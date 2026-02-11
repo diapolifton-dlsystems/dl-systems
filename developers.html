@@ -1,0 +1,93 @@
+<header class="nav enterprise-nav">
+  <div class="nav-inner">
+
+    <!-- BRAND / LOGO -->
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="DL Systems Logo">
+      <span>DL SYSTEMS</span>
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="founder.html">Founder</a>
+      <a href="collaborate.html">Collaborate</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Developers | DL SYSTEMS</title>
+<link rel="stylesheet" href="index.html">
+</head>
+
+<body>
+
+<nav>
+ <div class="logo">DL SYSTEMS</div>
+ <div class="nav-links">
+  <a href="index.html" data-i18n="nav_home"></a>
+  <a href="services.html" data-i18n="nav_services"></a>
+  <a href="developers.html" data-i18n="nav_devs"></a>
+  <a href="contact.html" data-i18n="nav_contact"></a>
+ </div>
+ <select id="lang" onchange="changeLanguage(this.value)">
+  <option value="en">EN</option>
+  <option value="fr">FR</option>
+  <option value="es">ES</option>
+  <option value="de">DE</option>
+ </select>
+</nav>
+
+<section style="padding:140px 8%;">
+ <h2 data-i18n="dev_title"></h2>
+ <p data-i18n="dev_sub"></p>
+
+ <form id="devForm">
+  <input placeholder="Name" required><br><br>
+  <input placeholder="Portfolio URL" required><br><br>
+  <input placeholder="Skills" required><br><br>
+  <input placeholder="GitHub" required><br><br>
+  <textarea placeholder="Message"></textarea><br><br>
+  <button class="btn" type="submit" data-i18n="apply"></button>
+ </form>
+
+ <p id="status"></p>
+</section>
+
+<script>
+document.getElementById("devForm").addEventListener("submit", async e=>{
+ e.preventDefault();
+ document.getElementById("status").textContent="Submitting...";
+
+ const data = {
+  name:e.target[0].value,
+  portfolio:e.target[1].value,
+  skills:e.target[2].value,
+  github:e.target[3].value,
+  message:e.target[4].value
+ };
+
+ const res = await fetch("/api/developers",{
+  method:"POST",
+  headers:{"Content-Type":"application/json"},
+  body:JSON.stringify(data)
+ });
+
+ document.getElementById("status").textContent =
+   res.ok ? "Application Sent!" : "Error submitting.";
+});
+</script>
+
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>

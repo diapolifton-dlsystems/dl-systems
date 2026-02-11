@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founder | DL SYSTEMS</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diapo Lifton Seabi — Systems Developer and Software Engineer focused on scalable, structured, real-world systems.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/particles.css">
+
+  <style>
+    /* Portrait Layout */
+    .founder-intro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      max-width: 1100px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .founder-portrait {
+      flex: 0 0 320px;
+      position: relative;
+    }
+
+    .founder-portrait img {
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+      filter: blur(0.2px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+      border: 1px solid rgba(0,255,255,0.15);
+    }
+
+    .founder-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .founder-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 900px) {
+      .founder-intro {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .founder-portrait {
+        max-width: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+<div class="neon-grid"></div>
+
+<header class="nav enterprise-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="DL Systems Logo">
+      <span>DL SYSTEMS</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="founder.html" class="active">Founder</a>
+      <a href="collaborate.html">Collaborate</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero--compact">
+  <div class="hero-inner">
+    <h1>Diapo Lifton Seabi</h1>
+    <p>
+      Systems Developer · Software Engineer ·
+      Builder of Structured Digital Systems
+    </p>
+  </div>
+</section>
+
+<!-- INTRO WITH PORTRAIT -->
+<section class="section">
+  <div class="founder-intro">
+
+    <div class="founder-portrait">
+      <!-- PLACE YOUR IMAGE HERE -->
+      <img src="assets/images/founder.jpg" alt="Diapo Lifton Seabi Portrait">
+    </div>
+
+    <div class="founder-text">
+      <p style="font-size:1.1rem;">
+        I build systems — not just websites.
+      </p>
+
+      <p style="margin-top:20px; color: var(--muted);">
+        My focus is clean architecture, structured backend logic,
+        database integrity, and production-ready solutions
+        that businesses can rely on.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Professional Summary</h2>
+
+  <div style="max-width:1000px; margin:auto;">
+    <p>
+      I am a Systems Development graduate (NQF Level 6) with hands-on
+      experience designing and building full-stack web platforms,
+      automation systems, and applications.
+    </p>
+
+    <p>
+      My approach is grounded in systems thinking, understanding how
+      frontend interfaces, backend logic, data models, and deployment
+      environments connect into one reliable structure.
+    </p>
+
+    <p>
+      I value clarity, Client engagement, documentation, version control discipline,
+      and performance awareness. I believe good engineering is invisible,
+      it simply works.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Technical Focus</h2>
+
+  <div class="service-grid">
+    <div class="card">
+      <h3>Full-Stack Engineering</h3>
+      <p>Frontend architecture, backend logic, REST APIs, authentication, system design.</p>
+    </div>
+
+    <div class="card">
+      <h3>Database Design</h3>
+      <p>MySQL, relational modeling, normalization, performance awareness.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI Systems</h3>
+      <p>Multi-LLM integration, workflow orchestration, modular AI architecture.</p>
+    </div>
+
+    <div class="card">
+      <h3>Engineering Principles</h3>
+      <p>Clean structure, maintainability, debugging discipline, scalable thinking.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section developer-signal">
+  <h2>Code & Professional Presence</h2>
+
+  <div class="signal-grid">
+
+    <div class="signal-card">
+      <i class="fab fa-github"></i>
+      <h3>GitHub</h3>
+      <p>
+        Clean repositories. Structured commits. Real projects.
+        Open to code reviews and technical discussions.
+      </p>
+      <a href="https://github.com/diapolifton-dlsystems" target="_blank" class="btn secondary">
+        View GitHub
+      </a>
+    </div>
+
+    <div class="signal-card">
+      <i class="fab fa-linkedin"></i>
+      <h3>LinkedIn</h3>
+      <p>
+        Professional background, education, and career progression.
+        Open to serious engineering opportunities.
+      </p>
+      <a href="https://www.linkedin.com/in/diapo-lifton-seabi-16ab92225" target="_blank" class="btn secondary">
+        View LinkedIn
+      </a>
+    </div>
+
+  </div>
+
+  <p class="microcopy">
+    I care about architecture, clarity, and long‑term scalability.
+    I don’t build for screenshots or content, I build for change and real‑world use.
+  </p>
+</section>
+
+<section class="cta-section">
+  <h2>Let’s Build Something Meaningful</h2>
+  <a href="contact.html" class="btn primary">Connect With Me</a>
+</section>
+
+<footer class="enterprise-footer">
+  <p>© 2026 DL SYSTEMS · Developed and Engineered by Diapo Lifton Seabi</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================
+       DL SYSTEMS — PREMIUM HOME
+  ====================================================== -->
+
+  <meta charset="UTF-8" />
+  <title>DL SYSTEMS — Software & Systems for Growing Businesses</title>
+
+  <meta name="description" content="DL Systems builds reliable websites, software systems, and automation for businesses that want clarity, growth, and long-term stability." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/particles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Premium Headline Accent */
+    .hero h1 {
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero h1::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #00e5ff, transparent);
+      border-radius: 10px;
+      animation: glowPulse 3s infinite ease-in-out;
+    }
+
+    @keyframes glowPulse {
+      0%,100% { opacity: .4; }
+      50% { opacity: 1; }
+    }
+
+    /* Section Separator */
+    .section {
+      position: relative;
+    }
+
+    .section::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 60%;
+      margin: 70px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(0,229,255,.2), transparent);
+    }
+
+    /* Elevated Cards */
+    .card {
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0, 229, 255, 0.12);
+    }
+
+    /* Trust Bar */
+    .trust-bar {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .trust-bar span {
+      margin: 0 18px;
+      opacity: .8;
+    }
+
+    /* Footer Social Glow */
+    .footer-socials a:hover {
+      color: #00e5ff;
+      text-shadow: 0 0 12px #00e5ff;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="nav enterprise-nav">
+  <div class="nav-inner">
+
+    <a href="index.html" class="brand" style="display:flex;align-items:center;gap:10px;">
+      <img src="assets/images/logo.png" alt="DL Systems Logo" style="height:34px;">
+      <span style="letter-spacing:1px;">DL SYSTEMS</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="founder.html">Founder</a>
+      <a href="collaborate.html">Collaborate</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<canvas id="particles"></canvas>
+<div class="neon-grid"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <h1>
+      Software & Systems<br>
+      <span style="font-size:0.65em;">built to make your business run better</span>
+    </h1>
+
+    <p>
+      We help businesses replace confusion, manual work, and fragile tools
+      with clear, reliable digital systems that grow with them.
+    </p>
+
+    <div style="margin-top:40px;">
+      <a href="services.html" class="btn primary">See What We Do</a>
+      <a href="contact.html" class="btn secondary" style="margin-left:14px;">Book a Consultation</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <span>Clean Architecture</span>
+  <span>Structured Engineering</span>
+  <span>Production‑Ready Systems</span>
+  <span>Long‑Term Scalability</span>
+</div>
+
+<!-- WHO WE HELP -->
+<section class="section">
+  <h2>Who We Help</h2>
+  <div class="service-grid">
+    <div class="card">
+      <h3>Business Owners</h3>
+      <p>Professional systems that actually improve operations.</p>
+    </div>
+    <div class="card">
+      <h3>Growing Teams</h3>
+      <p>Replacing spreadsheets and manual processes with clarity.</p>
+    </div>
+    <div class="card">
+      <h3>Founders & Employers</h3>
+      <p>Long‑term architecture, clean systems, real engineering.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE BUILD -->
+<section class="section services">
+  <h2>What We Build</h2>
+  <div class="service-grid">
+    <div class="card">
+      <h3>Websites That Work</h3>
+      <p>Systems that handle users, data, and growth.</p>
+    </div>
+    <div class="card">
+      <h3>Internal Business Systems</h3>
+      <p>Dashboards and admin tools that replace chaos.</p>
+    </div>
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Reduce repetitive work and human error.</p>
+    </div>
+    <div class="card">
+      <h3>Secure Architecture</h3>
+      <p>Built properly from day one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <h2>How Working With Us Feels</h2>
+  <div class="service-grid">
+    <div class="card">
+      <h3>1. We Listen</h3>
+      <p>No technical knowledge required.</p>
+    </div>
+    <div class="card">
+      <h3>2. We Plan</h3>
+      <p>You know exactly what you’re paying for.</p>
+    </div>
+    <div class="card">
+      <h3>3. We Build & Support</h3>
+      <p>Clean delivery with optional ongoing support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Not sure what you need yet?</h2>
+  <p>That’s okay. We’ll help you figure it out.</p>
+  <a href="contact.html" class="btn primary">Start a Conversation</a>
+</section>
+
+<footer class="enterprise-footer">
+  <div class="footer-inner" style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+
+    <div class="footer-brand" style="display:flex;align-items:center;gap:10px;">
+      <img src="assets/images/logo.png" alt="DL Systems Logo" style="height:28px;">
+      <span>DL SYSTEMS</span>
+    </div>
+
+    <div class="footer-socials" style="display:flex;gap:20px;font-size:1.1rem;">
+      <a href="https://facebook.com/jadentjay.seabi" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/diapo_slim" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/diapolifton-dlsystems" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/diapo-lifton-seabi-16ab92225" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copy">
+      © 2026 DL SYSTEMS · Software Systems & Digital Platforms
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+const reveals = document.querySelectorAll(".section, .card, .cta-section");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+  reveals.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 80) {
+      el.classList.add("active");
+      el.classList.add("reveal");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+</body>
+</html>

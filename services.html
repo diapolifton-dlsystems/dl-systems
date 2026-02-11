@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================
+       DL SYSTEMS — SERVICES (PACKAGES + DETAILS)
+  ====================================================== -->
+
+  <meta charset="UTF-8" />
+  <title>Services | DL SYSTEMS</title>
+
+  <meta name="description" content="Clear software systems, pricing packages, and long‑term technical solutions by DL Systems." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Styles (UNCHANGED) -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/particles.css">
+
+  <!-- Minimal page‑only helpers -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .price {
+      font-size: 1.6rem;
+      margin: 12px 0;
+      background: linear-gradient(90deg, var(--neon), var(--neon-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    .package-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .package-details {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .package-details ul {
+      list-style: none;
+      margin-top: 30px;
+    }
+
+    .package-details li {
+      margin: 12px 0;
+      color: var(--muted);
+    }
+
+    .divider {
+      margin: 80px auto;
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--neon), var(--neon-pink));
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===============================
+     HEADER (UNCHANGED)
+================================ -->
+<header class="nav enterprise-nav">
+  <div class="nav-inner">
+
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="DL Systems Logo">
+      <span>DL SYSTEMS</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="founder.html">Founder</a>
+      <a href="collaborate.html">Collaborate</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<canvas id="particles"></canvas>
+<div class="neon-grid"></div>
+
+<!-- ===============================
+     HERO
+================================ -->
+<section class="hero hero--compact">
+  <div class="hero-inner">
+    <h1>Services & Packages</h1>
+    <p>
+      Clear systems, transparent pricing, and long‑term thinking —
+      explained in plain English.
+    </p>
+  </div>
+</section>
+
+<!-- ===============================
+     PACKAGE OVERVIEW (CLICKABLE)
+================================ -->
+<section class="section services">
+
+  <h2>Choose a Package</h2>
+
+  <div class="service-grid">
+
+    <a href="#starter" class="card package-link">
+      <h3>Starter</h3>
+      <p class="price">From R2,500</p>
+      <p>
+        Ideal for individuals or small businesses
+        needing a professional digital foundation.
+      </p>
+    </a>
+
+    <a href="#growth" class="card package-link">
+      <h3>Growth</h3>
+      <p class="price">From R8,000</p>
+      <p>
+        Built for growing businesses that need systems,
+        automation, or internal tools.
+      </p>
+    </a>
+
+    <a href="#enterprise" class="card package-link">
+      <h3>Enterprise</h3>
+      <p class="price">From R20,000+</p>
+      <p>
+        For serious platforms, scalability,
+        and long‑term technical partnerships.
+      </p>
+    </a>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===============================
+     STARTER DETAILS
+================================ -->
+<section class="section" id="starter">
+  <div class="package-details">
+    <h2>Starter Package</h2>
+    <p class="price">From R2,500</p>
+
+    <p>
+      The Starter package is for clients who need a clean,
+      reliable online presence or a simple system that works properly.
+    </p>
+
+    <ul>
+      <li>✔ Professional website or basic web system</li>
+      <li>✔ Up to 5 pages or features</li>
+      <li>✔ Contact forms & basic data handling</li>
+      <li>✔ Secure setup & deployment</li>
+      <li>✔ Mobile‑friendly design</li>
+    </ul>
+
+    <p class="muted-text">
+      Optional maintenance available if you want updates,
+      backups, or small changes over time.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===============================
+     GROWTH DETAILS
+================================ -->
+<section class="section" id="growth">
+  <div class="package-details">
+    <h2>Growth Package</h2>
+    <p class="price">From R8,000</p>
+
+    <p>
+      Designed for businesses that are growing and need
+      systems to manage users, data, or operations.
+    </p>
+
+    <ul>
+      <li>✔ Custom dashboards or admin panels</li>
+      <li>✔ User login & permission systems</li>
+      <li>✔ Database design & workflows</li>
+      <li>✔ Automation (emails, actions, rules)</li>
+      <li>✔ Performance & security optimisation</li>
+    </ul>
+
+    <p class="muted-text">
+      Maintenance is optional and discussed separately.
+      You stay in control.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===============================
+     ENTERPRISE DETAILS
+================================ -->
+<section class="section" id="enterprise">
+  <div class="package-details">
+    <h2>Enterprise Package</h2>
+    <p class="price">From R20,000+</p>
+
+    <p>
+      Built for serious platforms, complex systems,
+      or founders who need a long‑term technical partner.
+    </p>
+
+    <ul>
+      <li>✔ System architecture & planning</li>
+      <li>✔ Scalable backend systems</li>
+      <li>✔ Advanced business logic</li>
+      <li>✔ Integrations with external services</li>
+      <li>✔ Security‑focused engineering</li>
+    </ul>
+
+    <p class="muted-text">
+      Long‑term maintenance, support, and iteration
+      can be added when required.
+    </p>
+  </div>
+</section>
+
+<!-- ===============================
+     CTA
+================================ -->
+<section class="cta-section">
+  <h2>Not sure which package fits?</h2>
+  <p>
+    We’ll help you choose the right option
+    based on your goals and budget.
+  </p>
+  <a href="contact.html" class="btn primary">Book a Consultation</a>
+</section>
+
+<footer>
+  © 2026 DL SYSTEMS · Software Systems & Digital Platforms
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

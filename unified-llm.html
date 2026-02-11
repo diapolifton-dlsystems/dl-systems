@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================
+       DL SYSTEMS — UNIFIED LLM PLATFORM
+       Technical Architecture & Engineering Overview
+  ====================================================== -->
+
+  <meta charset="UTF-8" />
+  <title>Unified LLM Platform | DL SYSTEMS</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="Technical architecture overview of a unified multi-model LLM platform engineered by DL Systems." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Styles (reuse existing system) -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/particles.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND SYSTEM -->
+<canvas id="particles"></canvas>
+<div class="neon-grid"></div>
+
+<!-- GLOBAL HEADER -->
+<header class="nav enterprise-nav">
+  <div class="nav-inner">
+
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="DL Systems Logo">
+      <span>DL SYSTEMS</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="founder.html">Founder</a>
+      <a href="collaborate.html">Collaborate</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero--compact">
+  <div class="hero-inner">
+    <h1>Unified LLM Platform</h1>
+    <p>
+      A multi‑model AI orchestration system<br>
+      designed for comparison, routing, and controlled experimentation.
+    </p>
+  </div>
+</section>
+
+<!-- STATUS -->
+<section class="section">
+  <div class="container">
+
+    <div class="project-status warning">
+      <strong>Status:</strong> Under active development — architecture stable, features evolving.
+    </div>
+
+    <p class="muted-text">
+      This page documents the <strong>engineering intent, system architecture, and design decisions</strong>
+      behind the Unified LLM Platform. It is presented transparently for technical review and
+      professional evaluation.
+    </p>
+
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="container">
+
+    <h2>Project Overview</h2>
+
+    <p>
+      The Unified LLM Platform is an experimental web‑based system that consolidates
+      multiple large language models into a single interface.
+      Its primary goal is to enable <strong>model comparison, routing, and evaluation</strong>
+      without locking users into a single provider.
+    </p>
+      Designed and prototyped a unified LLM orchestration platform focused on provider abstraction, request normalization, and model comparison.
+      The system explores multi‑provider routing, failover strategies, and interface‑level decoupling to enable scalable AI integration across applications
+
+    <p>
+      Rather than replacing individual LLMs, the system acts as an
+      <strong>orchestration layer</strong>, standardizing inputs and outputs while
+      preserving each model’s strengths and limitations.
+    </p>
+
+  </div>
+</section>
+
+<!-- CORE OBJECTIVES -->
+<section class="section">
+  <div class="container">
+
+    <h2>Core Engineering Objectives</h2>
+
+    <ul class="project-list">
+      <li>Abstract differences between LLM APIs behind a unified interface</li>
+      <li>Enable side‑by‑side and routed model responses</li>
+      <li>Maintain clear separation between UI, orchestration, and model adapters</li>
+      <li>Design for extensibility as new models become available</li>
+      <li>Ensure transparent behavior (no hidden prompt manipulation)</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section">
+  <div class="container">
+
+    <h2>System Architecture</h2>
+
+    <p>
+      The platform follows a modular, service‑oriented design to avoid tight coupling
+      between the user interface and individual LLM providers.
+    </p>
+
+    <div class="architecture-block">
+
+      <h3>1. Client Layer (Web UI)</h3>
+      <p>
+        A lightweight web interface responsible for:
+      </p>
+      <ul>
+        <li>User input capture</li>
+        <li>Conversation history rendering</li>
+        <li>Model selection and comparison controls</li>
+      </ul>
+
+      <h3>2. Orchestration Layer</h3>
+      <p>
+        The orchestration layer acts as the system’s control plane:
+      </p>
+      <ul>
+        <li>Normalizes prompts into a common internal format</li>
+        <li>Routes requests to selected models</li>
+        <li>Handles fallback and error isolation per provider</li>
+      </ul>
+
+      <h3>3. Model Adapter Layer</h3>
+      <p>
+        Each LLM provider is wrapped by an adapter responsible for:
+      </p>
+      <ul>
+        <li>API‑specific request formatting</li>
+        <li>Authentication handling</li>
+        <li>Response normalization</li>
+      </ul>
+
+      <h3>4. Response Aggregation</h3>
+      <p>
+        Outputs from different models are normalized and returned
+        in a consistent structure for display or comparison.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="section">
+  <div class="container">
+
+    <h2>Technology Stack</h2>
+
+    <div class="tech-grid">
+      <div>
+        <strong>Frontend:</strong>
+        <p>HTML · CSS · JavaScript</p>
+      </div>
+
+      <div>
+        <strong>Backend:</strong>
+        <p>Node.js · Express</p>
+      </div>
+
+      <div>
+        <strong>APIs:</strong>
+        <p>Multiple LLM provider APIs (abstracted)</p>
+      </div>
+
+      <div>
+        <strong>Architecture:</strong>
+        <p>Adapter Pattern · Service Separation</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT EXISTS -->
+<section class="section">
+  <div class="container">
+
+    <h2>Current Implementation State</h2>
+
+    <ul class="project-list">
+      <li>Multi‑model request routing (basic)</li>
+      <li>Unified prompt and response structure</li>
+      <li>Web interface prototype</li>
+      <li>Local development deployment</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- WHAT'S NEXT -->
+<section class="section">
+  <div class="container">
+
+    <h2>Planned Enhancements</h2>
+
+    <ul class="project-list">
+      <li>Conversation memory management</li>
+      <li>Advanced model comparison views</li>
+      <li>Cost and latency visibility per model</li>
+      <li>Access control and usage limits</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- PROFESSIONAL NOTE -->
+<section class="section">
+  <div class="container">
+
+    <h2>Professional Context</h2>
+
+    <p class="muted-text">
+      This project is presented as an <strong>engineering portfolio artifact</strong>.
+      It demonstrates architectural reasoning, abstraction strategies,
+      and real‑world system design considerations rather than a finished commercial product.
+    </p>
+
+  </div>
+</section>
+
+<!-- BACK -->
+<section class="cta-section">
+  <a href="projects.html" class="btn secondary">← Back to Projects</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="enterprise-footer">
+  <p>© 2026 DL SYSTEMS · Enterprise Software/Systems Development</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

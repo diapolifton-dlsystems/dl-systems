@@ -1,0 +1,989 @@
+/* ===============================
+   DL SYSTEMS — ENTERPRISE CORE
+================================ */
+
+:root {
+  --bg: #050509;
+  --bg-soft: #0a0f1f;
+  --glass: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+  --neon: #00fff0;
+  --neon-pink: #ff2bd6;
+  --text: #eaeaea;
+  --muted: #9aa0a6;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, var(--bg-soft), var(--bg));
+  color: var(--text);
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   GLOBAL NAV — ENTERPRISE
+================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(5,5,9,0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  max-width: 1400px;
+  margin: auto;
+  padding: 18px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===============================
+   BRAND / LOGO (ENTERPRISE FIX)
+================================ */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--neon);
+}
+
+.brand img {
+  height: 36px;
+  filter: drop-shadow(0 0 10px rgba(19, 3, 135, 0.367));
+}
+
+
+.brand span {
+  font-size: 14px;
+  color: var(--neon);
+}
+
+
+
+/* NAV LINKS */
+.nav-links a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+  transition: color .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--neon);
+}
+
+.nav-links .cta {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--neon);
+}
+
+/* ===============================
+   VISUAL BACKGROUND
+================================ */
+
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+}
+
+/* ===============================
+   GLOBAL BACKGROUND IMAGE LAYER
+================================ */
+
+.page-bg {
+  position: relative;
+  inset: 0;
+  z-index: -3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(6px) brightness(0.35);
+  transform: scale(1.05); /* prevents blur edge crop */
+}
+
+/* Optional soft vignette overlay */
+.page-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.75)
+  );
+}
+
+
+.neon-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,255,240,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,240,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===============================
+   HERO SYSTEM
+================================ */
+
+.hero {
+  min-height: 100vh;
+  padding-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero--compact {
+  min-height: 55vh;
+}
+
+.hero-inner {
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--neon), var(--neon-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+
+.btn {
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .35s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--neon), var(--neon-pink));
+  color: #000;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 30px rgba(0,255,240,0.6);
+  transform: translateY(-3px);
+}
+
+.btn.secondary {
+  border: 1px solid var(--neon);
+  color: var(--neon);
+}
+
+.btn.secondary:hover {
+  background: var(--neon);
+  color: #000;
+}
+
+/* ===============================
+   MAGNETIC BUTTON CORE
+================================ */
+
+.btn {
+  position: relative;
+  transition: transform 0.25s cubic-bezier(.22,.61,.36,1),
+              box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+.btn.magnetic-active {
+  transition: none;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+
+.section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 120px 60px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 60px;
+}
+
+/* ===============================
+   CARDS / GRIDS
+================================ */
+
+.service-grid,
+.collaborate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 36px;
+  text-align: center;
+  transition: .4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--neon);
+  box-shadow: 0 0 30px rgba(0,255,240,0.15);
+}
+
+
+
+/* ===============================
+   CONTACT — 3D ACTION BUTTONS
+================================ */
+
+.contact-cta-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.contact-3d {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 26px 30px;
+  border-radius: 22px;
+  text-decoration: none;
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.45),
+    inset 0 1px 1px rgba(255,255,255,0.08);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+/* ===============================
+   CONTACT CTA — PERFECT CENTERING
+================================ */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-cta-stack {
+  align-items: center;
+}
+
+.contact-3d {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* WhatsApp glow */
+.contact-3d.whatsapp .icon {
+  color: var(--whatsapp);
+  box-shadow: 0 0 30px rgb(3, 232, 41);
+}
+/* Email glow */
+.contact-3d.email .icon {
+  color: var(--neon);
+  box-shadow: 0 0 30px rgba(0, 255, 238, 0.968);
+}
+
+.contact-3d:hover {
+  transform: translateY(-6px);
+}
+
+.contact-3d.whatsapp:hover {
+  box-shadow:
+    0 0 45px rgba(2, 240, 90, 0.962),
+    0 12px 30px rgba(0,0,0,0.6);
+}
+
+.contact-3d.email:hover {
+  box-shadow:
+    0 0 45px rgba(0,255,240,0.6),
+    0 12px 30px rgba(0,0,0,0.6);
+}
+
+.contact-3d .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.25), rgba(0,0,0,0.2));
+}
+
+.contact-3d .icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+.contact-3d .text strong {
+  font-size: 18px;
+  color: var(--text);
+}
+
+.contact-3d .text span {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.contact-details li {
+  margin-bottom: 20px;
+}
+
+.contact-details a {
+  color: var(--neon);
+  text-decoration: none;
+}
+
+.contact-form-wrapper {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--neon);
+}
+
+
+/* ===============================
+   CTA SECTION
+================================ */
+
+.cta-section {
+  text-align: center;
+  padding: 120px 40px;
+  background: radial-gradient(circle, rgba(0,255,240,0.08), transparent);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+<footer class="enterprise-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="DL Systems enterprise software and systems engineering company logo featuring neon cyan and pink gradient design elements">
+      <span>DL SYSTEMS</span>
+    </div>
+
+    <div class="footer-contact">
+      <p>Email: <a href="mailto:info@dlsystems.co.za">info@dlsystems.co.za</a></p>
+      <p>Phone: <a href="tel:+27XXXXXXXXX">+27 XX XXX XXXX</a></p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/YOUR_PROFILE" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">
+    © 2026 DL SYSTEMS · Enterprise Software & Systems Engineering
+  </p>
+</footer>
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-inner {
+    padding: 15px 25px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .section {
+    padding: 80px 25px;
+  }
+}
+
+/* ===============================
+   MICRO‑INTERACTIONS — GLOW PHYSICS
+================================ */
+
+.interactive {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+/* Dynamic glow layer */
+.interactive::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(
+    220px circle at var(--x, 50%) var(--y, 50%),
+    rgba(0,255,240,0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Hover activation */
+.interactive:hover::before {
+  opacity: 1;
+}
+
+/* Elevation effect */
+.interactive:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 10px 40px rgba(0,255,240,0.18),
+    inset 0 0 20px rgba(0,255,240,0.08);
+}
+
+/* ===============================
+   MICRO‑INTERACTION — RIPPLE PRESS
+================================ */
+
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.ripple-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.35) 10%, transparent 60%);
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity .6s, transform .6s;
+  pointer-events: none;
+}
+
+.ripple-btn:active::after {
+  opacity: 1;
+  transform: scale(2.5);
+  transition: 0s;
+}
+
+.ripple-btn:active {
+  transform: translateY(1px) scale(0.985);
+}
+
+/* ===============================
+   TOAST — SUCCESS FEEDBACK
+================================ */
+
+.toast {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: rgba(10,15,31,0.9);
+  border: 1px solid rgba(0,255,240,0.4);
+  padding: 16px 22px;
+  border-radius: 14px;
+  color: var(--text);
+  font-size: 14px;
+  box-shadow: 0 0 30px rgba(0,255,240,0.35);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: .5s ease;
+  z-index: 2000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glow-pulse {
+  animation: glowPulse 1.4s ease;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 0 rgba(0,255,240,0); }
+  50% { box-shadow: 0 0 35px rgba(0,255,240,0.7); }
+  100% { box-shadow: 0 0 0 rgba(0,255,240,0); }
+}
+
+/* ===============================
+   ENERGY PRESS RIPPLE (SHOCKWAVE)
+================================ */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: rippleShock 700ms cubic-bezier(.2,.6,.3,1);
+  background: radial-gradient(
+    circle,
+    rgba(0,255,240,0.55) 0%,
+    rgba(0,255,240,0.35) 30%,
+    rgba(0,255,240,0.15) 55%,
+    rgba(0,255,240,0.05) 70%,
+    transparent 75%
+  );
+  mix-blend-mode: screen;
+}
+
+@keyframes rippleShock {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+function showToast(text) {
+  let toast = document.createElement("div");
+  toast.className = "toast show";
+  toast.textContent = text;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+    toast.remove();
+  }, 3000);
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top: 2px solid #00fff0;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: none;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.btn.loading .btn-text {
+  opacity: 0.6;
+}
+
+.btn.loading .spinner {
+  display: inline-block;
+}
+
+/* ===============================
+   SERVICES — LINK RESET (NO BLUE / NO UNDERLINE)
+================================ */
+
+/* Neutralize default anchor styles */
+.section.services a,
+.service-grid a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Keep hover behavior elegant */
+.section.services a:hover {
+  color: var(--neon);
+  text-decoration: none;
+}
+
+.brand-fix {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-text {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* =================================
+   FOUNDER — TIMELINE SYSTEM
+================================= */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 80px auto 0;
+  padding-left: 30px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background: var(--neon);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,255,240,0.6);
+}
+
+.timeline-content h3 {
+  margin-bottom: 6px;
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dev-note {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--neon);
+  opacity: 0.8;
+}
+
+
+/* =================================
+   DEVELOPER SIGNAL SECTION
+================================= */
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.signal-card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.signal-card i {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--neon);
+}
+
+.signal-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--neon);
+  box-shadow: 0 0 30px rgba(0,255,240,0.15);
+}
+
+.microcopy {
+  margin-top: 60px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* =================================
+   BRAND LINK FIX (NO UNDERLINE)
+================================= */
+
+.brand {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.brand span {
+  text-decoration: none !important;
+}
+
+.brand:focus,
+.brand:active,
+.brand:hover {
+  text-decoration: none !important;
+}
+
+.section-bg-panel {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  padding: 60px;
+}
+
+/* ===============================
+   HOME PAGE BACKGROUND
+================================ */
+
+.home-page::before {
+  background-image: url("../images/bg/home-bg.jpg");
+}
+
+/* ===============================
+   FOUNDER PAGE BACKGROUND
+================================ */
+
+.founder-page::before {
+  background-image: url("../images/bg/founder-bg.jpg");
+}
+
+/* ===============================
+   SERVICES PAGE BACKGROUND
+================================ */
+
+.services-page::before {
+  background-image: url("../images/bg/services-bg.jpg");
+}
+
+/* ===============================
+   GLOBAL PAGE BACKGROUND SYSTEM
+   (Non-destructive, safe layer)
+================================ */
+
+/* Base background image layer */
+.page-bg::before {
+  content: "";
+  position: relative;
+  inset: 0;
+  z-index: -3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(4px) brightness(0.5);
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+/* Individual page backgrounds */
+.home-bg::before {
+  background-image: url("../images/backgrounds/home.jpg");
+}
+
+.services-bg::before {
+  background-image: url("../images/bg/bg-services.jpg");
+}
+
+.founder-bg::before {
+  background-image: url("../images/bg/bg-founder.jpg");
+}
+
+/* ===============================
+   SOCIAL ICONS — PREMIUM GLOW
+================================ */
+
+.footer-socials {
+  display: flex;
+  gap: 18px;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--muted);
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Default hover */
+.social-link:hover {
+  transform: translateY(-4px);
+  color: white;
+  border-color: var(--neon);
+}
+
+/* BRAND GLOW — GitHub + LinkedIn */
+.social-link.github:hover,
+.social-link.linkedin:hover {
+  color: var(--neon);
+  box-shadow:
+    0 0 18px rgba(0,255,240,0.6),
+    0 0 40px rgba(0,255,240,0.25);
+  border-color: var(--neon);
+}
+
+/* Subtle idle glow (premium feel) */
+.social-link.github,
+.social-link.linkedin {
+  color: var(--neon);
+  border-color: rgba(0,255,240,0.2);
+}
+
+/* ===== Founder Portrait ===== */
+
+.founder-profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.founder-profile img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 229, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: portraitFade 1.2s ease forwards;
+  animation-delay: 0.3s;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle hover lift */
+.founder-profile img:hover {
+  transform: translateY(0) scale(1.03);
+  box-shadow: 0 25px 80px rgba(0, 229, 255, 0.15);
+}
+
+/* Fade animation */
+@keyframes portraitFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   SCROLL REVEAL (ULTRA SUBTLE)
+================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

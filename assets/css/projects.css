@@ -1,0 +1,148 @@
+/* ===============================
+   PROJECT GRID
+================================ */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* ===============================
+   PROJECT CARD
+================================ */
+
+.project-card {
+  position: relative;
+  height: 280px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f1115;
+  cursor: pointer;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(0,0,0,.45);
+}
+
+/* ===============================
+   BACKGROUND IMAGE LAYER
+================================ */
+
+.project-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity .45s ease, transform .6s ease;
+  z-index: 0;
+}
+
+.project-card:hover .project-bg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Dark overlay */
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.85)
+  );
+  opacity: 0;
+  transition: opacity .45s ease;
+  z-index: 1;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* ===============================
+   CONTENT LAYER
+================================ */
+
+.project-card__content {
+  position: relative;
+  z-index: 2;
+  padding: 26px;
+}
+
+.project-card__content h3 {
+  margin-bottom: 8px;
+}
+
+.project-meta {
+  font-size: .85rem;
+  color: #9aa0a6;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: .95rem;
+  color: #cfd3da;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   PROJECT LINKS
+================================ */
+
+.project-links a {
+  display: inline-block;
+  font-size: .85rem;
+  margin-right: 12px;
+  text-decoration: none;
+  color: #00fff0;
+  transition: opacity .3s ease;
+}
+
+.project-links a:hover {
+  opacity: .7;
+}
+
+/* ===============================
+   MOBILE FIX — ALWAYS SHOW IMAGE
+================================ */
+
+/* Desktop behavior (hover only) */
+@media (hover: hover) and (pointer: fine) {
+  .project-card {
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .project-card__overlay {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .project-card:hover .project-card__overlay {
+    opacity: 1;
+  }
+}
+
+/* Mobile behavior (no hover available) */
+@media (hover: none) and (pointer: coarse) {
+  .project-card {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .project-card__overlay {
+    opacity: 1; /* Always show image softly */
+  }
+}

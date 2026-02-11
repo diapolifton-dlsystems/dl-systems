@@ -1,0 +1,38 @@
+/* ===============================
+   VISUAL BACKGROUND LAYERS
+================================ */
+
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.neon-grid {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0,255,240,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,240,0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridMove 20s linear infinite;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 75%);
+  opacity: .25;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes gridMove {
+  from { background-position: 0 0; }
+  to { background-position: 60px 60px; }
+}
+
+/* Ensure content is above visuals */
+.nav,
+.hero,
+.section,
+footer {
+  position: relative;
+  z-index: 3;
+}
