@@ -1,247 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- =====================================================
-       DL SYSTEMS — PROJECTS (ULTRA ENHANCED)
-  ====================================================== -->
 
-  <meta charset="UTF-8" />
-  <title>Projects | DL SYSTEMS</title>
+<meta charset="UTF-8">
+<title>Software Projects & Case Studies | DL SYSTEMS</title>
 
-  <meta name="description" content="Enterprise software projects and case studies engineered by DL Systems." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Software systems, platforms, and commercial digital products engineered by DL Systems.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Core Styles -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/projects.css">
-  <link rel="stylesheet" href="assets/css/particles.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/projects.css">
+<link rel="stylesheet" href="assets/css/particles.css">
 
-  <!-- ENHANCEMENT STYLES (ADD-ON ONLY) -->
-  <style>
+<style>
 
-    /* === Premium Section Fade === */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
 
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
 
-    /* === Glass Hover Effect === */
-    .project-card {
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
+.project-card{
+transition:transform .4s ease, box-shadow .4s ease;
+}
 
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    }
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 50px rgba(0,0,0,0.5);
+}
 
-    /* === Subtle Hero Enhancement === */
-    .hero {
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 120px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #00e5ff, transparent);
-      opacity: 0.6;
-    }
-
-    /* === CTA Glow Interaction === */
-    .cta-section .btn.primary {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta-section .btn.primary::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
-      transition: 0.6s;
-    }
-
-    .cta-section .btn.primary:hover::before {
-      left: 100%;
-    }
-
-  </style>
+</style>
 
 </head>
 
 <body>
 
-<div class="page-bg" style="background-image: url('assets/images/bg-home.jpg');"></div>
+<div class="page-bg" style="background-image:url('assets/images/bg-home.jpg');"></div>
 
 <canvas id="particles"></canvas>
 <div class="neon-grid"></div>
 
 <header class="nav enterprise-nav">
-  <div class="nav-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo.png" alt="DL Systems Logo">
-      <span>DL SYSTEMS</span>
-    </a>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="founder.html">Founder</a>
-      <a href="collaborate.html">Collaborate</a>
-      <a href="contact.html" class="cta">Contact</a>
-    </nav>
-  </div>
+<div class="nav-inner">
+
+<a href="index.html" class="brand">
+<img src="assets/images/logo.png" alt="DL Systems Logo">
+<span>DL SYSTEMS</span>
+</a>
+
+<nav class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="projects.html" class="active">Projects</a>
+<a href="founder.html">Founder</a>
+<a href="collaborate.html">Collaborate</a>
+<a href="contact.html" class="cta">Contact</a>
+
+</nav>
+
+</div>
 </header>
 
 <section class="hero hero--compact reveal">
-  <div class="hero-inner">
-    <h1>Projects & Case Studies</h1>
-    <p>
-      Real systems. Real businesses.<br>
-      Engineered with enterprise discipline and long‑term vision.
-    </p>
-  </div>
+
+<div class="hero-inner">
+
+<h1>Projects & Case Studies</h1>
+
+<p>
+Real systems. Real businesses.  
+Engineered with structured architecture and long‑term thinking.
+</p>
+
+</div>
+
 </section>
 
+<!-- =========================
+PRODUCTION SYSTEMS
+========================= -->
+
 <section class="section projects-section reveal">
-  <h2 class="section-title">Completed Projects</h2>
 
-  <div class="projects-grid">
+<h2 class="section-title">Production Systems</h2>
 
-    <article
-      class="project-card"
-      data-bg="assets/images/projects/alpha-inks.jpg">
+<div class="projects-grid">
 
-      <div class="project-card__overlay"></div>
+<article class="project-card" data-bg="assets/images/projects/alpha-inks.jpg">
 
-      <div class="project-card__content">
-        <h3>Alpha Inks Tattoo Studio</h3>
+<div class="project-card__overlay"></div>
 
-        <p class="project-meta">
-          HTML · CSS · JavaScript · Firebase · EmailJS
-        </p>
+<div class="project-card__content">
 
-        <p class="project-desc">
-          Full production website engineered for performance,
-          SEO, mobile responsiveness, and customer enquiries.
-        </p>
+<h3>Alpha Inks Tattoo Studio</h3>
 
-        <div class="project-links">
-          <a href="https://alphainks.netlify.app" target="_blank" class="project-link">
-            View Live Website →
-          </a>
-          <a href="alpha-inks.html" class="project-link secondary">
-            View Case Study →
-          </a>
-        </div>
-      </div>
-    </article>
+<p class="project-meta">
+Frontend · Firebase Backend · EmailJS
+</p>
 
-  </div>
+<p class="project-desc">
+
+A full production website engineered for performance,
+SEO visibility, and reliable customer enquiries.
+
+The system provides the studio with a professional
+digital presence and streamlined communication
+with potential clients.
+
+</p>
+
+<div class="project-links">
+
+<a href="https://alphainks.netlify.app" target="_blank" class="project-link">
+View Live Website →
+</a>
+
+<a href="project-alpha-inks.html" class="project-link secondary">
+View Case Study →
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
 </section>
 
+<!-- =========================
+SOFTWARE SYSTEMS
+========================= -->
+
 <section class="section projects-section reveal">
-  <h2 class="section-title">Under Construction</h2>
 
-  <div class="projects-grid">
+<h2 class="section-title">Software Systems</h2>
 
-    <article
-      class="project-card project-card--placeholder"
-      data-bg="assets/images/projects/llm-platform.jpg">
+<div class="projects-grid">
 
-      <div class="project-card__overlay"></div>
+<article class="project-card" data-bg="assets/images/projects/automation-system.jpg">
 
-      <div class="project-card__content">
-        <h3>Unified LLM Platform</h3>
+<div class="project-card__overlay"></div>
 
-        <p class="project-meta">
-          AI Systems · Multi‑Model Architecture
-        </p>
+<div class="project-card__content">
 
-        <p class="project-desc">
-          Architecture‑phase platform unifying multiple LLMs
-          behind one intelligent interface.
-        </p>
+<h3>Internal Automation System</h3>
 
-        <div class="project-links">
-          <a href="unified-llm.html" class="project-link secondary">
-            View Architecture →
-          </a>
-        </div>
-      </div>
-    </article>
+<p class="project-meta">
+Node.js · APIs · Workflow Automation
+</p>
 
-    <article
-      class="project-card project-card--placeholder"
-      data-bg="assets/images/projects/delivery-platform.jpg">
+<p class="project-desc">
 
-      <div class="project-card__overlay"></div>
+Automation tools designed to eliminate repetitive
+business tasks, integrate APIs, and streamline
+data processing workflows.
 
-      <div class="project-card__content">
-        <h3>Local Commerce Delivery Platform</h3>
+</p>
 
-        <p class="project-meta">
-          Full‑Stack · Logistics · Payments
-        </p>
+<div class="project-links">
 
-        <p class="project-desc">
-          A scalable delivery ecosystem for local businesses
-          with dispatch logic and real‑time tracking.
-        </p>
-      </div>
-    </article>
+<a href="project-automation.html" class="project-link">
+View System →
+</a>
 
-  </div>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- =========================
+COMMERCIAL DEMOS
+========================= -->
+
+<section class="section projects-section reveal">
+
+<h2 class="section-title">Commercial Templates</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto;color:var(--muted);">
+
+Pre‑engineered digital products that businesses can deploy quickly.
+These systems can be customised and delivered to clients
+who need professional platforms without long development cycles.
+
+</p>
+
+<div class="projects-grid">
+
+<article class="project-card" data-bg="assets/images/projects/bikers-fix.jpg">
+
+<div class="project-card__overlay"></div>
+
+<div class="project-card__content">
+
+<h3>Bikers Fix Website</h3>
+
+<p class="project-meta">
+Motorcycle Service Business Template
+</p>
+
+<p class="project-desc">
+
+A modern website template designed for motorcycle
+repair shops and service garages.
+
+Includes service pages, enquiry forms,
+and a professional digital presence.
+
+</p>
+
+<div class="project-links">
+
+<a href="bikers-fix-demo-link.html" class="project-link">
+View Demo →
+</a>
+
+<a href="contact.html" class="project-link secondary">
+Request This Website →
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article class="project-card" data-bg="assets/images/projects/swift-courier.jpg">
+
+<div class="project-card__overlay"></div>
+
+<div class="project-card__content">
+
+<h3>Swift Courier Landing Page</h3>
+
+<p class="project-meta">
+Logistics · Courier Business Template
+</p>
+
+<p class="project-desc">
+
+Landing page designed for courier companies,
+delivery startups, and logistics services
+that need a strong digital presence.
+
+</p>
+
+<div class="project-links">
+
+<a href="swift-courier-demo-link.html" class="project-link">
+View Demo →
+</a>
+
+<a href="contact.html" class="project-link secondary">
+Request This Template →
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- =========================
+ENGINEERING PROJECTS
+========================= -->
+
+<section class="section projects-section reveal">
+
+<h2 class="section-title">Engineering Projects</h2>
+
+<div class="projects-grid">
+
+<article class="project-card project-card--placeholder" data-bg="assets/images/projects/llm-platform.jpg">
+
+<div class="project-card__overlay"></div>
+
+<div class="project-card__content">
+
+<h3>Unified LLM Platform</h3>
+
+<p class="project-meta">
+AI Systems · Multi‑Model Architecture
+</p>
+
+<p class="project-desc">
+
+Architecture‑phase platform unifying multiple
+large language models behind one intelligent interface.
+
+</p>
+
+</div>
+
+</article>
+
+<article class="project-card project-card--placeholder" data-bg="assets/images/projects/delivery-platform.jpg">
+
+<div class="project-card__overlay"></div>
+
+<div class="project-card__content">
+
+<h3>Local Commerce Delivery Platform</h3>
+
+<p class="project-meta">
+Full‑Stack · Logistics Platform
+</p>
+
+<p class="project-desc">
+
+A scalable delivery ecosystem for local businesses
+with dispatch management and real‑time tracking.
+
+</p>
+
+</div>
+
+</article>
+
+</div>
+
 </section>
 
 <section class="cta-section reveal">
-  <h2>Have a serious system in mind?</h2>
-  <p>We design and engineer systems built to scale.</p>
-  <a href="contact.html" class="btn primary">Start a Project</a>
+
+<h2>Have a system in mind?</h2>
+
+<p>
+We design and engineer platforms built to scale.
+</p>
+
+<a href="contact.html" class="btn primary">
+Start a Project
+</a>
+
 </section>
 
 <footer class="enterprise-footer">
-  <p>© 2026 DL SYSTEMS · Enterprise Software/Systems Development</p>
+
+<p>
+© 2026 DL SYSTEMS · Enterprise Software / Systems Engineering
+</p>
+
 </footer>
 
 <script src="assets/js/main.js"></script>
 
-<!-- Scroll Reveal Script -->
 <script>
-  const reveals = document.querySelectorAll(".reveal");
 
-  function revealOnScroll() {
-    const trigger = window.innerHeight * 0.85;
+const reveals=document.querySelectorAll(".reveal")
 
-    reveals.forEach(section => {
-      const top = section.getBoundingClientRect().top;
-      if (top < trigger) {
-        section.classList.add("active");
-      }
-    });
-  }
+function revealOnScroll(){
 
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
+const trigger=window.innerHeight*.85
+
+reveals.forEach(section=>{
+
+const top=section.getBoundingClientRect().top
+
+if(top<trigger){
+section.classList.add("active")
+}
+
+})
+
+}
+
+window.addEventListener("scroll",revealOnScroll)
+revealOnScroll()
+
 </script>
 
 </body>

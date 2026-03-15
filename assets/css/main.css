@@ -78,12 +78,27 @@ html, body {
 
 
 /* NAV LINKS */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .nav-links a {
-  margin-left: 28px;
+  margin-left: 0;
   text-decoration: none;
   color: var(--text);
   font-size: 14px;
-  transition: color .3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color .3s, background .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--neon);
+  background: rgba(0,255,240,0.05);
 }
 
 .nav-links a:hover,
@@ -986,4 +1001,54 @@ function showToast(text) {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+/* ===============================
+   MOBILE NAVIGATION FIX
+================================ */
+
+@media (max-width: 900px) {
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 20px;
+    gap: 12px;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .nav-links .cta {
+    padding: 6px 14px;
+  }
+
+}
+
+/* EXTRA SMALL PHONES */
+
+@media (max-width: 500px) {
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
 }
