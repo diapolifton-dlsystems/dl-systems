@@ -2,68 +2,318 @@
 <html lang="en">
 <head>
 
-<!-- =====================================================
-     DL SYSTEMS — SERVICES
-===================================================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8" />
+<title>Services | DL Systems — Business Systems & Digital Infrastructure</title>
 
-<title>Software Development Services | DL Systems South Africa</title>
-
-<meta name="description" content="DL Systems provides custom software development, internal business systems, automation tools, and scalable web platforms for growing businesses in South Africa." />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="DL Systems builds business platforms, dashboards, booking systems, automation tools, client portals, websites and scalable digital infrastructure for businesses in South Africa.">
+<meta name="keywords" content="DL Systems services, business systems South Africa, custom software development, automation systems, dashboard development, booking systems, client portals, digital infrastructure, web platforms, internal tools">
+<meta name="author" content="DL Systems">
+<meta name="theme-color" content="#05070d">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
 <link rel="canonical" href="https://dlsystems.co.za/services.html">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="DL Systems | Business Systems & Digital Infrastructure Services">
+<meta property="og:description" content="Custom systems, dashboards, automation tools, booking platforms and digital infrastructure built for real business operations.">
+<meta property="og:url" content="https://dlsystems.co.za/services.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
 
-<!-- Core Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/particles.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
 <style>
 
-html { scroll-behavior: smooth; }
-
-.price{
-font-size:1.6rem;
-margin:12px 0;
-background:linear-gradient(90deg,var(--neon),var(--neon-pink));
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-font-weight:700;
+.services-hero-note{
+  max-width:820px;
+  margin:34px auto 0;
+  padding:18px 22px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  background:rgba(255,255,255,.025);
+  color:var(--muted);
+  font-size:.95rem;
 }
 
-.package-link{
-text-decoration:none;
-color:inherit;
+.capability-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
 
-.package-details{
-max-width:900px;
-margin:auto;
-text-align:center;
+.capability-card{
+  padding:32px;
+  border-radius:24px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
+  min-height:260px;
 }
 
-.package-details ul{
-list-style:none;
-margin-top:30px;
+.capability-card span{
+  display:block;
+  color:var(--accent);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:18px;
 }
 
-.package-details li{
-margin:12px 0;
-color:var(--muted);
+.capability-card h3{
+  font-size:1.35rem;
+  margin-bottom:14px;
+  line-height:1.25;
 }
 
-.divider{
-margin:80px auto;
-width:120px;
-height:2px;
-background:linear-gradient(90deg,var(--neon),var(--neon-pink));
-border-radius:2px;
+.capability-card p{
+  font-size:.96rem;
+  line-height:1.8;
+}
+
+.service-band{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:50px;
+  align-items:start;
+  padding:52px;
+  border-radius:30px;
+  border:1px solid var(--border);
+  background:
+    radial-gradient(circle at top right,rgba(0,229,255,.08),transparent 40%),
+    linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
+}
+
+.service-band h2{
+  text-align:left;
+  margin-bottom:20px;
+}
+
+.service-band p{
+  margin-bottom:18px;
+}
+
+.service-points{
+  display:grid;
+  gap:18px;
+}
+
+.service-point{
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.service-point:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+
+.service-point strong{
+  display:block;
+  color:var(--text);
+  margin-bottom:6px;
+}
+
+.service-point span{
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.75;
+}
+
+.pricing-row{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.pricing-card{
+  position:relative;
+  padding:34px;
+  border-radius:26px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  display:flex;
+  flex-direction:column;
+  min-height:520px;
+}
+
+.pricing-card.featured{
+  border-color:rgba(0,229,255,.28);
+  background:
+    radial-gradient(circle at top,rgba(0,229,255,.1),transparent 38%),
+    linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+}
+
+.pricing-label{
+  color:var(--accent);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+.pricing-card h3{
+  font-size:1.7rem;
+  margin-bottom:10px;
+}
+
+.pricing-price{
+  font-size:2rem;
+  font-weight:900;
+  letter-spacing:-.06em;
+  margin-bottom:10px;
+}
+
+.pricing-card p{
+  font-size:.95rem;
+  line-height:1.8;
+  margin-bottom:24px;
+}
+
+.pricing-scope{
+  display:grid;
+  gap:14px;
+  margin:8px 0 28px;
+}
+
+.pricing-scope div{
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.075);
+}
+
+.pricing-scope strong{
+  display:block;
+  color:var(--text);
+  font-size:.92rem;
+  margin-bottom:4px;
+}
+
+.pricing-scope span{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+.pricing-card .btn{
+  margin-top:auto;
+}
+
+.support-table{
+  display:grid;
+  gap:1px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:24px;
+  background:rgba(255,255,255,.08);
+}
+
+.support-row{
+  display:grid;
+  grid-template-columns:1fr 1.4fr .7fr;
+  gap:24px;
+  padding:24px;
+  background:rgba(8,11,20,.9);
+  align-items:center;
+}
+
+.support-row strong{
+  color:var(--text);
+}
+
+.support-row span{
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.7;
+}
+
+.support-price{
+  text-align:right;
+  color:var(--accent);
+  font-weight:900;
+  font-size:1.1rem;
+}
+
+.process-line{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  border:1px solid var(--border);
+  border-radius:24px;
+  overflow:hidden;
+  background:rgba(255,255,255,.08);
+}
+
+.process-step{
+  padding:30px;
+  background:rgba(8,11,20,.9);
+}
+
+.process-step span{
+  display:inline-flex;
+  width:34px;
+  height:34px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--accent);
+  color:#001018;
+  font-weight:900;
+  margin-bottom:18px;
+}
+
+.process-step h3{
+  margin-bottom:10px;
+}
+
+.process-step p{
+  font-size:.92rem;
+  line-height:1.75;
+}
+
+@media(max-width:1000px){
+  .capability-grid,
+  .pricing-row,
+  .process-line{
+    grid-template-columns:1fr;
+  }
+
+  .service-band{
+    grid-template-columns:1fr;
+    padding:34px;
+  }
+
+  .service-band h2{
+    text-align:center;
+  }
+
+  .support-row{
+    grid-template-columns:1fr;
+  }
+
+  .support-price{
+    text-align:left;
+  }
+}
+
+@media(max-width:560px){
+  .capability-card,
+  .pricing-card,
+  .service-band,
+  .process-step{
+    padding:26px;
+  }
 }
 
 </style>
@@ -73,241 +323,453 @@ border-radius:2px;
 <body>
 
 <header class="nav enterprise-nav">
-
 <div class="nav-inner">
 
-<a href="index.html" class="brand">
-<img src="assets/images/logo.png" alt="DL Systems Software Development Company Logo">
+<a href="index.html" class="brand" aria-label="DL Systems Home">
+<img src="assets/images/logo.png" alt="DL Systems Logo">
 <span>DL SYSTEMS</span>
 </a>
 
-<nav class="nav-links">
+<nav class="nav-links" aria-label="Main navigation">
 <a href="index.html">Home</a>
 <a href="services.html" class="active">Services</a>
-<a href="marketplace.html">Marketplace</a>
 <a href="projects.html">Projects</a>
+<a href="marketplace.html">Marketplace</a>
 <a href="founder.html">Founder</a>
 <a href="collaborate.html">Collaborate</a>
 <a href="contact.html" class="cta">Contact</a>
 </nav>
 
 </div>
-
 </header>
 
 <canvas id="particles"></canvas>
 <div class="neon-grid"></div>
 
-<!-- HERO -->
-
 <section class="hero hero--compact">
-
 <div class="hero-inner">
 
-<h1>Software Development Services</h1>
+<div class="service-kicker">Strategy · Systems · Automation · Delivery</div>
+
+<h1>Services Built for Businesses That Need Better Control</h1>
 
 <p>
-DL Systems designs and builds custom software, internal business systems,
-and scalable web platforms that help organisations operate more efficiently
-and grow with confidence.
+DL Systems designs and builds digital platforms, dashboards, booking systems,
+automation tools and internal business systems for companies that need structure,
+speed and operational clarity.
 </p>
+
+<div class="services-hero-note">
+Not every business needs the same system. Some need a professional online presence.
+Some need dashboards. Some need booking flows, quotation tools, client portals or automation.
+DL Systems helps define the right solution before building.
+</div>
+
+<div class="hero-actions">
+<a href="#capabilities" class="btn primary">Explore Capabilities</a>
+<a href="#investment" class="btn secondary">View Investment Options</a>
+<a href="contact.html" class="btn secondary">Book Consultation</a>
+</div>
+
+</div>
+</section>
+
+<div class="trust-bar">
+<span>Business Platforms</span>
+<span>Operational Systems</span>
+<span>Dashboards</span>
+<span>Automation</span>
+<span>Client Portals</span>
+</div>
+
+<section class="section" id="capabilities">
+
+<h2>What We Build</h2>
+
+<p class="section-intro">
+The focus is not only design. The focus is building systems that help businesses present themselves,
+manage work, reduce manual pressure and create a stronger digital foundation.
+</p>
+
+<div class="capability-grid">
+
+<div class="capability-card">
+<span>01 · Presence</span>
+<h3>Business Websites & Digital Platforms</h3>
+<p>
+Professional websites and client-facing platforms built to communicate clearly,
+build credibility, collect enquiries and support growth across mobile, tablet and desktop.
+</p>
+</div>
+
+<div class="capability-card">
+<span>02 · Scheduling</span>
+<h3>Booking & Appointment Systems</h3>
+<p>
+Booking flows for barbershops, salons, clinics, consultants and service providers
+that need better customer scheduling and fewer missed opportunities.
+</p>
+</div>
+
+<div class="capability-card">
+<span>03 · Control</span>
+<h3>Dashboards & Admin Panels</h3>
+<p>
+Secure dashboards for managing clients, orders, bookings, products, staff activity,
+quotations, reports and performance from one organised control centre.
+</p>
+</div>
+
+<div class="capability-card">
+<span>04 · Efficiency</span>
+<h3>Automation & Workflow Systems</h3>
+<p>
+Digital workflows that reduce repetitive admin, improve follow-ups, connect business
+processes and remove unnecessary manual work.
+</p>
+</div>
+
+<div class="capability-card">
+<span>05 · Structure</span>
+<h3>Database & Backend Development</h3>
+<p>
+Backend logic, user roles, validation, data handling, system rules and structured databases
+that power reliable business software.
+</p>
+</div>
+
+<div class="capability-card">
+<span>06 · Access</span>
+<h3>Client Portals & Internal Tools</h3>
+<p>
+Login-based portals where clients, contractors, staff or admins can access information,
+submit requests, track progress and manage business workflows.
+</p>
+</div>
 
 </div>
 
 </section>
 
-<!-- PACKAGES -->
+<section class="section">
 
-<section class="section services">
+<div class="service-band">
 
-<h2>Development Packages</h2>
-
-<div class="service-grid">
-
-<a href="#starter" class="card package-link">
-
-<h3>Starter</h3>
-
-<p class="price">From R2,500</p>
+<div>
+<h2>The Business Problem We Solve</h2>
 
 <p>
-Perfect for startups, individuals, or small businesses
-that need a professional website or simple digital system
-to establish a reliable online presence.
+Many businesses are growing, but their operations are still trapped inside WhatsApp chats,
+paper notes, spreadsheets and manual follow-ups.
 </p>
-
-</a>
-
-<a href="#growth" class="card package-link">
-
-<h3>Growth</h3>
-
-<p class="price">From R8,000</p>
 
 <p>
-Designed for growing companies that require dashboards,
-internal tools, and automation to streamline their operations.
+That creates confusion, missed opportunities, slow responses, weak reporting and poor control.
+DL Systems builds the digital structure that helps the business operate with more clarity.
 </p>
+</div>
 
-</a>
+<div class="service-points">
 
-<a href="#enterprise" class="card package-link">
+<div class="service-point">
+<strong>Manual work becomes structured workflow.</strong>
+<span>Bookings, quotations, customer details and reports can be moved into organised systems.</span>
+</div>
 
-<h3>Enterprise</h3>
+<div class="service-point">
+<strong>Online presence becomes business infrastructure.</strong>
+<span>Your website becomes more than a digital flyer — it becomes a serious entry point into your business.</span>
+</div>
 
-<p class="price">From R20,000+</p>
+<div class="service-point">
+<strong>Daily operations become easier to manage.</strong>
+<span>Dashboards and internal tools give owners better visibility over what is happening.</span>
+</div>
 
-<p>
-For organisations building serious platforms,
-advanced software systems, or long‑term digital infrastructure.
-</p>
+<div class="service-point">
+<strong>Growth becomes easier to support.</strong>
+<span>Systems are built so they can be improved and extended as the business grows.</span>
+</div>
 
-</a>
+</div>
 
 </div>
 
 </section>
 
-<div class="divider"></div>
+<section class="section" id="investment">
 
-<!-- STARTER -->
+<h2>Investment Options</h2>
 
-<section class="section" id="starter">
+<p class="section-intro">
+These options give clients a realistic starting point. Final pricing is confirmed after discovery
+because every business has different workflows, content, features and deployment requirements.
+</p>
 
-<div class="package-details">
+<div class="pricing-row">
 
-<h2>Starter Package</h2>
+<div class="pricing-card">
 
-<p class="price">From R2,500</p>
+<div class="pricing-label">Foundation</div>
+
+<h3>Professional Presence</h3>
+
+<div class="pricing-price">From R2,500</div>
 
 <p>
-The Starter package is designed for businesses that need a
-clean, reliable digital foundation. Whether it's a professional
-website or a simple web system, this package ensures your
-online presence is built properly from day one.
+For businesses that need to look credible online, explain their services clearly and start
+receiving structured enquiries.
 </p>
 
-<ul>
+<div class="pricing-scope">
 
-<li>✔ Professional website or simple web platform</li>
-<li>✔ Up to 5 pages or functional features</li>
-<li>✔ Contact forms and secure data handling</li>
-<li>✔ Mobile‑friendly responsive design</li>
-<li>✔ Secure deployment and hosting setup</li>
+<div>
+<strong>Typical build</strong>
+<span>Business website, landing page or simple client-facing platform.</span>
+</div>
 
-</ul>
+<div>
+<strong>Core focus</strong>
+<span>Responsive layout, service presentation, contact flow and basic search visibility structure.</span>
+</div>
 
-<p class="muted-text">
-Optional maintenance packages are available for updates,
-backups, and improvements over time.
+<div>
+<strong>Best suited for</strong>
+<span>Startups, local service providers, personal brands and small businesses building their first serious online presence.</span>
+</div>
+
+</div>
+
+<a href="contact.html" class="btn secondary">Discuss Foundation Build</a>
+
+</div>
+
+<div class="pricing-card featured">
+
+<div class="pricing-label">Operations</div>
+
+<h3>Business Control</h3>
+
+<div class="pricing-price">From R8,000</div>
+
+<p>
+For businesses that need more than a website — admin control, customer data,
+bookings, internal tracking and structured workflows.
 </p>
+
+<div class="pricing-scope">
+
+<div>
+<strong>Typical build</strong>
+<span>Dashboard, booking system, quote system, order workflow or internal admin tool.</span>
+</div>
+
+<div>
+<strong>Core focus</strong>
+<span>Database-backed structure, protected areas, workflow logic, reporting and automation.</span>
+</div>
+
+<div>
+<strong>Best suited for</strong>
+<span>Growing service businesses, suppliers, contractors, logistics operators and teams with daily operational pressure.</span>
+</div>
+
+</div>
+
+<a href="contact.html" class="btn primary">Discuss Operations System</a>
+
+</div>
+
+<div class="pricing-card">
+
+<div class="pricing-label">Infrastructure</div>
+
+<h3>Custom Platform</h3>
+
+<div class="pricing-price">From R20,000+</div>
+
+<p>
+For businesses that need a full digital system built around their operations,
+users, data, business rules and future growth.
+</p>
+
+<div class="pricing-scope">
+
+<div>
+<strong>Typical build</strong>
+<span>Custom platform, client portal, staff portal, multi-user system or advanced business workflow.</span>
+</div>
+
+<div>
+<strong>Core focus</strong>
+<span>Architecture planning, backend logic, database structure, APIs, integrations and scalable implementation.</span>
+</div>
+
+<div>
+<strong>Best suited for</strong>
+<span>Companies replacing manual processes with proper software or building long-term digital infrastructure.</span>
+</div>
+
+</div>
+
+<a href="contact.html" class="btn secondary">Discuss Infrastructure Build</a>
+
+</div>
 
 </div>
 
 </section>
 
-<div class="divider"></div>
+<section class="section">
 
-<!-- GROWTH -->
+<h2>Maintenance & Support</h2>
 
-<section class="section" id="growth">
-
-<div class="package-details">
-
-<h2>Growth Package</h2>
-
-<p class="price">From R8,000</p>
-
-<p>
-The Growth package is built for businesses that are expanding
-and need structured systems to manage users, workflows,
-and operational data more effectively.
+<p class="section-intro">
+After launch, systems need care. DL Systems offers maintenance options to keep websites,
+dashboards and custom systems stable, updated and useful.
 </p>
 
-<ul>
+<div class="support-table">
 
-<li>✔ Custom dashboards or admin panels</li>
-<li>✔ User login and role‑based access systems</li>
-<li>✔ Database design and system workflows</li>
-<li>✔ Automation of repetitive business tasks</li>
-<li>✔ Performance and security optimisation</li>
+<div class="support-row">
+<strong>Essential Support</strong>
+<span>Minor content updates, small fixes, basic technical checks and general support guidance for simple websites.</span>
+<div class="support-price">From R350 / month</div>
+</div>
 
-</ul>
+<div class="support-row">
+<strong>Business Support</strong>
+<span>Bug fixes, performance checks, small improvements, security awareness updates and monthly support assistance.</span>
+<div class="support-price">From R750 / month</div>
+</div>
 
-<p class="muted-text">
-Maintenance and long‑term improvements can be added depending
-on your operational needs.
-</p>
+<div class="support-row">
+<strong>System Support</strong>
+<span>System monitoring, database backup support, workflow improvements, priority support and growth planning.</span>
+<div class="support-price">From R1,200 / month</div>
+</div>
 
 </div>
 
 </section>
 
-<div class="divider"></div>
+<section class="section">
 
-<!-- ENTERPRISE -->
+<h2>Delivery Process</h2>
 
-<section class="section" id="enterprise">
+<p class="section-intro">
+A strong system starts with understanding the business before writing code.
+This keeps the project clear, structured and professional from the beginning.
+</p>
 
-<div class="package-details">
+<div class="process-line">
 
-<h2>Enterprise Package</h2>
-
-<p class="price">From R20,000+</p>
-
+<div class="process-step">
+<span>1</span>
+<h3>Discovery</h3>
 <p>
-The Enterprise package is designed for organisations
-building large platforms or advanced software systems
-that require scalable architecture and long‑term support.
+We discuss the business, current workflow, challenges, users, features, budget and expected outcome.
 </p>
+</div>
 
-<ul>
-
-<li>✔ System architecture and technical planning</li>
-<li>✔ Scalable backend development</li>
-<li>✔ Advanced business logic and workflows</li>
-<li>✔ API integrations and external service connections</li>
-<li>✔ Security‑focused system engineering</li>
-
-</ul>
-
-<p class="muted-text">
-For long‑term projects, DL Systems can provide ongoing
-technical partnership, maintenance, and iterative improvements.
+<div class="process-step">
+<span>2</span>
+<h3>Structure</h3>
+<p>
+We plan the pages, modules, user journeys, data flow, access points and system logic.
 </p>
+</div>
+
+<div class="process-step">
+<span>3</span>
+<h3>Development</h3>
+<p>
+We build with clean structure, responsive layouts, practical functionality and maintainable code.
+</p>
+</div>
+
+<div class="process-step">
+<span>4</span>
+<h3>Launch</h3>
+<p>
+We test important flows, prepare deployment and create a foundation for future improvements.
+</p>
+</div>
 
 </div>
 
 </section>
 
-<!-- CTA -->
+<section class="section">
+
+<div class="service-band">
+
+<div>
+<h2>Before We Start</h2>
+
+<p>
+To build properly, we first need to understand what the business does, who uses the system,
+what problems exist and what the system must achieve.
+</p>
+
+<p>
+That is why every serious project starts with a consultation before a final quote is confirmed.
+</p>
+</div>
+
+<div class="service-points">
+
+<div class="service-point">
+<strong>Best fit clients</strong>
+<span>Service businesses, suppliers, startups, contractors and teams that need better structure.</span>
+</div>
+
+<div class="service-point">
+<strong>Best fit projects</strong>
+<span>Web platforms, booking systems, dashboards, quote tools, client portals and automation systems.</span>
+</div>
+
+<div class="service-point">
+<strong>Best fit mindset</strong>
+<span>Business owners who want technology to improve how the business actually operates.</span>
+</div>
+
+<div class="home-cta-inline">
+<a href="contact.html" class="btn primary">Book Consultation</a>
+<a href="marketplace.html" class="btn secondary">View Ready Systems</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section class="cta-section">
 
-<h2>Not Sure Which Solution Fits Your Needs?</h2>
+<h2>Let’s Build the Right System for Your Business</h2>
 
 <p>
-Every organisation is different. We'll help you identify the
-right system, platform, or automation solution based on
-your goals, operations, and budget.
+Whether you need a professional platform, booking system, dashboard, automation tool,
+client portal or full custom system, DL Systems can help structure it properly.
 </p>
 
-<a href="contact.html" class="btn primary">Book a Consultation</a>
+<a href="contact.html" class="btn primary">Start a Project Conversation</a>
 
 </section>
 
 <footer class="enterprise-footer">
 
-<div class="brand-visual">
+<div class="footer-inner">
 
-<img src="assets/images/logo.png"
-alt="DL Systems software engineering systems visual">
-
+<div class="footer-brand">
+<img src="assets/images/logo.png" alt="DL Systems Logo">
+<span>DL SYSTEMS</span>
 </div>
+
 <p class="footer-copy">
-
-© 2026 DL Systems · Custom Software Development & Business Systems Engineering
-
+© 2026 DL Systems · Business Systems, Digital Infrastructure, Automation,
+Dashboards and Custom Software Development in South Africa.
 </p>
 
 </div>

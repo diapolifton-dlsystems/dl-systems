@@ -1,18 +1,47 @@
 /* ===============================
-   ENTERPRISE ANIMATIONS
+   DL SYSTEMS — MOTION SYSTEM
 ================================ */
 
-.fade-in {
-  animation: fadeUp .9s ease forwards;
+.fade-in,
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease;
+}
+
+.fade-in{
+  animation:fadeUp .7s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(24px);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,
+  *::before,
+  *::after{
+    animation:none !important;
+    transition:none !important;
+    scroll-behavior:auto !important;
+  }
+
+  .reveal{
+    opacity:1;
+    transform:none;
   }
 }

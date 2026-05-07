@@ -3,66 +3,191 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Systems Marketplace | DL SYSTEMS</title>
-
-<meta name="description" content="Ready‑made business systems by DL Systems including booking platforms, courier websites, dashboards and automation systems.">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Systems Catalogue | DL SYSTEMS</title>
+
+<meta name="description" content="Deployable business systems by DL Systems including barbershop platforms, repair shop systems, courier platforms, dashboards, booking tools and automation systems.">
+<meta name="keywords" content="DL Systems marketplace, ready systems, deployable business systems, barbershop system, courier platform, dashboard system, booking system, automation system South Africa">
+<meta name="author" content="DL Systems">
+<meta name="theme-color" content="#05070d">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="canonical" href="https://dlsystems.co.za/marketplace.html">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<meta property="og:title" content="DL Systems | Systems Catalogue">
+<meta property="og:description" content="Deployable business systems that can be customised for real business operations.">
+<meta property="og:url" content="https://dlsystems.co.za/marketplace.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/particles.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
 <style>
 
-.market-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:40px;
+.catalogue-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
 }
 
-.market-card{
-background:var(--glass);
-border:1px solid var(--border);
-border-radius:18px;
-padding:36px;
-text-align:center;
-transition:.4s;
+.system-tile{
+  overflow:hidden;
+  border-radius:28px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  box-shadow:0 14px 44px rgba(0,0,0,.25);
 }
 
-.market-card:hover{
-transform:translateY(-8px);
-border-color:var(--neon);
-box-shadow:0 0 30px rgba(0,255,240,0.15);
+.system-tile img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.market-tag{
-display:inline-block;
-padding:4px 12px;
-font-size:11px;
-border-radius:20px;
-margin-bottom:12px;
-background:rgba(0,255,240,0.1);
-color:var(--neon);
-border:1px solid rgba(0,255,240,0.25);
+.system-content{
+  padding:32px;
 }
 
-.market-card h3{
-margin-bottom:10px;
+.system-meta{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
 }
 
-.market-card p{
-color:var(--muted);
-margin-bottom:20px;
+.system-meta span{
+  padding:6px 11px;
+  border-radius:999px;
+  border:1px solid rgba(0,229,255,.22);
+  background:rgba(0,229,255,.07);
+  color:var(--accent);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
 
-.market-actions{
-display:flex;
-flex-direction:column;
-gap:12px;
+.system-content h3{
+  font-size:1.65rem;
+  line-height:1.2;
+  margin-bottom:14px;
+}
+
+.system-content p{
+  line-height:1.8;
+  margin-bottom:24px;
+}
+
+.system-value{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin:24px 0;
+}
+
+.system-value div{
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.system-value strong{
+  display:block;
+  color:var(--text);
+  margin-bottom:6px;
+  font-size:.92rem;
+}
+
+.system-value span{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+.system-investment{
+  margin:26px 0;
+  padding:18px;
+  border-radius:18px;
+  border:1px solid rgba(0,229,255,.22);
+  background:rgba(0,229,255,.055);
+}
+
+.system-investment strong{
+  display:block;
+  color:var(--text);
+  font-size:1.15rem;
+  margin-bottom:4px;
+}
+
+.system-investment span{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.system-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.catalogue-note{
+  max-width:980px;
+  margin:auto;
+  padding:42px;
+  border-radius:28px;
+  border:1px solid var(--border);
+  background:
+    radial-gradient(circle at top right,rgba(0,229,255,.08),transparent 38%),
+    linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
+}
+
+.catalogue-note h2{
+  text-align:left;
+  margin-bottom:18px;
+}
+
+.catalogue-note p{
+  margin-bottom:16px;
+}
+
+@media(max-width:980px){
+  .catalogue-grid{
+    grid-template-columns:1fr;
+  }
+
+  .catalogue-note{
+    text-align:center;
+    padding:30px;
+  }
+
+  .catalogue-note h2{
+    text-align:center;
+  }
+}
+
+@media(max-width:560px){
+  .system-content{
+    padding:26px;
+  }
+
+  .system-value{
+    grid-template-columns:1fr;
+  }
+
+  .system-actions .btn{
+    width:100%;
+  }
 }
 
 </style>
@@ -75,39 +200,357 @@ gap:12px;
 <div class="neon-grid"></div>
 
 <header class="nav enterprise-nav">
-
 <div class="nav-inner">
 
-<a href="index.html" class="brand">
+<a href="index.html" class="brand" aria-label="DL Systems Home">
 <img src="assets/images/logo.png" alt="DL Systems Logo">
 <span>DL SYSTEMS</span>
 </a>
 
-<nav class="nav-links">
-
+<nav class="nav-links" aria-label="Main navigation">
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="projects.html">Projects</a>
-<a href="marketplace.html">Marketplace</a>
+<a href="marketplace.html" class="active">Marketplace</a>
 <a href="founder.html">Founder</a>
 <a href="collaborate.html">Collaborate</a>
 <a href="contact.html" class="cta">Contact</a>
-
 </nav>
 
 </div>
 </header>
 
 <section class="hero hero--compact">
-
 <div class="hero-inner">
 
-<h1>Systems Marketplace</h1>
+<div class="home-kicker">Deployable Systems · Customisation · Faster Delivery</div>
+
+<h1>Systems Catalogue</h1>
 
 <p>
-Pre‑built digital systems businesses can deploy quickly.
-Engineered with the same architecture used in custom projects.
+A collection of deployable business systems built as professional foundations.
+Each system can be customised around a client’s brand, workflow, services and operational goals.
 </p>
+
+<div class="hero-actions">
+<a href="#systems" class="btn primary">View Systems</a>
+<a href="contact.html" class="btn secondary">Request Custom Build</a>
+</div>
+
+</div>
+</section>
+
+<div class="trust-bar">
+<span>Fast Deployment</span>
+<span>Custom Branding</span>
+<span>Business Workflows</span>
+<span>Scalable Foundations</span>
+</div>
+
+<section class="section">
+
+<div class="catalogue-note">
+
+<h2>Not Templates. Deployable Foundations.</h2>
+
+<p>
+The systems below are not positioned as cheap copy-and-paste templates. They are working
+digital foundations that can be adapted for different businesses, industries and workflows.
+</p>
+
+<p>
+This approach reduces build time, keeps costs realistic, and still allows each client to receive
+a system shaped around their actual business needs.
+</p>
+
+</div>
+
+</section>
+
+<section class="section" id="systems">
+
+<h2>Deployable Business Systems</h2>
+
+<p class="section-intro">
+Choose an existing system foundation, then customise the structure, content, branding,
+features and workflow around your business.
+</p>
+
+<div class="catalogue-grid">
+
+<article class="system-tile">
+
+<img src="assets/images/projects/zitha-barbershop.jpg" alt="Zitha Barbershop business system">
+
+<div class="system-content">
+
+<div class="system-meta">
+<span>Service Business</span>
+<span>Booking-Ready</span>
+</div>
+
+<h3>Zitha Barbershop System</h3>
+
+<p>
+A professional platform for barbershops, salons and grooming businesses that need
+service presentation, customer enquiries and a foundation for booking expansion.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Built for</strong>
+<span>Barbershops, salons, grooming brands and appointment-based service providers.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Improves credibility, customer access and service communication.</span>
+</div>
+
+</div>
+
+<div class="system-investment">
+<strong>Deployment from R2,500</strong>
+<span>Final cost depends on pages, branding, booking logic and required customisation.</span>
+</div>
+
+<div class="system-actions">
+<a href="https://zitha-barbershop.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn secondary">View Demo</a>
+<a href="contact.html" class="btn primary">Request This System</a>
+</div>
+
+</div>
+
+</article>
+
+<article class="system-tile">
+
+<img src="assets/images/projects/bikers-fix.jpg" alt="RiderFix motorcycle repair platform">
+
+<div class="system-content">
+
+<div class="system-meta">
+<span>Workshop</span>
+<span>Service Platform</span>
+</div>
+
+<h3>RiderFix Repair Platform</h3>
+
+<p>
+A professional digital platform for motorcycle repair shops, garages and service workshops
+that need a stronger online presence and clear customer communication.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Built for</strong>
+<span>Repair shops, mechanics, workshops, garages and technical service providers.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Presents services clearly and turns visitors into enquiries.</span>
+</div>
+
+</div>
+
+<div class="system-investment">
+<strong>Deployment from R2,500</strong>
+<span>Final cost depends on service pages, quote forms, gallery content and business structure.</span>
+</div>
+
+<div class="system-actions">
+<a href="https://riderfix-motorcycle-repairs.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn secondary">View Demo</a>
+<a href="contact.html" class="btn primary">Request This System</a>
+</div>
+
+</div>
+
+</article>
+
+<article class="system-tile">
+
+<img src="assets/images/projects/delivery-platform.jpg" alt="Swift Courier logistics system">
+
+<div class="system-content">
+
+<div class="system-meta">
+<span>Logistics</span>
+<span>Lead Platform</span>
+</div>
+
+<h3>Swift Courier Platform</h3>
+
+<p>
+A courier and delivery business platform designed for logistics startups, local delivery
+companies and transport operators that need trust, clarity and service enquiries.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Built for</strong>
+<span>Courier companies, local delivery services, logistics startups and transport operators.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Builds trust, explains services and creates a professional enquiry flow.</span>
+</div>
+
+</div>
+
+<div class="system-investment">
+<strong>Deployment from R4,500</strong>
+<span>Final cost depends on quote flow, service areas, pricing logic and operational features.</span>
+</div>
+
+<div class="system-actions">
+<a href="https://fastlocalcourier.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn secondary">View Demo</a>
+<a href="contact.html" class="btn primary">Request Platform</a>
+</div>
+
+</div>
+
+</article>
+
+<article class="system-tile">
+
+<img src="assets/images/projects/booking systems.webp" alt="Online booking system interface">
+
+<div class="system-content">
+
+<div class="system-meta">
+<span>Bookings</span>
+<span>Appointments</span>
+</div>
+
+<h3>Online Booking System</h3>
+
+<p>
+A booking foundation for appointment-based businesses that need customers to request,
+schedule or manage appointments through a cleaner digital process.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Built for</strong>
+<span>Consultants, clinics, studios, salons, repair services and appointment-based teams.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Reduces manual scheduling pressure and improves client experience.</span>
+</div>
+
+</div>
+
+<div class="system-investment">
+<strong>Development from R4,000</strong>
+<span>Final cost depends on scheduling rules, admin dashboard, notifications and booking flow.</span>
+</div>
+
+<div class="system-actions">
+<a href="contact.html" class="btn primary">Request Booking System</a>
+</div>
+
+</div>
+
+</article>
+
+<article class="system-tile">
+
+<img src="assets/images/projects/dashboard-system.jpg" alt="Business dashboard system">
+
+<div class="system-content">
+
+<div class="system-meta">
+<span>Dashboard</span>
+<span>Reporting</span>
+</div>
+
+<h3>Business Dashboard</h3>
+
+<p>
+A dashboard foundation for businesses that need better visibility over clients, orders,
+bookings, reports, performance and daily operations.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Built for</strong>
+<span>Growing teams, suppliers, service businesses, managers and operations-heavy businesses.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Creates control, reporting visibility and easier decision-making.</span>
+</div>
+
+</div>
+
+<div class="system-investment">
+<strong>Development from R5,000</strong>
+<span>Final cost depends on data sources, users, reports, admin features and business logic.</span>
+</div>
+
+<div class="system-actions">
+<a href="contact.html" class="btn primary">Request Dashboard</a>
+</div>
+
+</div>
+
+</article>
+
+<article class="system-tile">
+
+<img src="assets/images/projects/automation-system.jpg" alt="Business automation system">
+
+<div class="system-content">
+
+<div class="system-meta">
+<span>Automation</span>
+<span>Workflow</span>
+</div>
+
+<h3>Business Automation System</h3>
+
+<p>
+Automation tools for businesses that want to reduce repetitive work, organise tasks,
+connect processes and improve daily efficiency.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Built for</strong>
+<span>Teams with repeated admin tasks, manual workflows, reports, follow-ups or data movement.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Saves time, reduces mistakes and creates repeatable operational structure.</span>
+</div>
+
+</div>
+
+<div class="system-investment">
+<strong>Development from R6,000</strong>
+<span>Final cost depends on integrations, APIs, workflow complexity and automation rules.</span>
+</div>
+
+<div class="system-actions">
+<a href="project-automation.html" class="btn secondary">View System</a>
+<a href="contact.html" class="btn primary">Request Automation</a>
+</div>
+
+</div>
+
+</article>
 
 </div>
 
@@ -115,140 +558,41 @@ Engineered with the same architecture used in custom projects.
 
 <section class="section">
 
-<h2>Ready‑to‑Deploy Systems</h2>
+<div class="service-band">
 
-<p style="text-align:center;max-width:800px;margin:auto;color:var(--muted);">
-
-These systems are professionally built foundations that can be customised and deployed
-for businesses without the long development cycle of building from scratch.
-
-</p>
-
-<div class="market-grid">
-
-<!-- RIDERFIX -->
-
-<div class="market-card">
-
-<span class="market-tag">Business Website</span>
-
-<h3>RiderFix System</h3>
+<div>
+<h2>Need Something Built Around Your Exact Business?</h2>
 
 <p>
-Professional website platform for motorcycle repair shops,
-garages, and service workshops.
+A catalogue system is a fast starting point, but not every business fits into an existing foundation.
+DL Systems can also design a full custom platform from scratch.
 </p>
-
-<div class="market-actions">
-
-<a href="https://riderfix-motorcycle-repairs.netlify.app/" target="_blank" class="btn secondary">
-View Demo
-</a>
-
-<a href="contact.html" class="btn primary">
-Request This System
-</a>
-
-</div>
-
-</div>
-
-<!-- SWIFT COURIER -->
-
-<div class="market-card">
-
-<span class="market-tag">Courier Platform</span>
-
-<h3>Swift Courier Platform</h3>
 
 <p>
-Landing platform designed for courier companies,
-delivery startups and logistics businesses.
+The right approach depends on the business model, workflow, users, data, timeline and budget.
 </p>
-
-<div class="market-actions">
-
-<a href="https://fastlocalcourier.netlify.app/" target="_blank" class="btn secondary">
-View Demo
-</a>
-
-<a href="contact.html" class="btn primary">
-Request This Platform
-</a>
-
 </div>
 
+<div class="service-points">
+
+<div class="service-point">
+<strong>Custom workflows</strong>
+<span>Build around how your business actually operates, not around a generic template.</span>
 </div>
 
-<!-- AUTOMATION -->
-
-<div class="market-card">
-
-<span class="market-tag">Automation</span>
-
-<h3>Business Automation System</h3>
-
-<p>
-Workflow automation tools that integrate APIs,
-process data and eliminate repetitive tasks.
-</p>
-
-<div class="market-actions">
-
-<a href="project-automation.html" class="btn secondary">
-View System
-</a>
-
-<a href="contact.html" class="btn primary">
-Request Automation
-</a>
-
+<div class="service-point">
+<strong>Custom dashboards</strong>
+<span>Track the records, activity and performance that matter to your business.</span>
 </div>
 
+<div class="service-point">
+<strong>Custom integrations</strong>
+<span>Connect forms, emails, WhatsApp, APIs, databases and reporting where required.</span>
 </div>
 
-<!-- DASHBOARD -->
-
-<div class="market-card">
-
-<span class="market-tag">Business Intelligence</span>
-
-<h3>Business Dashboard</h3>
-
-<p>
-Centralised dashboards for analytics,
-operations management and reporting.
-</p>
-
-<div class="market-actions">
-
-<a href="contact.html" class="btn primary">
-Request Dashboard
-</a>
-
-</div>
-
-</div>
-
-<!-- BOOKING -->
-
-<div class="market-card">
-
-<span class="market-tag">Booking Platform</span>
-
-<h3>Online Booking System</h3>
-
-<p>
-Appointment and booking systems for
-consultants, studios, clinics and service providers.
-</p>
-
-<div class="market-actions">
-
-<a href="contact.html" class="btn primary">
-Request Booking System
-</a>
-
+<div class="home-cta-inline">
+<a href="contact.html" class="btn primary">Start a Project</a>
+<a href="services.html" class="btn secondary">View Services</a>
 </div>
 
 </div>
@@ -259,23 +603,31 @@ Request Booking System
 
 <section class="cta-section">
 
-<h2>Need something custom?</h2>
+<h2>Start With a Foundation. Build Into a System.</h2>
 
 <p>
-We also engineer fully custom software systems for businesses.
+Choose a deployable system, customise it for your business, and grow it over time
+into something more powerful.
 </p>
 
-<a href="contact.html" class="btn primary">
-Start a Project
-</a>
+<a href="contact.html" class="btn primary">Request a System Consultation</a>
 
 </section>
 
 <footer class="enterprise-footer">
 
-<p>
-© 2026 DL SYSTEMS · Enterprise Software / Systems Engineering
+<div class="footer-inner">
+
+<div class="footer-brand">
+<img src="assets/images/logo.png" alt="DL Systems Logo">
+<span>DL SYSTEMS</span>
+</div>
+
+<p class="footer-copy">
+© 2026 DL SYSTEMS · Deployable Business Systems, Custom Platforms and Digital Infrastructure.
 </p>
+
+</div>
 
 </footer>
 

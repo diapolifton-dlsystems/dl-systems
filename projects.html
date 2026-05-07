@@ -3,10 +3,27 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Software Projects & Case Studies | DL SYSTEMS</title>
-
-<meta name="description" content="Software systems, platforms, and commercial digital products engineered by DL Systems.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Systems & Deployments | DL Systems</title>
+
+<meta name="description" content="Production systems, deployable platforms, business tools and engineering case studies built by DL Systems for real business operations.">
+<meta name="keywords" content="DL Systems projects, software systems, business systems, deployments, case studies, barbershop system, courier platform, automation systems, web platforms South Africa">
+<meta name="author" content="DL Systems">
+<meta name="theme-color" content="#05070d">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="canonical" href="https://dlsystems.co.za/projects.html">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<meta property="og:title" content="DL Systems | Systems & Deployments">
+<meta property="og:description" content="A showcase of real systems, deployment platforms and business-focused software engineering work by DL Systems.">
+<meta property="og:url" content="https://dlsystems.co.za/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -14,59 +31,7 @@
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/projects.css">
 <link rel="stylesheet" href="assets/css/particles.css">
-
-<style>
-
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:all .8s ease;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
-
-.project-card{
-transition:transform .4s ease, box-shadow .4s ease;
-}
-
-.project-card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 50px rgba(0,0,0,0.5);
-}
-
-/* portfolio badges */
-
-.project-badge{
-display:inline-block;
-padding:4px 10px;
-font-size:11px;
-border-radius:20px;
-letter-spacing:.5px;
-margin-bottom:12px;
-}
-
-.badge-production{
-background:rgba(0,255,240,0.15);
-color:#00fff0;
-border:1px solid rgba(0,255,240,0.3);
-}
-
-.badge-demo{
-background:rgba(255,255,255,0.08);
-color:#9aa0a6;
-border:1px solid rgba(255,255,255,0.15);
-}
-
-.badge-research{
-background:rgba(255,43,214,0.15);
-color:#ff2bd6;
-border:1px solid rgba(255,43,214,0.3);
-}
-
-</style>
+<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
@@ -78,83 +43,98 @@ border:1px solid rgba(255,43,214,0.3);
 <div class="neon-grid"></div>
 
 <header class="nav enterprise-nav">
-
 <div class="nav-inner">
 
-<a href="index.html" class="brand">
+<a href="index.html" class="brand" aria-label="DL Systems Home">
 <img src="assets/images/logo.png" alt="DL Systems Logo">
 <span>DL SYSTEMS</span>
 </a>
 
-<nav class="nav-links">
-
+<nav class="nav-links" aria-label="Main navigation">
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
-<a href="marketplace.html">Marketplace</a>
 <a href="projects.html" class="active">Projects</a>
+<a href="marketplace.html">Marketplace</a>
 <a href="founder.html">Founder</a>
 <a href="collaborate.html">Collaborate</a>
 <a href="contact.html" class="cta">Contact</a>
-
 </nav>
 
 </div>
 </header>
 
-<section class="hero hero--compact reveal">
+<!-- HERO -->
 
+<section class="hero hero--compact">
 <div class="hero-inner">
 
-<h1>Projects & Case Studies</h1>
+<div class="home-kicker">Systems · Deployments · Engineering Proof</div>
+
+<h1>Systems Built for Real Business Use</h1>
 
 <p>
-Real systems. Real businesses.
-Engineered with structured architecture and long‑term thinking.
+A collection of DL Systems deployments, commercial platforms, early client work
+and engineering concepts built around business operations, customer flow,
+automation and scalable digital structure.
 </p>
 
+<div class="hero-actions">
+<a href="#featured" class="btn primary">View Featured System</a>
+<a href="marketplace.html" class="btn secondary">View Deployable Systems</a>
+<a href="contact.html" class="btn secondary">Build Similar System</a>
 </div>
 
+</div>
 </section>
 
-<!-- =========================
-PRODUCTION SYSTEMS
-========================= -->
+<div class="trust-bar">
+<span>Production Builds</span>
+<span>Commercial Platforms</span>
+<span>Operational Workflows</span>
+<span>Engineering Concepts</span>
+</div>
 
-<section class="section projects-section reveal">
+<!-- FEATURED DEPLOYMENT -->
 
-<h2 class="section-title">Production Systems</h2>
+<section class="section projects-section" id="featured">
+
+<h2>Featured Deployment</h2>
+
+<p class="section-intro">
+A featured system represents the kind of business-focused platform DL Systems can design,
+build and adapt for real companies that need structure, visibility and operational control.
+</p>
 
 <div class="projects-grid">
 
-<article class="project-card" data-bg="assets/images/projects/alpha-inks.jpg">
+<article class="project-card" data-bg="assets/images/projects/zitha-barbershop.jpg">
 
 <div class="project-card__overlay"></div>
 
 <div class="project-card__content">
 
-<span class="project-badge badge-production">Production System</span>
+<span class="project-badge badge-production">Featured Deployment</span>
 
-<h3>Alpha Inks Tattoo Studio</h3>
+<h3>Zitha Barbershop Platform</h3>
 
 <p class="project-meta">
-Frontend · Firebase Backend · EmailJS
+Service Business Platform · Booking-Ready Infrastructure · Customer Enquiry Flow
 </p>
 
 <p class="project-desc">
-
-A full production website engineered for performance,
-SEO visibility, and reliable customer enquiries.
-
+A deployable digital platform created for barbershops, salons and grooming brands
+that need professional service presentation, mobile-ready customer access and a foundation
+for booking, enquiry and operational growth.
 </p>
 
 <div class="project-links">
 
-<a href="https://alphainks.netlify.app" target="_blank" class="project-link">
-View Live Website →
+<a href="https://zitha-barbershop.free.laravel.cloud/" target="_blank" rel="noopener noreferrer" class="project-link">
+View Live System →
 </a>
 
-<a href="project-alpha-inks.html" class="project-link secondary">
-View Case Study →
+<a href="contact.html" class="project-link secondary">
+Deploy Similar Platform →
 </a>
 
 </div>
@@ -167,13 +147,140 @@ View Case Study →
 
 </section>
 
-<!-- =========================
-SOFTWARE SYSTEMS
-========================= -->
+<!-- SYSTEM BREAKDOWN -->
 
-<section class="section projects-section reveal">
+<section class="section">
 
-<h2 class="section-title">Software Systems</h2>
+<h2>What This Work Demonstrates</h2>
+
+<p class="section-intro">
+Each system is presented as proof of capability: not just design, but structure, business thinking,
+responsiveness, deployment awareness and practical user flow.
+</p>
+
+<div class="home-proof-grid">
+
+<div class="home-proof">
+<strong>Business Understanding</strong>
+<span>Systems are shaped around operational problems such as bookings, enquiries, orders, workflows and reporting.</span>
+</div>
+
+<div class="home-proof">
+<strong>Responsive Execution</strong>
+<span>Interfaces are built to support real users across mobile, tablet and desktop environments.</span>
+</div>
+
+<div class="home-proof">
+<strong>Deployment Thinking</strong>
+<span>Projects are structured as usable platforms that can be customised, deployed and improved.</span>
+</div>
+
+<div class="home-proof">
+<strong>Commercial Direction</strong>
+<span>Work is positioned for real businesses, not only visual portfolio presentation.</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- COMMERCIAL PLATFORMS -->
+
+<section class="section projects-section">
+
+<h2>Commercial Platforms</h2>
+
+<p class="section-intro">
+Pre-engineered digital platforms designed for real businesses and ready for customisation
+based on industry, branding, workflow and customer needs.
+</p>
+
+<div class="projects-grid">
+
+<article class="project-card" data-bg="assets/images/projects/bikers-fix.jpg">
+
+<div class="project-card__overlay"></div>
+
+<div class="project-card__content">
+
+<span class="project-badge badge-demo">Commercial Platform</span>
+
+<h3>RiderFix Motorcycle Repairs</h3>
+
+<p class="project-meta">
+Workshop Platform · Repair Service Website · Customer Enquiry System
+</p>
+
+<p class="project-desc">
+A structured platform for motorcycle repair shops, garages and service workshops.
+Designed to present services clearly, increase credibility and make customer communication easier.
+</p>
+
+<div class="project-links">
+
+<a href="https://riderfix-motorcycle-repairs.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+View Demo →
+</a>
+
+<a href="contact.html" class="project-link secondary">
+Request This Platform →
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="project-card" data-bg="assets/images/projects/delivery-platform.jpg">
+
+<div class="project-card__overlay"></div>
+
+<div class="project-card__content">
+
+<span class="project-badge badge-demo">Commercial Platform</span>
+
+<h3>Swift Courier Platform</h3>
+
+<p class="project-meta">
+Courier Platform · Logistics Website · Lead Generation System
+</p>
+
+<p class="project-desc">
+A delivery-focused platform for courier companies, local delivery operators and logistics startups.
+Built to communicate services, present trust signals and support business enquiries.
+</p>
+
+<div class="project-links">
+
+<a href="https://fastlocalcourier.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+View Demo →
+</a>
+
+<a href="contact.html" class="project-link secondary">
+Deploy This Platform →
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- SOFTWARE SYSTEMS -->
+
+<section class="section projects-section">
+
+<h2>Software Systems & Automation</h2>
+
+<p class="section-intro">
+Systems in this category focus on internal operations, workflow automation, dashboards,
+business logic and reducing manual work.
+</p>
 
 <div class="projects-grid">
 
@@ -185,17 +292,15 @@ SOFTWARE SYSTEMS
 
 <span class="project-badge badge-production">Internal System</span>
 
-<h3>Internal Automation System</h3>
+<h3>Business Automation System</h3>
 
 <p class="project-meta">
-Node.js · APIs · Workflow Automation
+Workflow Automation · APIs · Operational Tools
 </p>
 
 <p class="project-desc">
-
-Automation tools designed to eliminate repetitive
-business tasks and streamline workflows.
-
+Automation-focused tools designed to reduce repetitive work, connect business processes,
+handle structured tasks and support operational efficiency.
 </p>
 
 <div class="project-links">
@@ -204,6 +309,10 @@ business tasks and streamline workflows.
 View System →
 </a>
 
+<a href="contact.html" class="project-link secondary">
+Request Automation →
+</a>
+
 </div>
 
 </div>
@@ -214,92 +323,42 @@ View System →
 
 </section>
 
-<!-- =========================
-COMMERCIAL DEMOS
-========================= -->
+<!-- EARLY CLIENT WORK -->
 
-<section class="section projects-section reveal">
+<section class="section projects-section">
 
-<h2 class="section-title">Commercial Templates</h2>
+<h2>Early Client Work</h2>
 
-<p style="text-align:center;max-width:700px;margin:auto;color:var(--muted);">
-
-Pre‑engineered digital products that businesses can deploy quickly.
-
+<p class="section-intro">
+Earlier production work showing the foundation of DL Systems: practical delivery,
+client communication, brand presentation and real-world deployment.
 </p>
 
 <div class="projects-grid">
 
-<!-- RIDERFIX -->
-
-<article class="project-card" data-bg="assets/images/projects/bikers-fix.jpg">
+<article class="project-card" data-bg="assets/images/projects/alpha-inks.jpg">
 
 <div class="project-card__overlay"></div>
 
 <div class="project-card__content">
 
-<span class="project-badge badge-demo">Commercial Demo</span>
+<span class="project-badge badge-demo">Early Production Work</span>
 
-<h3>RiderFix Motorcycle Repairs</h3>
+<h3>Alpha Inks Tattoo Studio</h3>
 
 <p class="project-meta">
-Business Website · Service Platform
+Client Website · Brand Presence · Service Presentation
 </p>
 
 <p class="project-desc">
-
-Professional website engineered for motorcycle repair
-workshops and service garages.
-
+An early client website focused on giving a creative business stronger digital presence,
+clear service communication and a professional online touchpoint.
 </p>
 
 <div class="project-links">
 
-<a href="https://riderfix-motorcycle-repairs.netlify.app/" target="_blank" class="project-link">
-View Demo →
-</a>
-
-<a href="contact.html" class="project-link secondary">
-Deploy This System →
-</a>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- SWIFT COURIER -->
-
-<article class="project-card" data-bg="assets/images/projects/swift-courier.jpg">
-
-<div class="project-card__overlay"></div>
-
-<div class="project-card__content">
-
-<span class="project-badge badge-demo">Commercial Demo</span>
-
-<h3>Swift Courier Landing Page</h3>
-
-<p class="project-meta">
-Courier Business Template
-</p>
-
-<p class="project-desc">
-
-Landing platform designed for courier companies
-and logistics startups.
-
-</p>
-
-<div class="project-links">
-
-<a href="https://fastlocalcourier.netlify.app/" target="_blank" class="project-link">
-View Demo →
-</a>
-
-<a href="contact.html" class="project-link secondary">
-Request This Template →
+<a href="https://alphainks.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
+View Site →
 </a>
 
 </div>
@@ -312,13 +371,16 @@ Request This Template →
 
 </section>
 
-<!-- =========================
-ENGINEERING PROJECTS
-========================= -->
+<!-- ENGINEERING / R&D -->
 
-<section class="section projects-section reveal">
+<section class="section projects-section">
 
-<h2 class="section-title">Engineering Projects</h2>
+<h2>Engineering & Research Direction</h2>
+
+<p class="section-intro">
+DL Systems is also exploring future-facing software concepts, AI-assisted workflows
+and multi-system architecture for business use.
+</p>
 
 <div class="projects-grid">
 
@@ -328,43 +390,17 @@ ENGINEERING PROJECTS
 
 <div class="project-card__content">
 
-<span class="project-badge badge-research">R&D Project</span>
+<span class="project-badge badge-research">R&D Direction</span>
 
 <h3>Unified LLM Platform</h3>
 
 <p class="project-meta">
-AI Systems · Multi‑Model Architecture
+AI Systems · Multi-Model Architecture · Concept Development
 </p>
 
 <p class="project-desc">
-
-Architecture‑phase platform unifying multiple
-large language models behind one interface.
-
-</p>
-
-</div>
-
-</article>
-
-<article class="project-card project-card--placeholder" data-bg="assets/images/projects/delivery-platform.jpg">
-
-<div class="project-card__overlay"></div>
-
-<div class="project-card__content">
-
-<span class="project-badge badge-research">R&D Project</span>
-
-<h3>Local Commerce Delivery Platform</h3>
-
-<p class="project-meta">
-Full‑Stack · Logistics Platform
-</p>
-
-<p class="project-desc">
-
-A scalable delivery ecosystem for local businesses.
-
+An architecture concept for connecting multiple AI models into one unified interface,
+with future potential for business assistants, research workflows and automation.
 </p>
 
 </div>
@@ -375,54 +411,82 @@ A scalable delivery ecosystem for local businesses.
 
 </section>
 
-<section class="cta-section reveal">
+<!-- DELIVERY POSITIONING -->
 
-<h2>Have a system in mind?</h2>
+<section class="section">
+
+<div class="home-split">
+
+<div class="home-panel">
+
+<h2 style="text-align:left;margin-bottom:18px;">More Than Visual Design</h2>
 
 <p>
-We design and engineer platforms built to scale.
+The work shown here is not only about appearance. Each system is treated as a business tool
+with purpose, structure, workflow and room for improvement.
+</p>
+
+<p>
+That means every project is judged by how well it supports the business, communicates value
+and creates a stronger digital foundation.
+</p>
+
+</div>
+
+<div class="home-panel">
+
+<h3>What DL Systems Can Build From These Foundations</h3>
+
+<ul class="problem-list">
+<li>Industry-specific business platforms</li>
+<li>Booking and appointment systems</li>
+<li>Quotation and order management systems</li>
+<li>Client portals and admin dashboards</li>
+<li>Automation tools and workflow systems</li>
+<li>Custom platforms built around business operations</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+<h2>Have a System in Mind?</h2>
+
+<p>
+DL Systems can design, build or customise a platform based on your business model,
+workflow, users and operational goals.
 </p>
 
 <a href="contact.html" class="btn primary">
-Start a Project
+Start a Project Conversation
 </a>
 
 </section>
 
 <footer class="enterprise-footer">
 
-<p>
-© 2026 DL SYSTEMS · Enterprise Software / Systems Engineering
+<div class="footer-inner">
+
+<div class="footer-brand">
+<img src="assets/images/logo.png" alt="DL Systems Logo">
+<span>DL SYSTEMS</span>
+</div>
+
+<p class="footer-copy">
+© 2026 DL SYSTEMS · Systems, Deployments, Business Platforms and Software Engineering.
 </p>
+
+</div>
 
 </footer>
 
 <script src="assets/js/main.js"></script>
-
-<script>
-
-const reveals=document.querySelectorAll(".reveal")
-
-function revealOnScroll(){
-
-const trigger=window.innerHeight*.85
-
-reveals.forEach(section=>{
-
-const top=section.getBoundingClientRect().top
-
-if(top<trigger){
-section.classList.add("active")
-}
-
-})
-
-}
-
-window.addEventListener("scroll",revealOnScroll)
-revealOnScroll()
-
-</script>
 
 </body>
 </html>
