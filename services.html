@@ -5,48 +5,633 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Services | DL Systems — Websites, Business Systems & Automation</title>
+<title>Software Development Services | DL Systems South Africa</title>
 
-<meta name="description" content="DL Systems builds starter business websites, Laravel booking systems, dashboards, automation tools, client portals and custom software platforms for businesses in South Africa.">
-<meta name="keywords" content="DL Systems services, business websites South Africa, Laravel booking system, dashboard development, automation systems, custom software development, business systems developer">
+<meta
+name="description"
+content="DL Systems develops professional websites, Laravel booking systems, business dashboards, workflow automation, client portals and custom software for organisations in South Africa."
+>
+
+<meta
+name="keywords"
+content="software development services South Africa, Laravel developer, business websites, booking systems, dashboards, workflow automation, client portals, custom software, DL Systems"
+>
+
 <meta name="author" content="DL Systems">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#05070d">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <link rel="canonical" href="https://dlsystems.co.za/services.html">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
 
-<meta property="og:title" content="DL Systems | Websites, Business Systems & Automation">
-<meta property="og:description" content="Starter websites, operational systems, Laravel platforms, dashboards and automation tools built for real business use.">
+<meta property="og:site_name" content="DL Systems">
+<meta property="og:title" content="Software Development Services | DL Systems">
+<meta
+property="og:description"
+content="Professional websites, Laravel systems, dashboards, automation tools and custom software developed around real operational needs."
+>
 <meta property="og:url" content="https://dlsystems.co.za/services.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
+<meta property="og:image:alt" content="DL Systems logo">
+<meta property="og:locale" content="en_ZA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Software Development Services | DL Systems">
+<meta
+name="twitter:description"
+content="Websites, Laravel applications, booking systems, dashboards, automation and custom business software."
+>
+<meta name="twitter:image" content="https://dlsystems.co.za/assets/images/logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet"
+>
 
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/particles.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dlsystems.co.za/#organization",
+      "name": "DL Systems",
+      "url": "https://dlsystems.co.za/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dlsystems.co.za/assets/images/logo.png"
+      },
+      "description": "DL Systems develops websites, Laravel applications, booking systems, dashboards, automation tools and custom business software.",
+      "founder": {
+        "@type": "Person",
+        "name": "Diapo Lifton Seabi",
+        "url": "https://dlsystems.co.za/founder.html"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dlsystems.co.za/#website",
+      "url": "https://dlsystems.co.za/",
+      "name": "DL Systems",
+      "publisher": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "inLanguage": "en-ZA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dlsystems.co.za/services.html#webpage",
+      "url": "https://dlsystems.co.za/services.html",
+      "name": "Software Development Services",
+      "description": "Professional websites, Laravel systems, dashboards, automation and custom software services from DL Systems.",
+      "isPartOf": {
+        "@id": "https://dlsystems.co.za/#website"
+      },
+      "about": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "inLanguage": "en-ZA"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://dlsystems.co.za/services.html#services",
+      "name": "DL Systems Development Services",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Professional Business Websites"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Business Website Platforms"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Booking and Management Systems"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Dashboards and Administration Tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Workflow Automation"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Custom Software Platforms"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+.skip-link{
+position:fixed;
+top:14px;
+left:14px;
+z-index:9999;
+padding:11px 16px;
+border-radius:10px;
+background:var(--accent);
+color:#041014;
+font-size:.88rem;
+font-weight:700;
+text-decoration:none;
+transform:translateY(-160%);
+transition:transform .2s ease;
+}
+
+.skip-link:focus{
+transform:translateY(0);
+}
+
+.services-hero-note{
+max-width:780px;
+margin:22px auto 0;
+padding:15px 18px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+color:var(--muted);
+font-size:.91rem;
+line-height:1.7;
+}
+
+.capability-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:22px;
+}
+
+.capability-card{
+position:relative;
+padding:30px;
+border:1px solid var(--border);
+border-radius:20px;
+background:
+linear-gradient(
+155deg,
+rgba(255,255,255,.055),
+rgba(255,255,255,.018)
+);
+overflow:hidden;
+}
+
+.capability-card::after{
+content:"";
+position:absolute;
+width:150px;
+height:150px;
+right:-70px;
+top:-70px;
+border-radius:50%;
+background:rgba(0,229,255,.05);
+pointer-events:none;
+}
+
+.capability-card > span{
+display:inline-block;
+margin-bottom:16px;
+color:var(--accent);
+font-size:.75rem;
+font-weight:700;
+letter-spacing:.1em;
+text-transform:uppercase;
+}
+
+.capability-card h3{
+position:relative;
+z-index:1;
+margin-bottom:12px;
+}
+
+.capability-card p{
+position:relative;
+z-index:1;
+}
+
+.service-band{
+display:grid;
+grid-template-columns:minmax(0,1.02fr) minmax(320px,.98fr);
+gap:30px;
+align-items:stretch;
+max-width:1100px;
+margin:0 auto;
+}
+
+.service-band > div{
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.02)
+);
+}
+
+.service-band h2{
+text-align:left;
+margin-bottom:18px;
+}
+
+.service-band p + p{
+margin-top:16px;
+}
+
+.service-points{
+display:grid;
+gap:13px;
+}
+
+.service-point{
+padding:16px 17px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+}
+
+.service-point strong{
+display:block;
+margin-bottom:6px;
+color:var(--text);
+}
+
+.service-point span{
+display:block;
+color:var(--muted);
+font-size:.9rem;
+line-height:1.65;
+}
+
+.pricing-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:22px;
+}
+
+.pricing-card{
+position:relative;
+display:flex;
+flex-direction:column;
+padding:30px;
+border:1px solid var(--border);
+border-radius:21px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.02)
+);
+}
+
+.pricing-card.featured{
+border-color:rgba(0,229,255,.38);
+box-shadow:0 0 34px rgba(0,229,255,.08);
+}
+
+.pricing-card.featured::before{
+content:"Most requested";
+position:absolute;
+top:18px;
+right:18px;
+padding:6px 10px;
+border:1px solid rgba(0,229,255,.25);
+border-radius:999px;
+background:rgba(0,229,255,.08);
+color:var(--accent);
+font-size:.68rem;
+font-weight:700;
+letter-spacing:.06em;
+text-transform:uppercase;
+}
+
+.pricing-label{
+margin-bottom:14px;
+color:var(--accent);
+font-size:.75rem;
+font-weight:700;
+letter-spacing:.1em;
+text-transform:uppercase;
+}
+
+.pricing-card h3{
+max-width:88%;
+margin-bottom:10px;
+}
+
+.pricing-price{
+margin:7px 0 17px;
+color:var(--text);
+font-size:1.45rem;
+font-weight:700;
+}
+
+.pricing-card > p{
+margin-bottom:22px;
+}
+
+.pricing-scope{
+display:grid;
+gap:13px;
+margin-bottom:26px;
+}
+
+.pricing-scope > div{
+padding:14px 15px;
+border:1px solid var(--border);
+border-radius:13px;
+background:rgba(255,255,255,.023);
+}
+
+.pricing-scope strong{
+display:block;
+margin-bottom:5px;
+color:var(--text);
+font-size:.87rem;
+}
+
+.pricing-scope span{
+display:block;
+color:var(--muted);
+font-size:.84rem;
+line-height:1.62;
+}
+
+.pricing-card .btn{
+width:100%;
+margin-top:auto;
+text-align:center;
+}
+
+.price-note{
+max-width:900px;
+margin:34px auto 0;
+padding:17px 20px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.024);
+color:var(--muted);
+font-size:.87rem;
+line-height:1.7;
+text-align:center;
+}
+
+.support-table{
+display:grid;
+gap:14px;
+max-width:1000px;
+margin:0 auto;
+}
+
+.support-row{
+display:grid;
+grid-template-columns:minmax(170px,.7fr) minmax(0,1.65fr) minmax(150px,.55fr);
+gap:22px;
+align-items:center;
+padding:22px 24px;
+border:1px solid var(--border);
+border-radius:16px;
+background:rgba(255,255,255,.03);
+}
+
+.support-row strong{
+color:var(--text);
+}
+
+.support-row span{
+color:var(--muted);
+font-size:.9rem;
+line-height:1.65;
+}
+
+.support-price{
+color:var(--accent);
+font-size:.9rem;
+font-weight:700;
+text-align:right;
+}
+
+.process-line{
+display:grid;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:18px;
+}
+
+.process-step{
+padding:25px;
+border:1px solid var(--border);
+border-radius:18px;
+background:rgba(255,255,255,.03);
+}
+
+.process-step > span{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:36px;
+height:36px;
+margin-bottom:17px;
+border:1px solid rgba(0,229,255,.3);
+border-radius:50%;
+background:rgba(0,229,255,.08);
+color:var(--accent);
+font-weight:700;
+}
+
+.process-step h3{
+margin-bottom:9px;
+}
+
+.process-step p{
+font-size:.9rem;
+line-height:1.7;
+}
+
+.home-cta-inline{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:22px;
+}
+
+.stack-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(125px,1fr));
+gap:13px;
+max-width:1020px;
+margin:34px auto 0;
+}
+
+.stack-item{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:58px;
+padding:13px 15px;
+border:1px solid var(--border);
+border-radius:13px;
+background:rgba(255,255,255,.026);
+color:var(--muted);
+font-size:.86rem;
+font-weight:600;
+text-align:center;
+}
+
+.stack-note{
+max-width:850px;
+margin:25px auto 0;
+color:var(--muted);
+font-size:.9rem;
+line-height:1.75;
+text-align:center;
+}
+
+@media(max-width:1000px){
+
+.capability-grid,
+.pricing-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+.process-line{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+}
+
+@media(max-width:900px){
+
+.service-band{
+grid-template-columns:1fr;
+}
+
+.support-row{
+grid-template-columns:1fr;
+gap:10px;
+}
+
+.support-price{
+text-align:left;
+}
+
+}
+
+@media(max-width:700px){
+
+.capability-grid,
+.pricing-grid,
+.process-line{
+grid-template-columns:1fr;
+}
+
+.service-band > div{
+padding:28px 22px;
+}
+
+.capability-card,
+.pricing-card{
+padding:25px 21px;
+}
+
+.pricing-card.featured::before{
+position:static;
+display:inline-block;
+width:max-content;
+margin-bottom:15px;
+}
+
+.pricing-card h3{
+max-width:none;
+}
+
+.support-row{
+padding:20px;
+}
+
+.home-cta-inline{
+flex-direction:column;
+}
+
+.home-cta-inline .btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+scroll-behavior:auto !important;
+animation-duration:.01ms !important;
+animation-iteration-count:1 !important;
+transition-duration:.01ms !important;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="neon-grid" aria-hidden="true"></div>
+
 <header class="nav enterprise-nav">
+
 <div class="nav-inner">
 
-<a href="index.html" class="brand" aria-label="DL Systems Home">
-<img src="assets/images/logo.png" alt="DL Systems Logo">
+<a href="index.html" class="brand" aria-label="DL Systems homepage">
+<img
+src="assets/images/logo.png"
+alt="DL Systems logo"
+width="48"
+height="48"
+>
 <span>DL SYSTEMS</span>
 </a>
 
-<nav class="nav-links" aria-label="Main navigation">
+<nav class="nav-links" aria-label="Primary navigation">
 <a href="index.html">Home</a>
-<a href="services.html" class="active">Services</a>
+<a href="services.html" class="active" aria-current="page">Services</a>
 <a href="projects.html">Projects</a>
 <a href="marketplace.html">Marketplace</a>
 <a href="founder.html">Founder</a>
@@ -55,110 +640,122 @@
 </nav>
 
 </div>
+
 </header>
 
-<canvas id="particles"></canvas>
-<div class="neon-grid"></div>
+<main id="main-content">
 
 <section class="hero hero--compact">
+
 <div class="hero-inner">
 
-<div class="service-kicker">Websites · Systems · Dashboards · Automation</div>
+<div class="service-kicker">
+Websites · Laravel Systems · Dashboards · Automation
+</div>
 
-<h1>Services Built Around Real Business Needs</h1>
+<h1>Development Services Built Around Real Business Needs</h1>
 
 <p>
-DL Systems helps businesses move from basic online presence to structured digital systems.
-Some clients need a simple website. Others need booking logic, dashboards, automation,
-databases or custom software.
+DL Systems helps businesses and organisations improve how they present themselves,
+serve customers and manage day-to-day work through well-structured digital solutions.
+</p>
+
+<p>
+Some clients need a professional website. Others need bookings, customer records,
+dashboards, automation or custom software. The project is scoped according to what
+the business actually needs to achieve.
 </p>
 
 <div class="services-hero-note">
-The goal is to choose the right level of build for the business — not overcharge for a simple
-website and not underprice a real system.
+A website and an operational system carry different responsibilities.
+The right approach is to define the problem first, then choose the appropriate
+level of technology, scope and investment.
 </div>
 
 <div class="hero-actions">
 <a href="#capabilities" class="btn primary">Explore Services</a>
-<a href="#investment" class="btn secondary">View Pricing Levels</a>
-<a href="contact.html" class="btn secondary">Book Consultation</a>
+<a href="#investment" class="btn secondary">View Investment Levels</a>
+<a href="contact.html" class="btn secondary">Discuss a Project</a>
 </div>
 
 </div>
+
 </section>
 
-<div class="trust-bar">
-<span>Starter Websites</span>
-<span>Laravel Systems</span>
+<div class="trust-bar" aria-label="DL Systems service categories">
+<span>Professional Websites</span>
+<span>Laravel Applications</span>
+<span>Booking Systems</span>
 <span>Dashboards</span>
-<span>Automation</span>
-<span>Custom Platforms</span>
+<span>Workflow Automation</span>
 </div>
 
 <section class="section" id="capabilities">
 
-<h2>What DL Systems Builds</h2>
+<h2>What DL Systems Develops</h2>
 
 <p class="section-intro">
-Every build is matched to the business problem. A repair shop website, a courier platform,
-a Laravel barbershop system and a custom dashboard are not the same level of work.
+Each service solves a different kind of problem. A repair-shop website,
+a school platform, a booking application and an internal dashboard should
+not be treated as the same project.
 </p>
 
 <div class="capability-grid">
 
-<div class="capability-card">
-<span>01 · Presence</span>
-<h3>Starter Business Websites</h3>
+<article class="capability-card">
+<span>01 · Digital presence</span>
+<h3>Professional Business Websites</h3>
 <p>
-Simple but professional websites for businesses that need credibility, service presentation,
-mobile responsiveness and a clean WhatsApp or enquiry flow.
+Responsive websites for businesses, schools and organisations that need
+clear information, stronger credibility and an easy path for customers
+or community members to get in touch.
 </p>
-</div>
+</article>
 
-<div class="capability-card">
-<span>02 · Growth</span>
-<h3>Business Websites & Platforms</h3>
+<article class="capability-card">
+<span>02 · Customer growth</span>
+<h3>Business Website Platforms</h3>
 <p>
-Multi-section websites with stronger branding, service pages, enquiry forms, galleries,
-location content and a more complete digital presence.
+Larger websites with stronger branding, service pages, galleries,
+enquiry forms, location information and a more complete customer journey.
 </p>
-</div>
+</article>
 
-<div class="capability-card">
-<span>03 · Bookings</span>
-<h3>Booking & Management Systems</h3>
+<article class="capability-card">
+<span>03 · Appointments</span>
+<h3>Booking and Management Systems</h3>
 <p>
-Laravel/PHP-based systems for appointment-based businesses that need structured bookings,
-customer flow, admin direction and scalable operations.
+Laravel and PHP applications for appointment-based businesses that need
+structured bookings, customer records, availability rules and administrative control.
 </p>
-</div>
+</article>
 
-<div class="capability-card">
-<span>04 · Control</span>
-<h3>Dashboards & Admin Panels</h3>
+<article class="capability-card">
+<span>04 · Operational control</span>
+<h3>Dashboards and Admin Panels</h3>
 <p>
-Dashboards for managing clients, bookings, orders, reports, products, staff activity,
-performance and internal business data.
+Secure interfaces for managing clients, bookings, orders, reports,
+services, staff activity and important business information.
 </p>
-</div>
+</article>
 
-<div class="capability-card">
+<article class="capability-card">
 <span>05 · Efficiency</span>
-<h3>Automation & Workflows</h3>
+<h3>Automation and Workflow Tools</h3>
 <p>
-Automation tools that reduce repetitive admin, organise follow-ups, connect processes
-and make daily operations easier to manage.
+Tools that reduce repeated administration, organise follow-ups,
+connect services through APIs and make routine work easier to manage.
 </p>
-</div>
+</article>
 
-<div class="capability-card">
-<span>06 · Scale</span>
+<article class="capability-card">
+<span>06 · Custom engineering</span>
 <h3>Custom Software Platforms</h3>
 <p>
-Custom platforms, portals and business systems built around specific users, workflows,
-databases, rules, integrations and long-term growth.
+Purpose-built systems, portals and applications developed around specific
+users, workflows, data, permissions, integrations and long-term plans.
 </p>
-</div>
+</article>
 
 </div>
 
@@ -169,39 +766,55 @@ databases, rules, integrations and long-term growth.
 <div class="service-band">
 
 <div>
-<h2>The Business Problem We Solve</h2>
+
+<h2>Good Businesses Often Outgrow Their Existing Tools</h2>
 
 <p>
-Many businesses are working hard, but their operations are still scattered across WhatsApp,
-paper notes, spreadsheets, manual follow-ups and outdated websites.
+Many businesses start with WhatsApp, paper notes and spreadsheets because
+those tools are accessible and easy to understand. The difficulty comes when
+the number of customers, bookings, staff members or daily tasks begins to grow.
 </p>
 
 <p>
-DL Systems helps bring structure: better presentation, better customer flow, better internal
-control and cleaner digital systems that can grow with the business.
+DL Systems helps introduce the right amount of structure without forcing a
+small organisation into technology it does not need. The aim is to improve
+clarity, customer experience and operational control.
 </p>
+
 </div>
 
 <div class="service-points">
 
 <div class="service-point">
-<strong>Simple businesses need visibility.</strong>
-<span>A clean website can help customers understand services, trust the brand and make contact quickly.</span>
+<strong>When visibility is the main problem</strong>
+<span>
+A professional website helps customers understand the organisation,
+trust its services and make contact without confusion.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Growing businesses need structure.</strong>
-<span>Booking systems, quote flows and dashboards help reduce confusion and organise daily work.</span>
+<strong>When bookings are difficult to manage</strong>
+<span>
+A booking system creates a consistent process for customers,
+staff and administrators.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Busy businesses need automation.</strong>
-<span>Repeated manual tasks can be improved with notifications, forms, workflows, integrations and reports.</span>
+<strong>When information is scattered</strong>
+<span>
+A dashboard or administration tool can bring important records
+and activity into one organised space.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Serious businesses need scalable systems.</strong>
-<span>Custom software supports unique processes, user roles, data and long-term operational growth.</span>
+<strong>When manual work becomes repetitive</strong>
+<span>
+Automation can reduce avoidable effort and make recurring processes
+more reliable.
+</span>
 </div>
 
 </div>
@@ -212,298 +825,342 @@ control and cleaner digital systems that can grow with the business.
 
 <section class="section" id="investment">
 
-<h2>Pricing Levels</h2>
+<h2>Typical Investment Levels</h2>
 
 <p class="section-intro">
-These are realistic starting points. Final pricing depends on the number of pages, system logic,
-database structure, dashboards, integrations, content readiness and deployment requirements.
+These ranges provide a practical starting point. Final pricing is confirmed
+after the scope, content, functionality, user roles, data, integrations and
+deployment requirements have been understood.
 </p>
 
-<div class="pricing-row">
+<div class="pricing-grid">
 
-<div class="pricing-card">
+<article class="pricing-card">
 
 <div class="pricing-label">Level 1</div>
 
-<h3>Starter Business Website</h3>
+<h3>Focused Business Website</h3>
 
 <div class="pricing-price">R1,500 – R3,500</div>
 
 <p>
-For businesses that need a clean professional online presence without advanced system logic.
+For a small business or individual that needs a clear, professional
+online presence without advanced backend functionality.
 </p>
 
 <div class="pricing-scope">
 
 <div>
-<strong>Typical build</strong>
-<span>One-page website, landing page or simple service business website.</span>
+<strong>Typical scope</strong>
+<span>
+A landing page, one-page website or focused service website.
+</span>
 </div>
 
 <div>
-<strong>Core focus</strong>
-<span>Mobile responsiveness, service presentation, contact buttons, WhatsApp flow and basic SEO structure.</span>
+<strong>Usually includes</strong>
+<span>
+Responsive design, service information, contact details,
+WhatsApp integration and essential search structure.
+</span>
 </div>
 
 <div>
-<strong>Examples</strong>
-<span>Repair shops, small service providers, creatives, barbers, mechanics and early-stage businesses.</span>
+<strong>Common use cases</strong>
+<span>
+Mechanics, repair shops, small service providers,
+creative professionals and early-stage businesses.
+</span>
 </div>
-
-<div>
-<strong>Best suited for</strong>
-<span>Businesses that need to look professional online and receive customer enquiries.</span>
-</div>
-
-</div>
-
-<a href="contact.html" class="btn secondary">Discuss Starter Website</a>
 
 </div>
 
-<div class="pricing-card">
+<a href="contact.html" class="btn secondary">
+Discuss a Focused Website
+</a>
+
+</article>
+
+<article class="pricing-card">
 
 <div class="pricing-label">Level 2</div>
 
-<h3>Business Website Platform</h3>
+<h3>Professional Business Website</h3>
 
 <div class="pricing-price">R3,500 – R8,500</div>
 
 <p>
-For businesses that need more than a single page: stronger branding, more sections,
-more content and better lead generation.
+For organisations that need deeper content, stronger presentation
+and more than one customer journey.
 </p>
 
 <div class="pricing-scope">
 
 <div>
-<strong>Typical build</strong>
-<span>Multi-section website, service pages, gallery, enquiry forms, location content and stronger brand structure.</span>
+<strong>Typical scope</strong>
+<span>
+Multiple pages or sections, galleries, forms,
+service categories and location information.
+</span>
 </div>
 
 <div>
-<strong>Core focus</strong>
-<span>Better customer journey, trust-building sections, professional layout and clearer conversion flow.</span>
+<strong>Usually includes</strong>
+<span>
+Stronger content structure, lead-generation sections,
+responsive layouts and clearer calls to action.
+</span>
 </div>
 
 <div>
-<strong>Examples</strong>
-<span>Courier companies, salons, suppliers, construction services, studios and local business brands.</span>
+<strong>Common use cases</strong>
+<span>
+Schools, courier companies, suppliers, salons,
+construction services and established local brands.
+</span>
 </div>
-
-<div>
-<strong>Best suited for</strong>
-<span>Businesses that need a stronger digital foundation but not a full backend system yet.</span>
-</div>
-
-</div>
-
-<a href="contact.html" class="btn secondary">Discuss Business Website</a>
 
 </div>
 
-<div class="pricing-card featured">
+<a href="contact.html" class="btn secondary">
+Discuss a Business Website
+</a>
+
+</article>
+
+<article class="pricing-card featured">
 
 <div class="pricing-label">Level 3</div>
 
-<h3>Operational Business System</h3>
+<h3>Booking or Operational System</h3>
 
 <div class="pricing-price">From R10,000</div>
 
 <p>
-For businesses that need booking logic, dashboards, admin tools, customer management
-or structured operational workflows.
+For businesses that need working application logic,
+persistent records, administration tools or controlled workflows.
 </p>
 
 <div class="pricing-scope">
 
 <div>
-<strong>Typical build</strong>
-<span>Booking system, quotation system, admin dashboard, client records, staff tools or service management flow.</span>
+<strong>Typical scope</strong>
+<span>
+Booking platform, quotation system, client records,
+staff tools, admin dashboard or service-management flow.
+</span>
 </div>
 
 <div>
-<strong>Core focus</strong>
-<span>Database-backed structure, protected areas, workflow logic, reporting, notifications and future expansion.</span>
+<strong>Usually includes</strong>
+<span>
+Laravel or PHP backend logic, database structure,
+protected areas, notifications and reporting foundations.
+</span>
 </div>
 
 <div>
-<strong>Examples</strong>
-<span>Zitha-style barbershop system, appointment platform, admin dashboard, quote flow and operational tool.</span>
-</div>
-
-<div>
-<strong>Best suited for</strong>
-<span>Growing businesses that need actual system functionality, not only website presentation.</span>
-</div>
-
-</div>
-
-<a href="contact.html" class="btn primary">Discuss Business System</a>
-
+<strong>Common use cases</strong>
+<span>
+Barbershops, salons, consultants, repair businesses,
+clinics and appointment-based teams.
+</span>
 </div>
 
 </div>
 
-</section>
+<a href="contact.html" class="btn primary">
+Discuss a Business System
+</a>
 
-<section class="section">
+</article>
 
-<div class="pricing-row">
-
-<div class="pricing-card">
+<article class="pricing-card">
 
 <div class="pricing-label">Level 4</div>
 
-<h3>Dashboards & Automation</h3>
+<h3>Dashboard or Automation Solution</h3>
 
 <div class="pricing-price">R7,000 – R20,000</div>
 
 <p>
-For businesses that need reporting, internal tracking, workflow automation or tools
-that reduce repetitive manual work.
+For organisations that need better reporting, internal visibility
+or less repeated administrative work.
 </p>
 
 <div class="pricing-scope">
 
 <div>
-<strong>Typical build</strong>
-<span>Business dashboard, reporting view, admin panel, automated notifications, workflow automation or API connection.</span>
+<strong>Typical scope</strong>
+<span>
+Reporting dashboard, workflow automation,
+internal admin panel or API-connected process.
+</span>
 </div>
 
 <div>
-<strong>Core focus</strong>
-<span>Visibility, control, repeated task reduction, cleaner reporting and improved business efficiency.</span>
+<strong>Usually includes</strong>
+<span>
+Operational data views, scheduled actions,
+email notifications, user controls or integrations.
+</span>
 </div>
 
 <div>
-<strong>Examples</strong>
-<span>Sales dashboards, booking reports, admin tracking, automated emails, stock visibility and workflow tools.</span>
+<strong>Common use cases</strong>
+<span>
+Sales reporting, booking oversight, order tracking,
+internal records and recurring follow-up processes.
+</span>
 </div>
-
-<div>
-<strong>Best suited for</strong>
-<span>Businesses that already operate daily and need better control over what is happening.</span>
-</div>
-
-</div>
-
-<a href="contact.html" class="btn secondary">Discuss Dashboard</a>
 
 </div>
 
-<div class="pricing-card">
+<a href="contact.html" class="btn secondary">
+Discuss a Dashboard or Automation
+</a>
+
+</article>
+
+<article class="pricing-card">
 
 <div class="pricing-label">Level 5</div>
 
 <h3>Custom Software Platform</h3>
 
-<div class="pricing-price">From R25,000+</div>
+<div class="pricing-price">From R25,000</div>
 
 <p>
-For serious custom systems built around specific business rules, users, data,
-integrations and long-term digital infrastructure.
+For organisations with specialised workflows, multiple user roles,
+complex information and long-term operational requirements.
 </p>
 
 <div class="pricing-scope">
 
 <div>
-<strong>Typical build</strong>
-<span>Client portal, staff portal, multi-user system, supplier platform, internal software or advanced workflow platform.</span>
+<strong>Typical scope</strong>
+<span>
+Client portal, staff platform, supplier system,
+multi-user application or internal business software.
+</span>
 </div>
 
 <div>
-<strong>Core focus</strong>
-<span>System architecture, backend logic, database structure, APIs, security-aware implementation and scalability.</span>
+<strong>Usually includes</strong>
+<span>
+System architecture, backend development, database design,
+permissions, APIs and deployment planning.
+</span>
 </div>
 
 <div>
-<strong>Examples</strong>
-<span>Client portals, supplier systems, internal platforms, multi-user dashboards and custom operational software.</span>
+<strong>Common use cases</strong>
+<span>
+Businesses replacing manual processes with dedicated software
+or building a new digital service.
+</span>
 </div>
-
-<div>
-<strong>Best suited for</strong>
-<span>Companies replacing manual operations with proper software infrastructure.</span>
-</div>
-
-</div>
-
-<a href="contact.html" class="btn secondary">Discuss Custom Platform</a>
 
 </div>
 
-<div class="pricing-card">
+<a href="contact.html" class="btn secondary">
+Discuss a Custom Platform
+</a>
 
-<div class="pricing-label">Consultation</div>
+</article>
 
-<h3>Project Scoping</h3>
+<article class="pricing-card">
 
-<div class="pricing-price">From R0</div>
+<div class="pricing-label">Project discovery</div>
+
+<h3>Scoping Consultation</h3>
+
+<div class="pricing-price">Initial discussion at no cost</div>
 
 <p>
-For clients who are not sure which level they need. We first understand the business,
-then recommend the correct route.
+For clients who know they need a digital solution but are not yet sure
+whether the right answer is a website, system or phased project.
 </p>
 
 <div class="pricing-scope">
 
 <div>
-<strong>Typical discussion</strong>
-<span>Business model, current workflow, problems, budget, timeline, required features and best technical direction.</span>
+<strong>What we discuss</strong>
+<span>
+The business model, current process, challenges,
+required features, budget and timeline.
+</span>
 </div>
 
 <div>
-<strong>Core focus</strong>
-<span>Choosing the right build level before wasting money on the wrong solution.</span>
-</div>
-
-<div>
-<strong>Examples</strong>
-<span>Website vs system, booking flow vs dashboard, starter platform vs custom build.</span>
+<strong>What you receive</strong>
+<span>
+A clearer recommendation on the level of build
+that matches the problem and available investment.
+</span>
 </div>
 
 <div>
 <strong>Best suited for</strong>
-<span>Business owners who know they need technology but are not sure where to start.</span>
+<span>
+Business owners who want practical direction before
+committing to development.
+</span>
 </div>
 
 </div>
 
-<a href="contact.html" class="btn secondary">Book Consultation</a>
+<a href="contact.html" class="btn secondary">
+Book a Consultation
+</a>
+
+</article>
 
 </div>
 
-</div>
+<p class="price-note">
+Prices are not fixed quotations. They are starting ranges based on common project
+types. A written quotation is prepared after the required pages, functionality,
+data, user access, integrations and deployment responsibilities have been confirmed.
+</p>
 
 </section>
 
 <section class="section">
 
-<h2>Maintenance & Support</h2>
+<h2>Maintenance and Ongoing Support</h2>
 
 <p class="section-intro">
-After launch, systems need care. DL Systems offers maintenance options based on the complexity
-of the build and the level of support required.
+Launching the project is one part of the work. Websites and applications may also
+need content updates, technical support, backups, fixes and gradual improvements.
 </p>
 
 <div class="support-table">
 
 <div class="support-row">
 <strong>Website Care</strong>
-<span>Minor content updates, small fixes, basic technical checks and support guidance for simple websites.</span>
+<span>
+Minor content changes, small fixes, routine checks and guidance
+for focused business websites.
+</span>
 <div class="support-price">From R350 / month</div>
 </div>
 
 <div class="support-row">
-<strong>Business Platform Support</strong>
-<span>Bug fixes, performance checks, small improvements, security awareness updates and monthly support assistance.</span>
+<strong>Business Website Support</strong>
+<span>
+Content assistance, bug fixes, performance checks and small
+improvements for larger websites.
+</span>
 <div class="support-price">From R750 / month</div>
 </div>
 
 <div class="support-row">
-<strong>System Support</strong>
-<span>System monitoring, database backup support, workflow improvements, priority support and growth planning.</span>
+<strong>Application Support</strong>
+<span>
+Priority support, backup guidance, workflow improvements and
+continued technical assistance for business systems.
+</span>
 <div class="support-price">From R1,200 / month</div>
 </div>
 
@@ -513,46 +1170,50 @@ of the build and the level of support required.
 
 <section class="section">
 
-<h2>Delivery Process</h2>
+<h2>How a Project Is Delivered</h2>
 
 <p class="section-intro">
-A strong build starts with understanding the business before writing code.
-That keeps the project realistic, structured and useful.
+Development starts with understanding the business before choosing the final
+features or technology. This reduces misunderstandings and keeps the work focused.
 </p>
 
 <div class="process-line">
 
-<div class="process-step">
+<article class="process-step">
 <span>1</span>
 <h3>Discovery</h3>
 <p>
-We discuss the business, current workflow, challenges, customers, budget and expected outcome.
+We discuss the organisation, users, current process, challenges,
+budget, timeline and desired outcome.
 </p>
-</div>
+</article>
 
-<div class="process-step">
+<article class="process-step">
 <span>2</span>
-<h3>Structure</h3>
+<h3>Planning</h3>
 <p>
-We plan the pages, modules, user journeys, data flow, access points and system logic.
+The pages, features, workflows, information, user access
+and technical requirements are agreed.
 </p>
-</div>
+</article>
 
-<div class="process-step">
+<article class="process-step">
 <span>3</span>
 <h3>Development</h3>
 <p>
-We build with clean structure, responsive layouts, practical functionality and maintainable code.
+The interface, application logic, database and integrations
+are developed according to the approved scope.
 </p>
-</div>
+</article>
 
-<div class="process-step">
+<article class="process-step">
 <span>4</span>
-<h3>Launch</h3>
+<h3>Testing and Launch</h3>
 <p>
-We test important flows, prepare deployment and create a foundation for future improvements.
+Important user journeys are checked, deployment is prepared
+and the finished solution is released for use.
 </p>
-</div>
+</article>
 
 </div>
 
@@ -563,39 +1224,51 @@ We test important flows, prepare deployment and create a foundation for future i
 <div class="service-band">
 
 <div>
-<h2>Before We Start</h2>
+
+<h2>A Clear Scope Protects Both the Client and the Project</h2>
 
 <p>
-To build properly, we first need to understand what the business does, who uses the system,
-what problems exist and what the system must achieve.
+Good software work depends on clear expectations. Before development begins,
+we confirm what the solution must do, who will use it and which responsibilities
+are included in the agreed scope.
 </p>
 
 <p>
-This is how DL Systems avoids pricing a simple website like a full system, or underpricing
-a serious Laravel-based business platform.
+This makes pricing more accurate, keeps communication straightforward
+and gives the project a better chance of being delivered successfully.
 </p>
+
 </div>
 
 <div class="service-points">
 
 <div class="service-point">
-<strong>Best fit clients</strong>
-<span>Service businesses, suppliers, startups, contractors and teams that need better digital structure.</span>
+<strong>Good fit for DL Systems</strong>
+<span>
+Businesses, schools, service providers, contractors,
+suppliers and growing teams that need better digital structure.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Best fit projects</strong>
-<span>Websites, booking systems, dashboards, quote tools, client portals, automation and custom systems.</span>
+<strong>Suitable project types</strong>
+<span>
+Websites, bookings, dashboards, quotation tools,
+client portals, automation and custom applications.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Best fit mindset</strong>
-<span>Business owners who want technology to improve how the business actually operates.</span>
+<strong>Best working relationship</strong>
+<span>
+Clients who communicate clearly, provide required information
+and value a properly structured solution.
+</span>
 </div>
 
 <div class="home-cta-inline">
-<a href="contact.html" class="btn primary">Book Consultation</a>
-<a href="marketplace.html" class="btn secondary">View Catalogue</a>
+<a href="contact.html" class="btn primary">Discuss Your Project</a>
+<a href="marketplace.html" class="btn secondary">View Ready Websites</a>
 </div>
 
 </div>
@@ -606,59 +1279,79 @@ a serious Laravel-based business platform.
 
 <section class="section">
 
-<h2>Development Stack</h2>
+<h2>Technology Selected for the Work</h2>
 
 <p class="section-intro">
-DL Systems uses practical modern technologies depending on project requirements,
-performance goals and operational complexity.
+The technology stack depends on the responsibility of the project.
+A focused website does not require the same architecture as a
+database-driven operational platform.
 </p>
 
-<div class="trust-bar">
-<span>Laravel</span>
-<span>PHP</span>
-<span>MySQL</span>
-<span>JavaScript</span>
-<span>Bootstrap</span>
-<span>HTML5</span>
-<span>CSS3</span>
-<span>Responsive UI</span>
-<span>API Integration</span>
-<span>Automation</span>
+<div class="stack-grid" aria-label="DL Systems development stack">
+<div class="stack-item">HTML5</div>
+<div class="stack-item">CSS3</div>
+<div class="stack-item">JavaScript</div>
+<div class="stack-item">Bootstrap</div>
+<div class="stack-item">PHP</div>
+<div class="stack-item">Laravel</div>
+<div class="stack-item">MySQL</div>
+<div class="stack-item">REST APIs</div>
+<div class="stack-item">Responsive UI</div>
+<div class="stack-item">Workflow Automation</div>
+<div class="stack-item">Git & GitHub</div>
+<div class="stack-item">Cloud Deployment</div>
 </div>
+
+<p class="stack-note">
+The stack is chosen after the project requirements are understood.
+The aim is not to use the most complicated technology available,
+but to use the right tools for a stable and maintainable result.
+</p>
 
 </section>
 
 <section class="cta-section">
 
-<h2>Let’s Build the Right Level of System</h2>
+<h2>Build the Right Solution for the Work You Need to Manage</h2>
 
 <p>
-Whether your business needs a starter website, booking system, dashboard, automation tool,
-client portal or full custom platform, DL Systems can help structure it properly.
+Whether you need a professional website, booking platform,
+dashboard, automation tool, client portal or custom Laravel application,
+DL Systems can help define and develop it properly.
 </p>
 
-<a href="contact.html" class="btn primary">Start a Project Conversation</a>
+<a href="contact.html" class="btn primary">
+Start a Project Conversation
+</a>
 
 </section>
+
+</main>
 
 <footer class="enterprise-footer">
 
 <div class="footer-inner">
 
 <div class="footer-brand">
-<img src="assets/images/logo.png" alt="DL Systems Logo">
+<img
+src="assets/images/logo.png"
+alt="DL Systems logo"
+width="48"
+height="48"
+>
 <span>DL SYSTEMS</span>
 </div>
 
 <p class="footer-copy">
-© 2026 DL Systems · Websites, Laravel Systems, Dashboards, Automation and Custom Software Development.
+© 2026 DL SYSTEMS · Custom Professional Websites, Laravel Applications,
+Booking Systems, Dashboards, Automation and Custom Software Development.
 </p>
 
 </div>
 
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js" defer></script>
 
 </body>
 </html>

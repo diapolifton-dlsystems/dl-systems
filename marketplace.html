@@ -5,424 +5,1193 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Systems Catalogue | DL Systems</title>
+<title>Ready-to-Deploy Websites & Custom Software | DL Systems</title>
 
-<meta name="description" content="DL Systems catalogue of starter business websites, Laravel booking systems, dashboards, automation tools and custom business platforms.">
-<meta name="keywords" content="DL Systems marketplace, business websites, Laravel booking system, barbershop system, dashboard system, automation system, custom software South Africa">
+<meta
+name="description"
+content="Explore ready-to-deploy websites for schools, barbershops, repair businesses, courier companies and creative brands. DL Systems also develops custom Laravel systems, dashboards, automation and business software."
+>
+
+<meta
+name="keywords"
+content="ready made websites South Africa, school website, barbershop website, courier website, repair business website, Laravel booking system, custom business software, DL Systems"
+>
+
 <meta name="author" content="DL Systems">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#05070d">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <link rel="canonical" href="https://dlsystems.co.za/marketplace.html">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-<meta property="og:title" content="DL Systems | Systems Catalogue">
-<meta property="og:description" content="Starter websites, Laravel systems, dashboards and automation tools structured by complexity and business value.">
+<meta property="og:site_name" content="DL Systems">
+<meta property="og:title" content="Ready-to-Deploy Websites & Custom Software | DL Systems">
+<meta
+property="og:description"
+content="Professionally engineered website foundations that can be customised and deployed for real businesses, schools and organisations."
+>
 <meta property="og:url" content="https://dlsystems.co.za/marketplace.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
+<meta property="og:image:alt" content="DL Systems software engineering and business systems">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ready-to-Deploy Websites | DL Systems">
+<meta
+name="twitter:description"
+content="Deployable websites for schools and businesses, supported by custom software engineering services."
+>
+<meta name="twitter:image" content="https://dlsystems.co.za/assets/images/logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet"
+>
 
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/particles.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dlsystems.co.za/#organization",
+      "name": "DL Systems",
+      "url": "https://dlsystems.co.za/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dlsystems.co.za/assets/images/logo.png"
+      },
+      "description": "DL Systems develops professional websites, Laravel applications, dashboards, workflow automation and custom business software in South Africa.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dlsystems.co.za/#website",
+      "url": "https://dlsystems.co.za/",
+      "name": "DL Systems",
+      "publisher": {
+        "@id": "https://dlsystems.co.za/#organization"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://dlsystems.co.za/marketplace.html#webpage",
+      "url": "https://dlsystems.co.za/marketplace.html",
+      "name": "Ready-to-Deploy Websites and Custom Software",
+      "description": "A catalogue of customisable website foundations and examples of advanced software systems developed by DL Systems.",
+      "isPartOf": {
+        "@id": "https://dlsystems.co.za/#website"
+      },
+      "about": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://dlsystems.co.za/marketplace.html#catalogue"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://dlsystems.co.za/marketplace.html#catalogue",
+      "name": "DL Systems Ready-to-Deploy Website Catalogue",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Nkoshilo Secondary School Website"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Deadline Fast Fades Website"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "RiderFix Repair Website"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Swift Courier Website"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Alpha Inks Creative Business Website"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+
+/* =========================================
+   MARKETPLACE PAGE REFINEMENTS
+========================================= */
+
+.marketplace-intro{
+max-width:980px;
+margin:0 auto;
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.055),
+rgba(255,255,255,.022)
+);
+}
+
+.marketplace-intro h2{
+margin-bottom:18px;
+}
+
+.marketplace-intro p{
+max-width:820px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.marketplace-intro p + p{
+margin-top:16px;
+}
+
+.catalogue-status{
+display:flex;
+align-items:center;
+gap:9px;
+margin-bottom:16px;
+color:var(--muted);
+font-size:.82rem;
+font-weight:600;
+letter-spacing:.04em;
+text-transform:uppercase;
+}
+
+.catalogue-status::before{
+content:"";
+width:8px;
+height:8px;
+border-radius:50%;
+background:#53f28c;
+box-shadow:0 0 14px rgba(83,242,140,.65);
+flex:0 0 auto;
+}
+
+.system-visual{
+position:relative;
+min-height:235px;
+display:flex;
+align-items:flex-end;
+padding:28px;
+overflow:hidden;
+isolation:isolate;
+border-bottom:1px solid var(--border);
+background:
+radial-gradient(
+circle at 18% 18%,
+rgba(0,229,255,.2),
+transparent 35%
+),
+radial-gradient(
+circle at 85% 78%,
+rgba(139,92,246,.16),
+transparent 36%
+),
+linear-gradient(
+145deg,
+rgba(7,16,31,.96),
+rgba(10,14,25,.92)
+);
+}
+
+.system-visual::before{
+content:"";
+position:absolute;
+inset:0;
+z-index:-2;
+background-image:
+linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+background-size:34px 34px;
+mask-image:linear-gradient(to bottom,black,transparent);
+}
+
+.system-visual::after{
+content:"";
+position:absolute;
+width:210px;
+height:210px;
+right:-65px;
+top:-75px;
+z-index:-1;
+border:1px solid rgba(0,229,255,.22);
+border-radius:50%;
+box-shadow:
+0 0 0 28px rgba(0,229,255,.025),
+0 0 0 56px rgba(139,92,246,.018);
+}
+
+.system-visual__content{
+position:relative;
+z-index:2;
+}
+
+.system-visual__eyebrow{
+display:block;
+margin-bottom:9px;
+color:var(--accent);
+font-size:.74rem;
+font-weight:700;
+letter-spacing:.13em;
+text-transform:uppercase;
+}
+
+.system-visual__name{
+display:block;
+max-width:420px;
+color:var(--text);
+font-size:clamp(1.35rem,3vw,2rem);
+font-weight:700;
+line-height:1.16;
+}
+
+.system-visual--school{
+background:
+radial-gradient(circle at 15% 20%,rgba(34,197,94,.18),transparent 35%),
+radial-gradient(circle at 88% 75%,rgba(0,229,255,.15),transparent 38%),
+linear-gradient(145deg,rgba(5,22,20,.98),rgba(7,15,26,.96));
+}
+
+.system-visual--barber{
+background:
+radial-gradient(circle at 18% 18%,rgba(0,229,255,.2),transparent 34%),
+radial-gradient(circle at 80% 80%,rgba(236,72,153,.15),transparent 38%),
+linear-gradient(145deg,rgba(8,15,27,.98),rgba(18,9,22,.96));
+}
+
+.system-visual--repair{
+background:
+radial-gradient(circle at 16% 20%,rgba(245,158,11,.18),transparent 35%),
+radial-gradient(circle at 85% 78%,rgba(239,68,68,.12),transparent 36%),
+linear-gradient(145deg,rgba(24,15,7,.96),rgba(10,14,22,.98));
+}
+
+.system-visual--logistics{
+background:
+radial-gradient(circle at 18% 20%,rgba(59,130,246,.2),transparent 35%),
+radial-gradient(circle at 84% 78%,rgba(14,165,233,.15),transparent 38%),
+linear-gradient(145deg,rgba(5,16,35,.98),rgba(7,15,26,.96));
+}
+
+.system-visual--creative{
+background:
+radial-gradient(circle at 18% 20%,rgba(236,72,153,.2),transparent 35%),
+radial-gradient(circle at 84% 78%,rgba(139,92,246,.16),transparent 38%),
+linear-gradient(145deg,rgba(24,7,25,.96),rgba(10,12,22,.98));
+}
+
+.system-visual--software{
+background:
+radial-gradient(circle at 18% 20%,rgba(0,229,255,.22),transparent 34%),
+radial-gradient(circle at 84% 78%,rgba(139,92,246,.2),transparent 38%),
+linear-gradient(145deg,rgba(4,15,28,.98),rgba(15,8,29,.97));
+}
+
+.system-feature-list{
+list-style:none;
+display:grid;
+gap:10px;
+margin:20px 0 0;
+padding:0;
+}
+
+.system-feature-list li{
+position:relative;
+padding-left:22px;
+color:var(--muted);
+font-size:.92rem;
+line-height:1.6;
+}
+
+.system-feature-list li::before{
+content:"";
+position:absolute;
+left:0;
+top:.62em;
+width:7px;
+height:7px;
+border-radius:50%;
+background:var(--accent);
+box-shadow:0 0 10px rgba(0,229,255,.45);
+}
+
+.catalogue-disclaimer{
+max-width:900px;
+margin:40px auto 0;
+padding:18px 20px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+color:var(--muted);
+font-size:.88rem;
+line-height:1.7;
+text-align:center;
+}
+
+.custom-system-showcase{
+display:grid;
+grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);
+gap:34px;
+align-items:stretch;
+max-width:1100px;
+margin:0 auto;
+}
+
+.custom-system-copy,
+.custom-system-panel{
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.055),
+rgba(255,255,255,.022)
+);
+}
+
+.custom-system-copy h2{
+text-align:left;
+margin-bottom:18px;
+}
+
+.custom-system-copy p + p{
+margin-top:16px;
+}
+
+.custom-system-panel{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.capability-list{
+list-style:none;
+display:grid;
+gap:14px;
+margin:24px 0 30px;
+padding:0;
+}
+
+.capability-list li{
+padding:15px 17px;
+border:1px solid var(--border);
+border-radius:13px;
+background:rgba(255,255,255,.028);
+color:var(--muted);
+}
+
+.capability-list strong{
+display:block;
+margin-bottom:4px;
+color:var(--text);
+}
+
+.marketplace-actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+.marketplace-actions .btn{
+flex:1 1 190px;
+text-align:center;
+}
+
+.deployment-steps{
+display:grid;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:18px;
+margin-top:40px;
+}
+
+.deployment-step{
+padding:23px;
+border:1px solid var(--border);
+border-radius:17px;
+background:rgba(255,255,255,.03);
+}
+
+.deployment-step span{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:36px;
+height:36px;
+margin-bottom:16px;
+border:1px solid rgba(0,229,255,.3);
+border-radius:50%;
+background:rgba(0,229,255,.08);
+color:var(--accent);
+font-weight:700;
+}
+
+.deployment-step h3{
+margin-bottom:9px;
+font-size:1.02rem;
+}
+
+.deployment-step p{
+font-size:.9rem;
+}
+
+@media(max-width:900px){
+
+.custom-system-showcase{
+grid-template-columns:1fr;
+}
+
+.deployment-steps{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+}
+
+@media(max-width:640px){
+
+.marketplace-intro,
+.custom-system-copy,
+.custom-system-panel{
+padding:26px 21px;
+}
+
+.system-visual{
+min-height:200px;
+padding:22px;
+}
+
+.deployment-steps{
+grid-template-columns:1fr;
+}
+
+.marketplace-actions{
+flex-direction:column;
+}
+
+.marketplace-actions .btn{
+width:100%;
+flex-basis:auto;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<canvas id="particles"></canvas>
-<div class="neon-grid"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="neon-grid" aria-hidden="true"></div>
 
 <header class="nav enterprise-nav">
+
 <div class="nav-inner">
 
-<a href="index.html" class="brand" aria-label="DL Systems Home">
-<img src="assets/images/logo.png" alt="DL Systems Logo">
+<a href="index.html" class="brand" aria-label="DL Systems homepage">
+<img src="assets/images/logo.png" alt="DL Systems logo">
 <span>DL SYSTEMS</span>
 </a>
 
-<nav class="nav-links" aria-label="Main navigation">
+<nav class="nav-links" aria-label="Primary navigation">
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="projects.html">Projects</a>
-<a href="marketplace.html" class="active">Marketplace</a>
+<a href="marketplace.html" class="active" aria-current="page">Marketplace</a>
 <a href="founder.html">Founder</a>
 <a href="collaborate.html">Collaborate</a>
 <a href="contact.html" class="cta">Contact</a>
 </nav>
 
 </div>
+
 </header>
 
+<main>
+
 <section class="hero hero--compact">
+
 <div class="hero-inner">
 
-<div class="home-kicker">Websites · Systems · Dashboards · Automation</div>
+<div class="home-kicker">
+Ready Websites · Professional Deployment · Custom Software
+</div>
 
-<h1>Systems Catalogue</h1>
+<h1>Launch With a Proven Digital Foundation</h1>
 
 <p>
-DL Systems separates simple websites from real business systems so clients understand
-the difference in scope, pricing, logic and long-term value.
+Explore professionally structured websites that are already designed,
+developed and ready to be adapted for a new organisation, industry or brand.
 </p>
 
 <p>
-Choose a starter website, a Laravel-powered system, a dashboard, or a custom business platform
-depending on what your business actually needs.
+Choose an existing foundation for faster deployment, or work with DL Systems
+to engineer a custom Laravel application, dashboard, automation workflow
+or complete business platform.
 </p>
 
 <div class="hero-actions">
-<a href="#starter-websites" class="btn primary">Starter Websites</a>
-<a href="#business-systems" class="btn secondary">Business Systems</a>
-<a href="contact.html" class="btn secondary">Request Custom Build</a>
+<a href="#ready-websites" class="btn primary">View Ready Websites</a>
+<a href="#custom-software" class="btn secondary">Explore Custom Software</a>
+<a href="contact.html" class="btn secondary">Discuss Your Requirements</a>
 </div>
 
 </div>
+
 </section>
 
-<div class="trust-bar">
-<span>Starter Websites</span>
-<span>Laravel Systems</span>
-<span>Dashboards</span>
-<span>Automation</span>
-<span>Custom Platforms</span>
+<div class="trust-bar" aria-label="DL Systems marketplace benefits">
+<span>Live Demonstrations</span>
+<span>Custom Branding</span>
+<span>Mobile-Ready Interfaces</span>
+<span>Deployment Support</span>
+<span>Custom Engineering Available</span>
 </div>
 
 <section class="section">
 
-<div class="catalogue-note">
+<div class="marketplace-intro">
 
-<h2>Different Builds. Different Value.</h2>
+<h2>What “Ready to Deploy” Means</h2>
 
 <p>
-A one-page service website and a Laravel-based booking system should never be priced the same.
-One mainly presents a business online. The other includes system planning, backend logic,
-database thinking, workflow structure and growth potential.
+The website foundations in this catalogue already have their visual direction,
+page structure and customer journey established. DL Systems can replace the
+demonstration content with your organisation’s branding, services, contact
+information, imagery and business requirements.
 </p>
 
 <p>
-This catalogue is structured by complexity so clients can see what they are paying for clearly.
+This reduces unnecessary development time without presenting every client with
+an identical finished product. Each deployment is still refined to suit the
+client’s identity, market and communication goals.
 </p>
 
 </div>
 
 </section>
 
-<section class="section" id="starter-websites">
+<section class="section" id="ready-websites">
 
-<h2>Starter Business Websites</h2>
+<h2>Ready-to-Deploy Website Foundations</h2>
 
 <p class="section-intro">
-These are lighter website foundations for businesses that need a professional online presence,
-service presentation and customer enquiry flow. Best for starting properly without building a full system yet.
+Browse live demonstrations for schools, grooming businesses, repair services,
+logistics companies and creative brands. These foundations can be customised
+and prepared for production without starting the entire interface from zero.
 </p>
 
 <div class="catalogue-grid">
 
+<!-- NKOSHILO SCHOOL -->
+
 <article class="system-tile">
 
-<img src="assets/images/projects/bikers-fix.jpg" alt="RiderFix motorcycle repair website">
+<div class="system-visual system-visual--school" role="img" aria-label="Nkoshilo Secondary School website presentation">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Education Website</span>
+<span class="system-visual__name">Nkoshilo Secondary School</span>
+</div>
+
+</div>
 
 <div class="system-content">
 
+<div class="catalogue-status">Available for custom deployment</div>
+
 <div class="system-meta">
-<span>Starter Website</span>
-<span>Service Business</span>
+<span>School Website</span>
+<span>Education</span>
 </div>
 
-<h3>RiderFix Repair Website</h3>
+<h3>Modern School Website</h3>
 
 <p>
-A clean business website foundation for motorcycle repair shops, mechanics, workshops
-and service providers that need credibility and clear service presentation.
+A structured website foundation for primary schools, secondary schools,
+academies and educational organisations that need a trusted digital home
+for learners, parents, staff and the wider community.
 </p>
 
 <div class="system-value">
 
 <div>
-<strong>Built for</strong>
-<span>Repair shops, garages, mechanics and small service businesses.</span>
+<strong>Designed for</strong>
+<span>Schools, academies, colleges, tutoring organisations and educational programmes.</span>
 </div>
 
 <div>
 <strong>Business value</strong>
-<span>Helps customers understand services and make enquiries quickly.</span>
+<span>Centralises school information, strengthens credibility and improves communication with parents and learners.</span>
 </div>
 
 </div>
+
+<ul class="system-feature-list">
+<li>School profile, leadership and institutional information</li>
+<li>Academic programmes and learner-facing information</li>
+<li>Announcements, notices and important updates</li>
+<li>Contact information and enquiry journey</li>
+<li>Responsive presentation for phones and computers</li>
+</ul>
 
 <div class="system-investment">
-<strong>Deployment from R1,500 – R3,500</strong>
-<span>Best for simple pages, service sections, WhatsApp flow and basic business presence.</span>
+<strong>Custom deployment quotation</strong>
+<span>
+Pricing depends on the number of pages, content migration, application forms,
+staff information, document downloads, announcements and administration requirements.
+</span>
 </div>
 
 <div class="system-actions">
-<a href="https://riderfix-motorcycle-repairs.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn secondary">View Demo</a>
-<a href="contact.html" class="btn primary">Request Starter Website</a>
+
+<a
+href="https://nkoshilosecondaryschool.netlify.app/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary"
+aria-label="Open the Nkoshilo Secondary School website demonstration in a new tab"
+>
+View Live Demo
+</a>
+
+<a href="contact.html" class="btn primary">
+Request a School Website
+</a>
+
 </div>
 
 </div>
 
 </article>
 
+<!-- DEADLINE FAST FADES -->
+
 <article class="system-tile">
 
-<img src="assets/images/projects/delivery-platform.jpg" alt="Swift Courier logistics website">
+<div class="system-visual system-visual--barber" role="img" aria-label="Deadline Fast Fades barbershop website and booking platform">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Grooming Business Platform</span>
+<span class="system-visual__name">Deadline Fast Fades</span>
+</div>
+
+</div>
 
 <div class="system-content">
 
+<div class="catalogue-status">Available as an industry foundation</div>
+
 <div class="system-meta">
-<span>Business Website</span>
+<span>Barbershop Platform</span>
+<span>Booking-Ready</span>
+</div>
+
+<h3>Deadline Fast Fades Website</h3>
+
+<p>
+A modern grooming-business foundation for barbershops and hair studios that
+need premium visual presentation, clear service information and a stronger
+digital journey from discovery to appointment.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Designed for</strong>
+<span>Barbershops, salons, grooming studios, mobile barbers and personal-care brands.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Professionalises the brand, makes services easier to discover and provides a direct route into booking or enquiry.</span>
+</div>
+
+</div>
+
+<ul class="system-feature-list">
+<li>Service and pricing presentation</li>
+<li>Barber or team profile capability</li>
+<li>Gallery and visual brand storytelling</li>
+<li>Appointment or booking call-to-action</li>
+<li>Mobile-first customer journey</li>
+</ul>
+
+<div class="system-investment">
+<strong>Custom deployment quotation</strong>
+<span>
+Final pricing depends on booking functionality, staff schedules,
+service rules, customer notifications, administration tools and hosting requirements.
+</span>
+</div>
+
+<div class="system-actions">
+
+<a
+href="https://deadlinefastfades.laravel.cloud/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary"
+aria-label="Open the Deadline Fast Fades website in a new tab"
+>
+View Live Website
+</a>
+
+<a href="contact.html" class="btn primary">
+Request a Grooming Website
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+<!-- RIDERFIX -->
+
+<article class="system-tile">
+
+<div class="system-visual system-visual--repair" role="img" aria-label="RiderFix motorcycle repair website">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Technical Service Website</span>
+<span class="system-visual__name">RiderFix Motorcycle Repairs</span>
+</div>
+
+</div>
+
+<div class="system-content">
+
+<div class="catalogue-status">Available for custom deployment</div>
+
+<div class="system-meta">
+<span>Service Website</span>
+<span>Repair Industry</span>
+</div>
+
+<h3>RiderFix Repair Website</h3>
+
+<p>
+A professional website foundation for motorcycle repair shops, mechanics,
+garages and technical service providers that need to communicate expertise,
+services and contact options clearly.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Designed for</strong>
+<span>Repair shops, mechanics, workshops, garages and mobile technical services.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Builds customer confidence and creates a clear path from a repair problem to a service enquiry.</span>
+</div>
+
+</div>
+
+<ul class="system-feature-list">
+<li>Repair and maintenance service presentation</li>
+<li>Workshop credibility and business information</li>
+<li>WhatsApp and direct enquiry journey</li>
+<li>Location and operating-hour information</li>
+<li>Responsive interface for customers on the road</li>
+</ul>
+
+<div class="system-investment">
+<strong>Custom deployment quotation</strong>
+<span>
+Pricing depends on pages, service categories, quotation forms,
+content preparation, location features and additional integrations.
+</span>
+</div>
+
+<div class="system-actions">
+
+<a
+href="https://riderfix-motorcycle-repairs.netlify.app/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary"
+aria-label="Open the RiderFix motorcycle repair website demo in a new tab"
+>
+View Live Demo
+</a>
+
+<a href="contact.html" class="btn primary">
+Request a Repair Website
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+<!-- SWIFT COURIER -->
+
+<article class="system-tile">
+
+<div class="system-visual system-visual--logistics" role="img" aria-label="Swift Courier logistics website">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Logistics Website</span>
+<span class="system-visual__name">Swift Courier Platform</span>
+</div>
+
+</div>
+
+<div class="system-content">
+
+<div class="catalogue-status">Available for custom deployment</div>
+
+<div class="system-meta">
+<span>Courier Website</span>
 <span>Logistics</span>
 </div>
 
 <h3>Swift Courier Website</h3>
 
 <p>
-A logistics-focused business website for courier companies, delivery operators and transport
-services that need stronger trust, clarity and customer enquiry structure.
+A logistics-focused website foundation for courier companies, delivery
+operators and transport businesses that need to communicate coverage,
+reliability and service options professionally.
 </p>
 
 <div class="system-value">
 
 <div>
-<strong>Built for</strong>
-<span>Courier companies, delivery startups and local transport operators.</span>
+<strong>Designed for</strong>
+<span>Courier companies, delivery startups, logistics operators and local transport services.</span>
 </div>
 
 <div>
 <strong>Business value</strong>
-<span>Improves service presentation, customer confidence and enquiry flow.</span>
+<span>Builds trust, presents delivery services clearly and strengthens the quotation or customer-enquiry process.</span>
 </div>
 
 </div>
+
+<ul class="system-feature-list">
+<li>Courier and delivery service categories</li>
+<li>Coverage-area communication</li>
+<li>Quotation or delivery-enquiry capability</li>
+<li>Business credibility and contact information</li>
+<li>Mobile-ready presentation for active customers</li>
+</ul>
 
 <div class="system-investment">
-<strong>Deployment from R3,500 – R6,500</strong>
-<span>Final cost depends on quote forms, service areas, content, pages and business structure.</span>
+<strong>Custom deployment quotation</strong>
+<span>
+Final pricing depends on quote forms, service areas, parcel categories,
+tracking requirements, content and operational integrations.
+</span>
 </div>
 
 <div class="system-actions">
-<a href="https://fastlocalcourier.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn secondary">View Demo</a>
-<a href="contact.html" class="btn primary">Request Business Website</a>
+
+<a
+href="https://fastlocalcourier.netlify.app/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary"
+aria-label="Open the Swift Courier website demo in a new tab"
+>
+View Live Demo
+</a>
+
+<a href="contact.html" class="btn primary">
+Request a Courier Website
+</a>
+
 </div>
 
 </div>
 
 </article>
+
+<!-- ALPHA INKS -->
+
+<article class="system-tile">
+
+<div class="system-visual system-visual--creative" role="img" aria-label="Creative studio and tattoo business website">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Creative Business Website</span>
+<span class="system-visual__name">Studio & Portfolio Foundation</span>
+</div>
+
+</div>
+
+<div class="system-content">
+
+<div class="catalogue-status">Available as a creative-business foundation</div>
+
+<div class="system-meta">
+<span>Portfolio Website</span>
+<span>Creative Services</span>
+</div>
+
+<h3>Creative Studio Website</h3>
+
+<p>
+A visual business foundation based on earlier studio work, suitable for
+tattoo artists, photographers, designers and other creative professionals
+who need to present their work and receive customer enquiries.
+</p>
+
+<div class="system-value">
+
+<div>
+<strong>Designed for</strong>
+<span>Tattoo studios, photographers, artists, designers and appointment-based creative professionals.</span>
+</div>
+
+<div>
+<strong>Business value</strong>
+<span>Combines portfolio presentation, business information and direct customer contact in one focused experience.</span>
+</div>
+
+</div>
+
+<ul class="system-feature-list">
+<li>Portfolio or gallery presentation</li>
+<li>Artist and studio information</li>
+<li>Service and style communication</li>
+<li>WhatsApp and direct contact options</li>
+<li>Responsive visual experience</li>
+</ul>
+
+<div class="system-investment">
+<strong>Custom deployment quotation</strong>
+<span>
+Pricing depends on gallery size, content preparation, enquiry forms,
+booking requirements and brand-specific visual customisation.
+</span>
+</div>
+
+<div class="system-actions">
+
+<a
+href="https://alphainks.netlify.app/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary"
+aria-label="Open the creative studio website example in a new tab"
+>
+View Website Example
+</a>
+
+<a href="contact.html" class="btn primary">
+Request a Creative Website
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+<p class="catalogue-disclaimer">
+Demonstrations are presented as examples of layout, customer journey and technical capability.
+A client deployment receives its own branding, content, contact details, configuration and agreed functionality.
+</p>
+
+</section>
+
+<!-- CUSTOM SOFTWARE -->
+
+<section class="section" id="custom-software">
+
+<div class="custom-system-showcase">
+
+<div class="custom-system-copy">
+
+<div class="home-kicker">Custom Engineering</div>
+
+<h2>Need More Than a Website?</h2>
+
+<p>
+A ready website is appropriate when the main goal is visibility,
+communication and customer enquiries. Businesses that need to manage
+bookings, users, records, queues, reports or internal workflows require
+a properly planned software system.
+</p>
+
+<p>
+DL Systems develops custom Laravel applications and operational tools
+around the way a business actually works. These projects are scoped
+individually because database structure, permissions, workflows and
+integrations cannot be treated like interchangeable website sections.
+</p>
+
+<div class="marketplace-actions">
+<a href="contact.html" class="btn primary">Request Custom Software</a>
+<a href="projects.html" class="btn secondary">View Engineering Projects</a>
+</div>
+
+</div>
+
+<div class="custom-system-panel">
+
+<div class="system-visual system-visual--software" role="img" aria-label="Custom Laravel software and business systems">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Full-Stack Software Engineering</span>
+<span class="system-visual__name">Custom Systems Built Around Real Operations</span>
+</div>
+
+</div>
+
+<ul class="capability-list">
+
+<li>
+<strong>Booking and queue systems</strong>
+Customer bookings, availability rules, queue control, confirmations and administration.
+</li>
+
+<li>
+<strong>Business dashboards</strong>
+Centralised operational information, reporting, customer records and performance visibility.
+</li>
+
+<li>
+<strong>Workflow automation</strong>
+Tools that reduce repeated administration, organise processes and connect services through APIs.
+</li>
+
+<li>
+<strong>Role-based platforms</strong>
+Secure systems for administrators, staff members, customers, parents, learners or other user groups.
+</li>
+
+</ul>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="section" id="business-systems">
-
-<h2>Booking & Management Systems</h2>
-
-<p class="section-intro">
-These are not basic websites. They are system builds involving workflow planning, backend logic,
-database structure, user flow and business operations.
-</p>
-
-<div class="catalogue-grid">
-
-<article class="system-tile">
-
-<img src="assets/images/projects/zitha-barbershop.jpg" alt="Zitha Barbershop Laravel booking and management system">
-
-<div class="system-content">
-
-<div class="system-meta">
-<span>Laravel System</span>
-<span>Booking Management</span>
-</div>
-
-<h3>Zitha Barbershop Booking & Management System</h3>
-
-<p>
-A Laravel-powered business system for barbershops, salons and grooming businesses that need
-structured booking flow, customer access, service visibility and operational growth.
-</p>
-
-<div class="system-value">
-
-<div>
-<strong>Built for</strong>
-<span>Barbershops, salons, grooming brands and appointment-based service providers.</span>
-</div>
-
-<div>
-<strong>Business value</strong>
-<span>Creates a stronger foundation for bookings, customer management and daily operations.</span>
-</div>
-
-</div>
-
-<div class="system-investment">
-<strong>Development from R8,000 – R18,000</strong>
-<span>Final cost depends on admin dashboard, booking rules, database logic, email flow, staff features and payment readiness.</span>
-</div>
-
-<div class="system-actions">
-<a href="https://zitha-barbershop.free.laravel.cloud/" target="_blank" rel="noopener noreferrer" class="btn secondary">View Live System</a>
-<a href="contact.html" class="btn primary">Request Booking System</a>
-</div>
-
-</div>
-
-</article>
-
-<article class="system-tile">
-
-<img src="assets/images/projects/booking systems.webp" alt="Online booking system interface">
-
-<div class="system-content">
-
-<div class="system-meta">
-<span>Booking System</span>
-<span>Appointments</span>
-</div>
-
-<h3>Online Booking System</h3>
-
-<p>
-A booking system foundation for appointment-based businesses that need clients to request,
-schedule or manage appointments through a cleaner digital process.
-</p>
-
-<div class="system-value">
-
-<div>
-<strong>Built for</strong>
-<span>Consultants, clinics, salons, studios, repair services and appointment-based teams.</span>
-</div>
-
-<div>
-<strong>Business value</strong>
-<span>Reduces manual scheduling pressure and improves customer experience.</span>
-</div>
-
-</div>
-
-<div class="system-investment">
-<strong>Development from R6,000 – R14,000</strong>
-<span>Final cost depends on booking rules, admin dashboard, notifications, user access and database structure.</span>
-</div>
-
-<div class="system-actions">
-<a href="contact.html" class="btn primary">Request Booking System</a>
-</div>
-
-</div>
-
-</article>
-
-</div>
-
-</section>
+<!-- ZITHA CASE STUDY -->
 
 <section class="section">
 
-<h2>Dashboards & Automation</h2>
+<h2>Software Capability Example</h2>
 
 <p class="section-intro">
-For businesses that need visibility, reporting, internal tools, workflow control or automation
-to reduce repetitive manual work.
+Zitha Barbershop demonstrates the difference between a promotional website
+and a working operational platform.
 </p>
 
 <div class="catalogue-grid">
 
 <article class="system-tile">
 
-<img src="assets/images/projects/dashboard-system.jpg" alt="Business dashboard system">
+<div class="system-visual system-visual--software" role="img" aria-label="Zitha Barbershop Laravel booking and management system">
+
+<div class="system-visual__content">
+<span class="system-visual__eyebrow">Laravel Business Application</span>
+<span class="system-visual__name">Zitha Barbershop Booking & Management System</span>
+</div>
+
+</div>
 
 <div class="system-content">
 
 <div class="system-meta">
-<span>Dashboard</span>
-<span>Reporting</span>
+<span>Laravel</span>
+<span>MySQL</span>
+<span>Business Operations</span>
 </div>
 
-<h3>Business Dashboard</h3>
+<h3>From Customer Booking to Operational Control</h3>
 
 <p>
-A dashboard foundation for businesses that need better visibility over clients, orders,
-bookings, reports, performance and daily operations.
+Zitha Barbershop is a full business-system example developed around
+appointment handling, queue management, customer information,
+administrative oversight and daily barbershop operations.
 </p>
 
 <div class="system-value">
 
 <div>
-<strong>Built for</strong>
-<span>Growing teams, suppliers, service businesses and operations-heavy companies.</span>
+<strong>Engineering scope</strong>
+<span>Backend logic, persistent data, booking workflows, queue functionality, administration and analytics.</span>
 </div>
 
 <div>
-<strong>Business value</strong>
-<span>Creates reporting visibility, management control and easier decision-making.</span>
+<strong>Business purpose</strong>
+<span>Creates order, reduces booking confusion and gives the owner greater visibility over daily activity.</span>
 </div>
 
 </div>
+
+<ul class="system-feature-list">
+<li>Online customer booking journey</li>
+<li>Queue and arrival management</li>
+<li>Administrative booking controls</li>
+<li>Customer and service information</li>
+<li>Operational analytics and reporting foundations</li>
+<li>Email and notification workflows</li>
+</ul>
 
 <div class="system-investment">
-<strong>Development from R7,000 – R20,000</strong>
-<span>Final cost depends on users, reports, data sources, admin features and business logic.</span>
+<strong>Custom software quotation required</strong>
+<span>
+Custom systems are priced after discovery because the final investment
+depends on users, permissions, workflows, integrations, security,
+administration requirements and deployment infrastructure.
+</span>
 </div>
 
 <div class="system-actions">
-<a href="contact.html" class="btn primary">Request Dashboard</a>
-</div>
 
-</div>
+<a
+href="https://zitha-barbershop.free.laravel.cloud/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary"
+aria-label="Open the Zitha Barbershop Laravel system in a new tab"
+>
+View Live System
+</a>
 
-</article>
+<a href="contact.html" class="btn primary">
+Build a Custom System
+</a>
 
-<article class="system-tile">
-
-<img src="assets/images/projects/automation-system.jpg" alt="Business automation system">
-
-<div class="system-content">
-
-<div class="system-meta">
-<span>Automation</span>
-<span>Workflow</span>
-</div>
-
-<h3>Business Automation System</h3>
-
-<p>
-Automation tools for businesses that want to reduce repetitive admin, organise tasks,
-connect processes and improve daily efficiency.
-</p>
-
-<div class="system-value">
-
-<div>
-<strong>Built for</strong>
-<span>Teams with repeated admin tasks, manual workflows, reports or follow-ups.</span>
-</div>
-
-<div>
-<strong>Business value</strong>
-<span>Saves time, reduces mistakes and creates repeatable operational structure.</span>
-</div>
-
-</div>
-
-<div class="system-investment">
-<strong>Development from R6,000 – R18,000</strong>
-<span>Final cost depends on integrations, APIs, workflow complexity and automation rules.</span>
-</div>
-
-<div class="system-actions">
-<a href="project-automation.html" class="btn secondary">View System</a>
-<a href="contact.html" class="btn primary">Request Automation</a>
 </div>
 
 </div>
@@ -432,44 +1201,108 @@ connect processes and improve daily efficiency.
 </div>
 
 </section>
+
+<!-- PROCESS -->
+
+<section class="section">
+
+<h2>How Deployment Works</h2>
+
+<p class="section-intro">
+Whether you select an existing website foundation or commission a complete
+software platform, the work is adapted to the organisation that will use it.
+</p>
+
+<div class="deployment-steps">
+
+<div class="deployment-step">
+<span>1</span>
+<h3>Choose a Direction</h3>
+<p>
+Select a relevant website foundation or explain the operational problem that custom software must solve.
+</p>
+</div>
+
+<div class="deployment-step">
+<span>2</span>
+<h3>Define the Scope</h3>
+<p>
+We confirm branding, content, pages, functionality, user roles, integrations and expected outcomes.
+</p>
+</div>
+
+<div class="deployment-step">
+<span>3</span>
+<h3>Customise or Engineer</h3>
+<p>
+The selected foundation is adapted, or the custom system is designed and developed around the approved scope.
+</p>
+</div>
+
+<div class="deployment-step">
+<span>4</span>
+<h3>Test and Launch</h3>
+<p>
+Core journeys are tested, deployment is prepared and the finished platform is released for practical use.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL DECISION BAND -->
 
 <section class="section">
 
 <div class="service-band">
 
 <div>
-<h2>Need Something Built Around Your Exact Business?</h2>
+
+<h2>Website Foundation or Custom Software?</h2>
 
 <p>
-A catalogue option can reduce build time, but not every business fits into an existing foundation.
-Some businesses need a custom platform built from the ground up.
+The correct choice depends on what the organisation expects the technology
+to do after it launches.
 </p>
 
 <p>
-The right approach depends on your business model, workflow, users, data, timeline and budget.
+A website communicates. A software system manages processes, users,
+records and operational decisions. DL Systems will recommend the appropriate
+level instead of selling unnecessary complexity.
 </p>
+
 </div>
 
 <div class="service-points">
 
 <div class="service-point">
-<strong>Starter website</strong>
-<span>Best for businesses that need professional visibility and customer enquiries.</span>
+<strong>Choose a ready website</strong>
+<span>
+Best when you need professional visibility, clear information,
+customer enquiries and faster deployment.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Business system</strong>
-<span>Best when the platform must manage bookings, users, records, dashboards or workflows.</span>
+<strong>Choose a custom system</strong>
+<span>
+Best when you need bookings, dashboards, users, records,
+workflow rules, reporting or automation.
+</span>
 </div>
 
 <div class="service-point">
-<strong>Custom platform</strong>
-<span>Best when your business has unique processes that need custom logic and architecture.</span>
+<strong>Request technical guidance</strong>
+<span>
+Explain the business problem and DL Systems will help determine
+whether a website, system or phased approach is appropriate.
+</span>
 </div>
 
 <div class="home-cta-inline">
-<a href="contact.html" class="btn primary">Start a Project</a>
-<a href="services.html" class="btn secondary">View Services</a>
+<a href="contact.html" class="btn primary">Discuss Your Project</a>
+<a href="services.html" class="btn secondary">Explore All Services</a>
 </div>
 
 </div>
@@ -480,28 +1313,33 @@ The right approach depends on your business model, workflow, users, data, timeli
 
 <section class="cta-section">
 
-<h2>Start With the Right Level of Build</h2>
+<h2>Deploy a Proven Foundation or Build Something Original</h2>
 
 <p>
-Not every business needs a full system immediately. DL Systems helps you choose the right level:
-starter website, business platform, booking system, dashboard, automation or custom software.
+Start with one of the available website demonstrations or commission
+custom software designed around your users, data and business workflow.
 </p>
 
-<a href="contact.html" class="btn primary">Request a System Consultation</a>
+<a href="contact.html" class="btn primary">
+Request a Project Consultation
+</a>
 
 </section>
+
+</main>
 
 <footer class="enterprise-footer">
 
 <div class="footer-inner">
 
 <div class="footer-brand">
-<img src="assets/images/logo.png" alt="DL Systems Logo">
+<img src="assets/images/logo.png" alt="DL Systems logo">
 <span>DL SYSTEMS</span>
 </div>
 
 <p class="footer-copy">
-© 2026 DL SYSTEMS · Starter Websites, Laravel Systems, Dashboards, Automation and Custom Business Platforms.
+© 2026 DL SYSTEMS · Ready-to-Deploy Websites, Laravel Applications,
+Business Dashboards, Automation and Custom Software Engineering.
 </p>
 
 </div>

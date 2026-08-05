@@ -1,51 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About DL Systems | Software & Systems Development</title>
+
+<meta
+name="description"
+content="Learn about DL Systems, a South African software and systems development business building websites, booking platforms, dashboards, automation tools and custom digital solutions."
+>
+
+<meta
+name="keywords"
+content="about DL Systems, software development South Africa, systems development, business websites, booking systems, dashboards, automation, custom software"
+>
+
+<meta name="author" content="DL Systems">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#05070d">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="canonical" href="https://dlsystems.co.za/about.html">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+<meta property="og:site_name" content="DL Systems">
+<meta property="og:title" content="About DL Systems | Software & Systems Development">
+<meta
+property="og:description"
+content="DL Systems builds professional websites, business systems, booking platforms, dashboards, automation tools and custom software."
+>
+<meta property="og:url" content="https://dlsystems.co.za/about.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
+<meta property="og:image:alt" content="DL Systems logo">
+<meta property="og:locale" content="en_ZA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About DL Systems">
+<meta
+name="twitter:description"
+content="Software and systems development focused on practical digital solutions for businesses and organisations."
+>
+<meta name="twitter:image" content="https://dlsystems.co.za/assets/images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet"
+>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+>
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/particles.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dlsystems.co.za/#organization",
+      "name": "DL Systems",
+      "url": "https://dlsystems.co.za/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dlsystems.co.za/assets/images/logo.png"
+      },
+      "description": "DL Systems develops professional websites, booking systems, dashboards, workflow automation and custom software.",
+      "founder": {
+        "@type": "Person",
+        "name": "Diapo Lifton Seabi",
+        "url": "https://dlsystems.co.za/founder.html"
+      },
+      "email": "dlsystems.official@gmail.com",
+      "telephone": "+27680244514",
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "sameAs": [
+        "https://www.facebook.com/jadentjay.seabi",
+        "https://www.instagram.com/diapo_slim"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dlsystems.co.za/#website",
+      "url": "https://dlsystems.co.za/",
+      "name": "DL Systems",
+      "publisher": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "inLanguage": "en-ZA"
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://dlsystems.co.za/about.html#webpage",
+      "url": "https://dlsystems.co.za/about.html",
+      "name": "About DL Systems",
+      "description": "Information about DL Systems, its development approach, values and business direction.",
+      "isPartOf": {
+        "@id": "https://dlsystems.co.za/#website"
+      },
+      "about": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "inLanguage": "en-ZA"
+    }
+  ]
+}
+</script>
+
+<style>
+
+.skip-link{
+position:fixed;
+top:14px;
+left:14px;
+z-index:9999;
+padding:11px 16px;
+border-radius:10px;
+background:var(--accent);
+color:#041014;
+font-size:.88rem;
+font-weight:700;
+text-decoration:none;
+transform:translateY(-160%);
+transition:transform .2s ease;
+}
+
+.skip-link:focus{
+transform:translateY(0);
+}
+
+.about-intro{
+max-width:980px;
+margin:0 auto;
+padding:40px;
+border:1px solid var(--border);
+border-radius:22px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.055),
+rgba(255,255,255,.02)
+);
+}
+
+.about-intro h2{
+margin-bottom:20px;
+}
+
+.about-intro p{
+max-width:820px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.about-intro p + p{
+margin-top:16px;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:24px;
+}
+
+.about-card{
+padding:30px;
+border:1px solid var(--border);
+border-radius:20px;
+background:
+linear-gradient(
+155deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.018)
+);
+}
+
+.about-card__icon{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:47px;
+height:47px;
+margin-bottom:18px;
+border:1px solid rgba(0,229,255,.25);
+border-radius:14px;
+background:rgba(0,229,255,.07);
+color:var(--accent);
+}
+
+.about-card h3{
+margin-bottom:12px;
+}
+
+.about-card p + p{
+margin-top:14px;
+}
+
+.company-story{
+display:grid;
+grid-template-columns:minmax(0,1.04fr) minmax(320px,.96fr);
+gap:28px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.company-story__copy,
+.company-story__points{
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.02)
+);
+}
+
+.company-story__copy h2{
+text-align:left;
+margin-bottom:18px;
+}
+
+.company-story__copy p + p{
+margin-top:16px;
+}
+
+.company-story__points{
+display:grid;
+gap:13px;
+}
+
+.story-point{
+padding:16px 17px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+}
+
+.story-point strong{
+display:block;
+margin-bottom:6px;
+color:var(--text);
+}
+
+.story-point span{
+display:block;
+color:var(--muted);
+font-size:.89rem;
+line-height:1.65;
+}
+
+.values-grid{
+display:grid;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:19px;
+}
+
+.value-card{
+padding:27px;
+border:1px solid var(--border);
+border-radius:19px;
+background:rgba(255,255,255,.03);
+}
+
+.value-card span{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:39px;
+height:39px;
+margin-bottom:17px;
+border:1px solid rgba(0,229,255,.26);
+border-radius:12px;
+background:rgba(0,229,255,.075);
+color:var(--accent);
+font-weight:700;
+}
+
+.value-card h3{
+margin-bottom:10px;
+}
+
+.value-card p{
+font-size:.89rem;
+line-height:1.7;
+}
+
+.focus-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:20px;
+}
+
+.focus-card{
+padding:28px;
+border:1px solid var(--border);
+border-radius:19px;
+background:rgba(255,255,255,.03);
+}
+
+.focus-card i{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:45px;
+height:45px;
+margin-bottom:17px;
+border:1px solid rgba(0,229,255,.24);
+border-radius:13px;
+background:rgba(0,229,255,.07);
+color:var(--accent);
+}
+
+.focus-card h3{
+margin-bottom:10px;
+}
+
+.focus-card p{
+font-size:.9rem;
+line-height:1.7;
+}
+
+.approach-grid{
+display:grid;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:18px;
+}
+
+.approach-step{
+padding:24px;
+border:1px solid var(--border);
+border-radius:17px;
+background:rgba(255,255,255,.03);
+}
+
+.approach-step span{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:36px;
+height:36px;
+margin-bottom:16px;
+border:1px solid rgba(0,229,255,.28);
+border-radius:50%;
+background:rgba(0,229,255,.075);
+color:var(--accent);
+font-weight:700;
+}
+
+.approach-step h3{
+margin-bottom:9px;
+font-size:1rem;
+}
+
+.approach-step p{
+font-size:.88rem;
+line-height:1.68;
+}
+
+.company-position{
+display:grid;
+grid-template-columns:minmax(0,1fr) minmax(320px,.95fr);
+gap:28px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.company-position__copy,
+.company-position__options{
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.02)
+);
+}
+
+.company-position__copy h2{
+text-align:left;
+margin-bottom:18px;
+}
+
+.company-position__copy p + p{
+margin-top:16px;
+}
+
+.company-position__options{
+display:grid;
+gap:13px;
+}
+
+.position-option{
+padding:16px 17px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+}
+
+.position-option strong{
+display:block;
+margin-bottom:6px;
+color:var(--text);
+}
+
+.position-option span{
+display:block;
+color:var(--muted);
+font-size:.89rem;
+line-height:1.65;
+}
+
+.about-actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+.stack-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(125px,1fr));
+gap:13px;
+max-width:1030px;
+margin:34px auto 0;
+}
+
+.stack-item{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:58px;
+padding:13px 15px;
+border:1px solid var(--border);
+border-radius:13px;
+background:rgba(255,255,255,.026);
+color:var(--muted);
+font-size:.85rem;
+font-weight:600;
+text-align:center;
+}
+
+.stack-note{
+max-width:850px;
+margin:25px auto 0;
+color:var(--muted);
+font-size:.9rem;
+line-height:1.75;
+text-align:center;
+}
+
+@media(max-width:1000px){
+
+.company-story,
+.company-position{
+grid-template-columns:1fr;
+}
+
+.values-grid,
+.approach-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+}
+
+@media(max-width:850px){
+
+.about-grid,
+.focus-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:640px){
+
+.about-intro,
+.company-story__copy,
+.company-story__points,
+.company-position__copy,
+.company-position__options{
+padding:27px 21px;
+}
+
+.values-grid,
+.approach-grid{
+grid-template-columns:1fr;
+}
+
+.about-card,
+.focus-card{
+padding:25px 21px;
+}
+
+.about-actions{
+flex-direction:column;
+}
+
+.about-actions .btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+scroll-behavior:auto !important;
+animation-duration:.01ms !important;
+animation-iteration-count:1 !important;
+transition-duration:.01ms !important;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="neon-grid" aria-hidden="true"></div>
+
 <header class="nav enterprise-nav">
-  <div class="nav-inner">
 
-    <!-- BRAND / LOGO -->
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo.png" alt="DL Systems Logo">
-      <span>DL SYSTEMS</span>
-    </a>
+<div class="nav-inner">
 
-    <!-- NAVIGATION -->
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="marketplace.html">Marketplace</a>
-      <a href="projects.html">Projects</a>
-      <a href="founder.html">Founder</a>
-      <a href="collaborate.html">Collaborate</a>
-      <a href="contact.html" class="cta">Contact</a>
-    </nav>
+<a href="index.html" class="brand" aria-label="DL Systems homepage">
+<img
+src="assets/images/logo.png"
+alt="DL Systems logo"
+width="48"
+height="48"
+>
+<span>DL SYSTEMS</span>
+</a>
 
-  </div>
+<nav class="nav-links" aria-label="Primary navigation">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="founder.html">Founder</a>
+<a href="collaborate.html">Collaborate</a>
+<a href="contact.html" class="cta">Contact</a>
+</nav>
+
+</div>
+
 </header>
 
+<main id="main-content">
+
+<section class="hero hero--compact">
+
+<div class="hero-inner">
+
+<div class="home-kicker">
+Software Development · Systems Thinking · Practical Delivery
+</div>
+
+<h1>About DL Systems</h1>
+
+<p>
+DL Systems is a South African software and systems development business
+focused on building websites, business platforms and digital tools that solve
+clear, practical problems.
+</p>
+
+<p>
+The work ranges from professional public websites to booking systems,
+dashboards, automation tools and custom software designed around the way
+an organisation operates.
+</p>
+
+<div class="hero-actions">
+<a href="services.html" class="btn primary">Explore Services</a>
+<a href="projects.html" class="btn secondary">View Project Work</a>
+<a href="contact.html" class="btn secondary">Discuss a Project</a>
+</div>
+
+</div>
+
+</section>
+
+<div class="trust-bar" aria-label="DL Systems areas of work">
+<span>Software Development</span>
+<span>Systems Development</span>
+<span>Professional Websites</span>
+<span>Business Platforms</span>
+<span>Automation</span>
+</div>
+
+<section class="section">
+
+<div class="about-intro">
+
+<h2>Technology Should Support the Work, Not Distract From It</h2>
+
+<p>
+DL Systems was created around a simple idea: the value of technology
+is measured by what it helps people and organisations accomplish.
+</p>
+
+<p>
+A business may need a clear website that improves credibility and customer
+communication. Another may need a working system that manages bookings,
+records, users, reports or repeated tasks. The correct solution depends
+on the responsibility the technology must carry.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>What DL Systems Does</h2>
+
+<p class="section-intro">
+The company works across different levels of digital delivery,
+from focused websites to custom systems with backend logic and databases.
+</p>
+
+<div class="about-grid">
+
+<article class="about-card">
+
+<div class="about-card__icon" aria-hidden="true">
+<i class="fa-solid fa-globe"></i>
+</div>
+
+<h3>Professional Websites</h3>
+
+<p>
+Responsive websites for schools, businesses, service providers and organisations
+that need clear communication, stronger credibility and a reliable way for people
+to make contact.
+</p>
+
+</article>
+
+<article class="about-card">
+
+<div class="about-card__icon" aria-hidden="true">
+<i class="fa-regular fa-calendar-check"></i>
+</div>
+
+<h3>Booking and Management Systems</h3>
+
+<p>
+Applications for businesses that need structured appointments,
+customer information, administration and a clearer daily workflow.
+</p>
+
+</article>
+
+<article class="about-card">
+
+<div class="about-card__icon" aria-hidden="true">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+
+<h3>Dashboards and Internal Tools</h3>
+
+<p>
+Operational interfaces that help teams organise records, reports,
+customers, services and other important business information.
+</p>
+
+</article>
+
+<article class="about-card">
+
+<div class="about-card__icon" aria-hidden="true">
+<i class="fa-solid fa-gears"></i>
+</div>
+
+<h3>Automation and Custom Software</h3>
+
+<p>
+Purpose-built tools that reduce repeated work, connect processes
+and support specialised business or organisational requirements.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="company-story">
+
+<div class="company-story__copy">
+
+<h2>Built Through Practical Project Work</h2>
+
+<p>
+DL Systems grew from the decision to apply software development knowledge
+to complete, publicly accessible projects rather than keeping the work limited
+to exercises and demonstrations.
+</p>
+
+<p>
+That journey now includes school websites, service-business platforms,
+booking applications, business-system concepts and workflow automation.
+Each project contributes to a broader understanding of how interfaces,
+backend logic, information and business processes fit together.
+</p>
+
+<p>
+The company continues to develop through real delivery, honest evaluation
+and steady improvement rather than claiming to have reached a final stage.
+</p>
+
+</div>
+
+<div class="company-story__points">
+
+<div class="story-point">
+<strong>Business understanding</strong>
+<span>
+Projects begin by understanding the organisation, its users,
+its current process and the problem being solved.
+</span>
+</div>
+
+<div class="story-point">
+<strong>Technical judgement</strong>
+<span>
+The technology is selected according to the work required,
+rather than forcing every project into one framework.
+</span>
+</div>
+
+<div class="story-point">
+<strong>Professional delivery</strong>
+<span>
+Responsive design, clear structure, testing and maintainability
+remain part of the development process.
+</span>
+</div>
+
+<div class="story-point">
+<strong>Long-term direction</strong>
+<span>
+DL Systems is growing towards deeper software engineering,
+business systems, automation and scalable digital products.
+</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Principles Behind the Work</h2>
+
+<p class="section-intro">
+The company is being built around a small number of principles
+that influence both technical decisions and client relationships.
+</p>
+
+<div class="values-grid">
+
+<article class="value-card">
+<span>1</span>
+<h3>Understand First</h3>
+<p>
+Development begins with the people, workflow and expected result,
+not with a predetermined design or technology.
+</p>
+</article>
+
+<article class="value-card">
+<span>2</span>
+<h3>Build Clearly</h3>
+<p>
+Interfaces, data and system responsibilities should remain organised
+enough to understand and improve after launch.
+</p>
+</article>
+
+<article class="value-card">
+<span>3</span>
+<h3>Be Honest About Scope</h3>
+<p>
+A simple website and a full business system should not be described,
+priced or delivered as if they carry the same responsibility.
+</p>
+</article>
+
+<article class="value-card">
+<span>4</span>
+<h3>Keep Improving</h3>
+<p>
+Projects are reviewed honestly so that mistakes, feedback and practical
+experience strengthen the next delivery.
+</p>
+</article>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Who DL Systems Works With</h2>
+
+<p class="section-intro">
+The work is suitable for organisations that need a stronger digital presence
+or more structure in how information and customer activity are managed.
+</p>
+
+<div class="focus-grid">
+
+<article class="focus-card">
+
+<i class="fa-solid fa-building" aria-hidden="true"></i>
+
+<h3>Businesses and Service Providers</h3>
+
+<p>
+Websites, booking tools, dashboards and digital systems for service businesses,
+suppliers, contractors, shops and growing teams.
+</p>
+
+</article>
+
+<article class="focus-card">
+
+<i class="fa-solid fa-school" aria-hidden="true"></i>
+
+<h3>Schools and Community Organisations</h3>
+
+<p>
+Public platforms that make institutional information, announcements,
+documents and contact details easier to access.
+</p>
+
+</article>
+
+<article class="focus-card">
+
+<i class="fa-solid fa-people-group" aria-hidden="true"></i>
+
+<h3>Employers and Technical Partners</h3>
+
+<p>
+The DL Systems portfolio also demonstrates practical software development
+experience, project ownership and a growing systems development capability.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>How Projects Are Approached</h2>
+
+<p class="section-intro">
+A clear process protects the project from unnecessary complexity,
+unclear expectations and rushed technical decisions.
+</p>
+
+<div class="approach-grid">
+
+<article class="approach-step">
+<span>1</span>
+<h3>Discovery</h3>
+<p>
+The organisation, users, challenges, timeline and expected outcome
+are discussed.
+</p>
+</article>
+
+<article class="approach-step">
+<span>2</span>
+<h3>Definition</h3>
+<p>
+The pages, features, workflows, information and delivery responsibilities
+are confirmed.
+</p>
+</article>
+
+<article class="approach-step">
+<span>3</span>
+<h3>Development</h3>
+<p>
+The interface, logic, database and integrations are built according
+to the agreed scope.
+</p>
+</article>
+
+<article class="approach-step">
+<span>4</span>
+<h3>Testing and Launch</h3>
+<p>
+Important journeys are reviewed before the project is released
+for practical use.
+</p>
+</article>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="company-position">
+
+<div class="company-position__copy">
+
+<h2>A Business Platform and a Professional Portfolio</h2>
+
+<p>
+DL Systems serves two connected purposes. It is a business through which
+clients can request websites, systems and software-development services.
+</p>
+
+<p>
+It is also a professional portfolio showing the experience, initiative
+and technical growth of its founder, Diapo Lifton Seabi.
+</p>
+
+<p>
+This allows clients, employers and collaborators to evaluate the work
+from different perspectives while seeing the same evidence of practical delivery.
+</p>
+
+</div>
+
+<div class="company-position__options">
+
+<div class="position-option">
+<strong>For clients</strong>
+<span>
+A clear view of available services, live projects and the development
+approach behind each type of solution.
+</span>
+</div>
+
+<div class="position-option">
+<strong>For employers</strong>
+<span>
+Evidence of software development, systems thinking, responsive interfaces,
+database work, deployment and project ownership.
+</span>
+</div>
+
+<div class="position-option">
+<strong>For collaborators</strong>
+<span>
+A foundation for working together on websites, applications,
+automation tools and new digital products.
+</span>
+</div>
+
+<div class="about-actions">
+<a href="projects.html" class="btn primary">Review Project Work</a>
+<a href="founder.html" class="btn secondary">Meet the Founder</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Technology and Tools</h2>
+
+<p class="section-intro">
+The stack changes according to what the project must accomplish.
+DL Systems is focused on software and systems development rather than
+being limited to one framework.
+</p>
+
+<div class="stack-grid" aria-label="DL Systems technology stack">
+<div class="stack-item">HTML5</div>
+<div class="stack-item">CSS3</div>
+<div class="stack-item">JavaScript</div>
+<div class="stack-item">Bootstrap</div>
+<div class="stack-item">PHP</div>
+<div class="stack-item">Laravel</div>
+<div class="stack-item">MySQL</div>
+<div class="stack-item">REST APIs</div>
+<div class="stack-item">Responsive Design</div>
+<div class="stack-item">Git & GitHub</div>
+<div class="stack-item">Workflow Automation</div>
+<div class="stack-item">Cloud Deployment</div>
+</div>
+
+<p class="stack-note">
+A focused website may need a lightweight structure, while an operational
+system may require backend logic, stored data, user access and integrations.
+The technology is selected according to the responsibility of the project.
+</p>
+
+</section>
+
+<section class="cta-section">
+
+<h2>Build Something That Fits the Work</h2>
+
+<p>
+Contact DL Systems about a professional website, booking platform,
+dashboard, automation tool or custom software project.
+</p>
+
+<a href="contact.html" class="btn primary">
+Start a Project Conversation
+</a>
+
+</section>
+
+</main>
+
 <footer class="enterprise-footer">
-  <div class="footer-inner">
 
-    <div class="footer-brand">
-      <img src="assets/images/logo.png" alt="DL Systems Logo">
-      <span>DL SYSTEMS</span>
-    </div>
+<div class="footer-inner">
 
-    <div class="footer-contact">
-      <p>Email: <a href="mailto:dlsystems.official@gmail.com">dlsystems.official@gmail.com</a></p>
-      <p>Phone: <a href="tel:+27680244514">+27 68 024 4514</a></p>
-    </div>
+<div class="footer-brand">
+<img
+src="assets/images/logo.png"
+alt="DL Systems logo"
+width="48"
+height="48"
+>
+<span>DL SYSTEMS</span>
+</div>
 
-    <div class="footer-socials">
-      <a href="https://www.facebook.com/jadentjay.seabi" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/diapo_slim" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
+<div class="footer-contact">
 
-  </div>
+<p>
+Email:
+<a href="mailto:dlsystems.official@gmail.com">
+dlsystems.official@gmail.com
+</a>
+</p>
 
-  <p class="footer-copy">
-    © 2026 DL SYSTEMS · Enterprise Software & Systems Engineering
-  </p>
+<p>
+Phone:
+<a href="tel:+27680244514">
++27 68 024 4514
+</a>
+</p>
+
+</div>
+
+<div class="footer-socials">
+
+<a
+href="https://www.facebook.com/jadentjay.seabi"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Visit DL Systems on Facebook"
+>
+<i class="fab fa-facebook-f" aria-hidden="true"></i>
+</a>
+
+<a
+href="https://www.instagram.com/diapo_slim"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Visit DL Systems on Instagram"
+>
+<i class="fab fa-instagram" aria-hidden="true"></i>
+</a>
+
+</div>
+
+</div>
+
+<p class="footer-copy">
+© 2026 DL SYSTEMS · Software Development, Systems Development,
+Professional Websites and Digital Solutions.
+</p>
+
 </footer>
+
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

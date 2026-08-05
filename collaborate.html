@@ -5,138 +5,746 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Collaborate With DL Systems | Technical Partnerships & Digital Builds</title>
+<title>Collaborate With DL Systems | Software Projects & Technical Partnerships</title>
 
-<meta name="description" content="Collaborate with DL Systems on business websites, booking systems, dashboards, automation tools, internal systems, MVPs and custom digital platforms.">
-<meta name="keywords" content="collaborate with DL Systems, software collaboration South Africa, business systems developer, web development partnership, automation systems, dashboards, MVP development">
+<meta
+name="description"
+content="Collaborate with DL Systems on professional websites, business systems, dashboards, automation, MVP development and custom software projects."
+>
+
+<meta
+name="keywords"
+content="collaborate with DL Systems, software development partnership South Africa, systems developer, technical collaboration, MVP development, business automation, dashboard development"
+>
+
 <meta name="author" content="DL Systems">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#05070d">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <link rel="canonical" href="https://dlsystems.co.za/collaborate.html">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
 
+<meta property="og:site_name" content="DL Systems">
 <meta property="og:title" content="Collaborate With DL Systems | Technical Partnerships">
-<meta property="og:description" content="Structured collaboration on websites, systems, dashboards, automation tools and digital platforms.">
+<meta
+property="og:description"
+content="Structured collaboration on websites, business systems, dashboards, automation and digital products."
+>
 <meta property="og:url" content="https://dlsystems.co.za/collaborate.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://dlsystems.co.za/assets/images/logo.png">
+<meta property="og:image:alt" content="DL Systems logo">
+<meta property="og:locale" content="en_ZA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Collaborate With DL Systems">
+<meta
+name="twitter:description"
+content="Work with DL Systems on software projects, websites, automation, dashboards and product development."
+>
+<meta name="twitter:image" content="https://dlsystems.co.za/assets/images/logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet"
+>
 
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/particles.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dlsystems.co.za/#organization",
+      "name": "DL Systems",
+      "url": "https://dlsystems.co.za/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dlsystems.co.za/assets/images/logo.png"
+      },
+      "description": "DL Systems develops professional websites, business systems, dashboards, automation tools and custom software.",
+      "founder": {
+        "@type": "Person",
+        "name": "Diapo Lifton Seabi",
+        "url": "https://dlsystems.co.za/founder.html"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dlsystems.co.za/#website",
+      "url": "https://dlsystems.co.za/",
+      "name": "DL Systems",
+      "publisher": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "inLanguage": "en-ZA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dlsystems.co.za/collaborate.html#webpage",
+      "url": "https://dlsystems.co.za/collaborate.html",
+      "name": "Collaborate With DL Systems",
+      "description": "Technical collaboration opportunities for software projects, websites, business systems, automation and digital products.",
+      "isPartOf": {
+        "@id": "https://dlsystems.co.za/#website"
+      },
+      "about": {
+        "@id": "https://dlsystems.co.za/#organization"
+      },
+      "inLanguage": "en-ZA"
+    }
+  ]
+}
+</script>
+
+<style>
+
+.skip-link{
+position:fixed;
+top:14px;
+left:14px;
+z-index:9999;
+padding:11px 16px;
+border-radius:10px;
+background:var(--accent);
+color:#041014;
+font-size:.88rem;
+font-weight:700;
+text-decoration:none;
+transform:translateY(-160%);
+transition:transform .2s ease;
+}
+
+.skip-link:focus{
+transform:translateY(0);
+}
+
+.collaboration-intro{
+max-width:980px;
+margin:0 auto;
+padding:40px;
+border:1px solid var(--border);
+border-radius:22px;
+background:linear-gradient(
+180deg,
+rgba(255,255,255,.055),
+rgba(255,255,255,.02)
+);
+}
+
+.collaboration-intro h2{
+margin-bottom:20px;
+}
+
+.collaboration-intro p{
+max-width:830px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.collaboration-intro p + p{
+margin-top:16px;
+}
+
+.partner-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:22px;
+}
+
+.partner-card{
+position:relative;
+padding:29px;
+border:1px solid var(--border);
+border-radius:20px;
+background:linear-gradient(
+155deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.018)
+);
+overflow:hidden;
+}
+
+.partner-card::after{
+content:"";
+position:absolute;
+width:140px;
+height:140px;
+right:-68px;
+top:-68px;
+border-radius:50%;
+background:rgba(0,229,255,.045);
+pointer-events:none;
+}
+
+.partner-number{
+display:inline-block;
+margin-bottom:16px;
+color:var(--accent);
+font-size:.74rem;
+font-weight:700;
+letter-spacing:.1em;
+text-transform:uppercase;
+}
+
+.partner-card h3{
+position:relative;
+z-index:1;
+margin-bottom:11px;
+}
+
+.partner-card p{
+position:relative;
+z-index:1;
+}
+
+.collaboration-layout{
+display:grid;
+grid-template-columns:minmax(0,1.04fr) minmax(320px,.96fr);
+gap:28px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.collaboration-copy,
+.collaboration-points{
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:linear-gradient(
+180deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.02)
+);
+}
+
+.collaboration-copy h2{
+text-align:left;
+margin-bottom:18px;
+}
+
+.collaboration-copy p + p{
+margin-top:16px;
+}
+
+.collaboration-points{
+display:grid;
+gap:13px;
+}
+
+.collaboration-point{
+padding:16px 17px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+}
+
+.collaboration-point strong{
+display:block;
+margin-bottom:6px;
+color:var(--text);
+}
+
+.collaboration-point span{
+display:block;
+color:var(--muted);
+font-size:.89rem;
+line-height:1.65;
+}
+
+.collaboration-areas{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:22px;
+}
+
+.area-card{
+padding:29px;
+border:1px solid var(--border);
+border-radius:20px;
+background:linear-gradient(
+155deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.018)
+);
+}
+
+.area-icon{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:44px;
+height:44px;
+margin-bottom:17px;
+border:1px solid rgba(0,229,255,.24);
+border-radius:13px;
+background:rgba(0,229,255,.07);
+color:var(--accent);
+font-weight:700;
+}
+
+.area-card h3{
+margin-bottom:11px;
+}
+
+.area-list{
+list-style:none;
+display:grid;
+gap:9px;
+margin:18px 0 0;
+padding:0;
+}
+
+.area-list li{
+position:relative;
+padding-left:21px;
+color:var(--muted);
+font-size:.88rem;
+line-height:1.65;
+}
+
+.area-list li::before{
+content:"";
+position:absolute;
+left:0;
+top:.65em;
+width:6px;
+height:6px;
+border-radius:50%;
+background:var(--accent);
+}
+
+.engagement-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:20px;
+}
+
+.engagement-card{
+padding:28px;
+border:1px solid var(--border);
+border-radius:19px;
+background:rgba(255,255,255,.03);
+}
+
+.engagement-card span{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:39px;
+height:39px;
+margin-bottom:17px;
+border:1px solid rgba(0,229,255,.26);
+border-radius:12px;
+background:rgba(0,229,255,.075);
+color:var(--accent);
+font-weight:700;
+}
+
+.engagement-card h3{
+margin-bottom:10px;
+}
+
+.engagement-card p{
+font-size:.89rem;
+line-height:1.7;
+}
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:18px;
+}
+
+.process-step{
+padding:24px;
+border:1px solid var(--border);
+border-radius:17px;
+background:rgba(255,255,255,.03);
+}
+
+.process-step span{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:36px;
+height:36px;
+margin-bottom:16px;
+border:1px solid rgba(0,229,255,.28);
+border-radius:50%;
+background:rgba(0,229,255,.075);
+color:var(--accent);
+font-weight:700;
+}
+
+.process-step h3{
+margin-bottom:9px;
+font-size:1rem;
+}
+
+.process-step p{
+font-size:.88rem;
+line-height:1.68;
+}
+
+.fit-layout{
+display:grid;
+grid-template-columns:minmax(0,1fr) minmax(320px,.95fr);
+gap:28px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.fit-copy,
+.fit-options{
+padding:38px;
+border:1px solid var(--border);
+border-radius:22px;
+background:linear-gradient(
+180deg,
+rgba(255,255,255,.052),
+rgba(255,255,255,.02)
+);
+}
+
+.fit-copy h2{
+text-align:left;
+margin-bottom:18px;
+}
+
+.fit-copy p + p{
+margin-top:16px;
+}
+
+.fit-options{
+display:grid;
+gap:13px;
+}
+
+.fit-option{
+padding:16px 17px;
+border:1px solid var(--border);
+border-radius:14px;
+background:rgba(255,255,255,.025);
+}
+
+.fit-option strong{
+display:block;
+margin-bottom:6px;
+color:var(--text);
+}
+
+.fit-option span{
+display:block;
+color:var(--muted);
+font-size:.89rem;
+line-height:1.65;
+}
+
+.collaboration-actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+.collaboration-actions .btn{
+flex:1 1 190px;
+text-align:center;
+}
+
+.stack-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(125px,1fr));
+gap:13px;
+max-width:1030px;
+margin:34px auto 0;
+}
+
+.stack-item{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:58px;
+padding:13px 15px;
+border:1px solid var(--border);
+border-radius:13px;
+background:rgba(255,255,255,.026);
+color:var(--muted);
+font-size:.85rem;
+font-weight:600;
+text-align:center;
+}
+
+.stack-note{
+max-width:850px;
+margin:25px auto 0;
+color:var(--muted);
+font-size:.9rem;
+line-height:1.75;
+text-align:center;
+}
+
+@media(max-width:1000px){
+
+.collaboration-layout,
+.fit-layout{
+grid-template-columns:1fr;
+}
+
+.partner-grid,
+.engagement-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+.process-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+}
+
+@media(max-width:780px){
+
+.partner-grid,
+.collaboration-areas,
+.engagement-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:640px){
+
+.collaboration-intro,
+.collaboration-copy,
+.collaboration-points,
+.fit-copy,
+.fit-options{
+padding:27px 21px;
+}
+
+.partner-card,
+.area-card,
+.engagement-card{
+padding:24px 21px;
+}
+
+.process-grid{
+grid-template-columns:1fr;
+}
+
+.collaboration-actions{
+flex-direction:column;
+}
+
+.collaboration-actions .btn{
+width:100%;
+flex-basis:auto;
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+scroll-behavior:auto !important;
+animation-duration:.01ms !important;
+animation-iteration-count:1 !important;
+transition-duration:.01ms !important;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="page-bg" style="background-image:url('assets/images/bg-home.jpg');"></div>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<canvas id="particles"></canvas>
-<div class="neon-grid"></div>
+<div
+class="page-bg"
+style="background-image:url('assets/images/bg-home.jpg');"
+aria-hidden="true"
+></div>
+
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="neon-grid" aria-hidden="true"></div>
 
 <header class="nav enterprise-nav">
+
 <div class="nav-inner">
 
-<a href="index.html" class="brand" aria-label="DL Systems Home">
-<img src="assets/images/logo.png" alt="DL Systems Logo">
+<a href="index.html" class="brand" aria-label="DL Systems homepage">
+<img
+src="assets/images/logo.png"
+alt="DL Systems logo"
+width="48"
+height="48"
+>
 <span>DL SYSTEMS</span>
 </a>
 
-<nav class="nav-links" aria-label="Main navigation">
+<nav class="nav-links" aria-label="Primary navigation">
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="projects.html">Projects</a>
 <a href="marketplace.html">Marketplace</a>
 <a href="founder.html">Founder</a>
-<a href="collaborate.html" class="active">Collaborate</a>
+<a href="collaborate.html" class="active" aria-current="page">Collaborate</a>
 <a href="contact.html" class="cta">Contact</a>
 </nav>
 
 </div>
+
 </header>
 
+<main id="main-content">
+
 <section class="hero hero--compact">
+
 <div class="hero-inner">
 
-<div class="home-kicker">Collaboration · Delivery · Technical Partnership</div>
+<div class="home-kicker">
+Technical Collaboration · Product Delivery · Shared Execution
+</div>
 
-<h1>Let’s Build Digital Solutions That Actually Solve Problems</h1>
+<h1>Build Better Software Through Clear Collaboration</h1>
 
 <p>
-DL Systems collaborates with developers, founders, agencies and business teams on projects
-that need planning, structure, development support and practical execution.
+DL Systems works with developers, founders, agencies, businesses and
+technical teams on digital projects that need thoughtful planning,
+reliable implementation and practical delivery.
 </p>
 
 <p>
-The goal is to build systems that are useful, maintainable and genuinely valuable
-to the people using them.
+Collaboration may involve an entire build or one specific part of the work,
+such as frontend development, backend functionality, database structure,
+automation, testing or deployment.
 </p>
 
 <div class="hero-actions">
-<a href="#collaboration" class="btn primary">Explore Collaboration</a>
-<a href="projects.html" class="btn secondary">View Work</a>
-<a href="contact.html" class="btn secondary">Start Conversation</a>
+<a href="#partners" class="btn primary">Explore Collaboration</a>
+<a href="projects.html" class="btn secondary">Review Project Work</a>
+<a href="contact.html" class="btn secondary">Start a Conversation</a>
 </div>
 
 </div>
+
 </section>
 
-<div class="trust-bar">
-<span>Technical Builds</span>
-<span>Business Websites</span>
-<span>Booking Systems</span>
-<span>Dashboards</span>
+<div class="trust-bar" aria-label="DL Systems collaboration areas">
+<span>Software Development</span>
+<span>Business Systems</span>
+<span>Frontend & Backend</span>
 <span>Automation</span>
+<span>Technical Delivery</span>
 </div>
 
-<section class="section" id="collaboration">
+<section class="section">
 
-<div class="service-band">
+<div class="collaboration-intro">
 
-<div>
-<h2>Collaboration With Purpose</h2>
+<h2>Collaboration Should Make the Project Stronger</h2>
 
 <p>
-Good digital products are rarely built by accident. They come from clear communication,
-careful planning, practical technical decisions and a shared understanding of what the project must solve.
+The purpose of working together is not simply to add more people to a project.
+A useful collaboration brings the right skills, clearer decisions and greater
+delivery capacity to the work.
 </p>
 
 <p>
-DL Systems is open to focused collaboration on websites, dashboards, internal tools,
-booking systems, automation systems, MVPs and business platforms where quality and execution matter.
+DL Systems is open to projects where responsibilities can be defined,
+communication remains direct and everyone involved is working towards
+a result that can be used, tested and improved.
 </p>
-</div>
-
-<div class="service-points">
-
-<div class="service-point">
-<strong>For developers</strong>
-<span>Collaborate on structured builds, frontend interfaces, backend logic, databases, dashboards and deployment-ready systems.</span>
-</div>
-
-<div class="service-point">
-<strong>For founders</strong>
-<span>Turn ideas into practical MVPs, platforms or internal tools that can be tested, improved and expanded.</span>
-</div>
-
-<div class="service-point">
-<strong>For agencies</strong>
-<span>Add development support to client projects that need dashboards, automation, backend structure or custom workflows.</span>
-</div>
-
-<div class="service-point">
-<strong>For businesses</strong>
-<span>Build digital tools around real business operations instead of relying only on scattered tools and manual processes.</span>
-</div>
 
 </div>
+
+</section>
+
+<section class="section" id="partners">
+
+<h2>Who DL Systems Collaborates With</h2>
+
+<p class="section-intro">
+Different partnerships require different working arrangements.
+The scope is shaped around what the project needs and where DL Systems
+can contribute meaningful technical value.
+</p>
+
+<div class="partner-grid">
+
+<article class="partner-card">
+<span class="partner-number">01 · Developers</span>
+<h3>Software Developers</h3>
+<p>
+Collaboration on interfaces, backend functionality, databases,
+APIs, debugging, testing, version control and deployment.
+</p>
+</article>
+
+<article class="partner-card">
+<span class="partner-number">02 · Founders</span>
+<h3>Product and Startup Founders</h3>
+<p>
+Technical support for turning an early concept into a realistic MVP,
+internal tool or customer-facing digital product.
+</p>
+</article>
+
+<article class="partner-card">
+<span class="partner-number">03 · Agencies</span>
+<h3>Creative and Digital Agencies</h3>
+<p>
+Development support for agency projects that require custom functionality,
+business systems or additional delivery capacity.
+</p>
+</article>
+
+<article class="partner-card">
+<span class="partner-number">04 · Businesses</span>
+<h3>Business Owners and Teams</h3>
+<p>
+Digital tools for managing bookings, records, enquiries, reporting,
+customer activity and everyday workflows.
+</p>
+</article>
+
+<article class="partner-card">
+<span class="partner-number">05 · Employers</span>
+<h3>Engineering and Product Teams</h3>
+<p>
+Employment, contract or project-based opportunities where practical
+software-development experience and systems thinking are valuable.
+</p>
+</article>
+
+<article class="partner-card">
+<span class="partner-number">06 · Specialists</span>
+<h3>Designers, Analysts and Automation Builders</h3>
+<p>
+Cross-functional work combining software development with design,
+business analysis, integrations or workflow automation.
+</p>
+</article>
 
 </div>
 
@@ -144,66 +752,59 @@ booking systems, automation systems, MVPs and business platforms where quality a
 
 <section class="section">
 
-<h2>Who We Work With</h2>
+<div class="collaboration-layout">
 
-<p class="section-intro">
-Collaboration works best when the goal is clear, the scope is honest and the people involved
-respect delivery, communication and quality.
-</p>
+<div class="collaboration-copy">
 
-<div class="capability-grid">
+<h2>Where DL Systems Can Contribute</h2>
 
-<div class="capability-card">
-<span>01 · Developers</span>
-<h3>Software Developers</h3>
 <p>
-Developers who care about clean structure, readable code, version control,
-maintainability and systems that can grow beyond the first version.
+A collaboration does not always require handing over an entire project.
+DL Systems can take responsibility for a clearly defined section of the work
+or support the broader team from planning through to deployment.
 </p>
+
+<p>
+The working arrangement depends on the existing team, project stage,
+technical requirements and the result that must be delivered.
+</p>
+
 </div>
 
-<div class="capability-card">
-<span>02 · Founders</span>
-<h3>Startup Builders</h3>
-<p>
-Founders building platforms, MVPs, internal systems or digital products that need
-a stronger technical foundation and realistic execution.
-</p>
+<div class="collaboration-points">
+
+<div class="collaboration-point">
+<strong>Project definition</strong>
+<span>
+Clarifying users, workflows, features, information and technical responsibilities
+before development begins.
+</span>
 </div>
 
-<div class="capability-card">
-<span>03 · Agencies</span>
-<h3>Creative & Technical Teams</h3>
-<p>
-Agencies and teams that need support with websites, dashboards, backend logic,
-automation or platform development.
-</p>
+<div class="collaboration-point">
+<strong>Development support</strong>
+<span>
+Building responsive interfaces, backend functionality, databases,
+forms, dashboards and operational workflows.
+</span>
 </div>
 
-<div class="capability-card">
-<span>04 · Businesses</span>
-<h3>Business Owners</h3>
-<p>
-Businesses that need digital tools to manage bookings, quotes, orders, clients,
-reports, tasks or internal workflows.
-</p>
+<div class="collaboration-point">
+<strong>System improvement</strong>
+<span>
+Reviewing an existing platform, fixing problems and improving structure,
+usability or maintainability.
+</span>
 </div>
 
-<div class="capability-card">
-<span>05 · Automation</span>
-<h3>Automation Builders</h3>
-<p>
-Builders working on API integrations, workflow automation and systems that reduce repetitive work.
-</p>
+<div class="collaboration-point">
+<strong>Launch preparation</strong>
+<span>
+Testing important user journeys, resolving deployment issues
+and preparing the project for practical use.
+</span>
 </div>
 
-<div class="capability-card">
-<span>06 · Employers</span>
-<h3>Employers & Partners</h3>
-<p>
-Teams looking for a developer with practical project experience, systems thinking,
-business awareness and real execution ability.
-</p>
 </div>
 
 </div>
@@ -215,43 +816,91 @@ business awareness and real execution ability.
 <h2>Collaboration Areas</h2>
 
 <p class="section-intro">
-DL Systems can support projects from early idea planning to build execution,
-system improvement and launch preparation.
+DL Systems can support both public-facing products and internal software
+used by staff, administrators or business owners.
 </p>
 
-<div class="service-grid">
+<div class="collaboration-areas">
 
-<div class="card">
-<h3>Planning & Project Structure</h3>
+<article class="area-card">
+
+<div class="area-icon" aria-hidden="true">01</div>
+
+<h3>Websites and Customer Platforms</h3>
+
 <p>
-Clarifying the purpose, user flow, pages, modules, data needs, feature direction
-and delivery route before development starts.
+Professional websites and customer-facing platforms built around clear
+communication, responsive design and meaningful user journeys.
 </p>
-</div>
 
-<div class="card">
-<h3>Website & Platform Development</h3>
-<p>
-Building business websites, dashboards, booking systems, client portals,
-internal tools and custom digital platforms for real use.
-</p>
-</div>
+<ul class="area-list">
+<li>Business and service websites</li>
+<li>School and organisation websites</li>
+<li>Landing pages and campaign platforms</li>
+<li>Customer forms and enquiry journeys</li>
+</ul>
 
-<div class="card">
-<h3>Automation & Workflow Tools</h3>
-<p>
-Connecting processes, improving follow-ups, reducing repetitive admin
-and creating tools that support daily operations.
-</p>
-</div>
+</article>
 
-<div class="card">
-<h3>MVP & Product Support</h3>
+<article class="area-card">
+
+<div class="area-icon" aria-hidden="true">02</div>
+
+<h3>Business and Internal Systems</h3>
+
 <p>
-Supporting founders and teams with technical direction, feature planning,
-build structure and practical execution from idea to launch.
+Software that helps teams organise information, manage activity
+and improve control over daily operations.
 </p>
-</div>
+
+<ul class="area-list">
+<li>Booking and appointment systems</li>
+<li>Administration dashboards</li>
+<li>Customer and service records</li>
+<li>Internal portals and management tools</li>
+</ul>
+
+</article>
+
+<article class="area-card">
+
+<div class="area-icon" aria-hidden="true">03</div>
+
+<h3>Automation and Integrations</h3>
+
+<p>
+Connected workflows that reduce repeated work and help information
+move more reliably between systems.
+</p>
+
+<ul class="area-list">
+<li>API integrations</li>
+<li>Email and notification workflows</li>
+<li>Repeated task automation</li>
+<li>Data and reporting processes</li>
+</ul>
+
+</article>
+
+<article class="area-card">
+
+<div class="area-icon" aria-hidden="true">04</div>
+
+<h3>MVP and Product Development</h3>
+
+<p>
+Focused support for early products that need enough structure
+to be tested with users and developed further.
+</p>
+
+<ul class="area-list">
+<li>Feature and workflow definition</li>
+<li>Responsive product interfaces</li>
+<li>Backend and database foundations</li>
+<li>Deployment and feedback preparation</li>
+</ul>
+
+</article>
 
 </div>
 
@@ -259,91 +908,68 @@ build structure and practical execution from idea to launch.
 
 <section class="section">
 
-<div class="service-band">
-
-<div>
-<h2>How We Approach Collaboration</h2>
-
-<p>
-DL Systems works best on projects where the build has a clear purpose, a realistic scope
-and a practical reason for existing.
-</p>
-
-<p>
-The aim is to understand the problem properly, choose the right technical direction
-and build something that businesses or users can realistically depend on.
-</p>
-</div>
-
-<div class="service-points">
-
-<div class="service-point">
-<strong>Clear scope before development</strong>
-<span>The project must have a defined purpose, user flow, feature direction and expected outcome.</span>
-</div>
-
-<div class="service-point">
-<strong>Practical technical decisions</strong>
-<span>Technology must support the business goal, not just look impressive on paper.</span>
-</div>
-
-<div class="service-point">
-<strong>Real device readiness</strong>
-<span>Interfaces must work properly across mobile, tablet and desktop screens.</span>
-</div>
-
-<div class="service-point">
-<strong>Maintainable delivery</strong>
-<span>The build should be structured clearly enough to improve, extend and support over time.</span>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Working Principles</h2>
+<h2>Ways We Can Work Together</h2>
 
 <p class="section-intro">
-These principles guide how DL Systems approaches technical collaboration and project execution.
+The engagement can be structured around the full project,
+a defined technical responsibility or ongoing development support.
 </p>
 
-<div class="process-line">
+<div class="engagement-grid">
 
-<div class="process-step">
+<article class="engagement-card">
 <span>1</span>
-<h3>Understand</h3>
+<h3>Complete Project Delivery</h3>
 <p>
-Define the workflow, users, business problem, expected outcome and what success should look like.
+DL Systems plans and develops the agreed solution from initial requirements
+through to testing and deployment.
 </p>
-</div>
+</article>
 
-<div class="process-step">
+<article class="engagement-card">
 <span>2</span>
-<h3>Structure</h3>
+<h3>Defined Development Support</h3>
 <p>
-Map the pages, modules, user journeys, data flow, access points and system logic.
+DL Systems takes responsibility for a specific area such as frontend work,
+backend functionality, database integration or deployment.
 </p>
-</div>
+</article>
 
-<div class="process-step">
+<article class="engagement-card">
 <span>3</span>
-<h3>Build</h3>
+<h3>Technical Collaboration</h3>
 <p>
-Develop with clean structure, practical functionality, responsive layouts and maintainable code.
+DL Systems works alongside another developer, agency or internal team
+on shared delivery responsibilities.
 </p>
-</div>
+</article>
 
-<div class="process-step">
+<article class="engagement-card">
 <span>4</span>
-<h3>Improve</h3>
+<h3>MVP Partnership</h3>
 <p>
-Review, test, refine and create room for the system to grow after the first release.
+An early product is reduced to a practical first version that can be
+built, reviewed and tested without unnecessary complexity.
 </p>
-</div>
+</article>
+
+<article class="engagement-card">
+<span>5</span>
+<h3>Platform Improvement</h3>
+<p>
+An existing website or application is reviewed and improved through
+focused technical changes.
+</p>
+</article>
+
+<article class="engagement-card">
+<span>6</span>
+<h3>Ongoing Support</h3>
+<p>
+Continued assistance can cover maintenance, fixes, small improvements
+and preparation for future development.
+</p>
+</article>
 
 </div>
 
@@ -351,106 +977,193 @@ Review, test, refine and create room for the system to grow after the first rele
 
 <section class="section">
 
-<div class="service-band">
-
-<div>
-<h2>What Makes a Good Collaboration</h2>
-
-<p>
-The best projects are not always the biggest projects. They are the ones where the problem is
-clear, communication is honest and the people involved want to build something useful.
-</p>
-
-<p>
-DL Systems values serious builders, realistic planning and delivery that can actually support users.
-</p>
-</div>
-
-<div class="service-points">
-
-<div class="service-point">
-<strong>Good fit</strong>
-<span>Projects involving websites, booking systems, dashboards, automation, internal tools or business workflows.</span>
-</div>
-
-<div class="service-point">
-<strong>Not a good fit</strong>
-<span>Rushed work with unclear requirements, no direction, no content, no decision-maker or no realistic budget.</span>
-</div>
-
-<div class="service-point">
-<strong>Best starting point</strong>
-<span>A short discussion explaining the idea, current problem, required features, timeline and available resources.</span>
-</div>
-
-<div class="home-cta-inline">
-<a href="contact.html" class="btn primary">Start the Conversation</a>
-<a href="founder.html" class="btn secondary">View Founder</a>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Technical Stack</h2>
+<h2>How Collaboration Moves Forward</h2>
 
 <p class="section-intro">
-DL Systems collaborates using practical technologies selected around project requirements,
-system goals and long-term maintainability.
+A strong working relationship begins with clear information,
+realistic expectations and agreed responsibilities.
 </p>
 
-<div class="trust-bar">
-<span>HTML5</span>
-<span>CSS3</span>
-<span>JavaScript</span>
-<span>Bootstrap</span>
-<span>PHP</span>
-<span>Laravel</span>
-<span>MySQL</span>
-<span>Responsive Design</span>
-<span>APIs</span>
-<span>Automation</span>
+<div class="process-grid">
+
+<article class="process-step">
+<span>1</span>
+<h3>Discuss</h3>
+<p>
+The project, existing team, current challenges, expected result,
+timeline and available resources are discussed.
+</p>
+</article>
+
+<article class="process-step">
+<span>2</span>
+<h3>Define</h3>
+<p>
+The responsibilities, scope, deliverables, communication route
+and technical boundaries are agreed.
+</p>
+</article>
+
+<article class="process-step">
+<span>3</span>
+<h3>Develop</h3>
+<p>
+The work is completed through organised implementation,
+version control, testing and regular communication.
+</p>
+</article>
+
+<article class="process-step">
+<span>4</span>
+<h3>Review and Deliver</h3>
+<p>
+The agreed functionality is reviewed before handover,
+deployment or the next development phase.
+</p>
+</article>
+
 </div>
+
+</section>
+
+<section class="section">
+
+<div class="fit-layout">
+
+<div class="fit-copy">
+
+<h2>The Best Collaborations Begin With Honest Expectations</h2>
+
+<p>
+The size of the project matters less than the quality of the working relationship.
+A focused project with clear decisions can be more successful than a large project
+with uncertain ownership and constantly changing requirements.
+</p>
+
+<p>
+DL Systems works best with people who are prepared to communicate,
+make decisions, provide required information and respect the development process.
+</p>
+
+</div>
+
+<div class="fit-options">
+
+<div class="fit-option">
+<strong>A good fit</strong>
+<span>
+Projects with a clear problem, responsible decision-maker,
+realistic timeline and defined outcome.
+</span>
+</div>
+
+<div class="fit-option">
+<strong>Useful information to prepare</strong>
+<span>
+The current problem, intended users, required features,
+available content, timeline and expected budget.
+</span>
+</div>
+
+<div class="fit-option">
+<strong>Projects requiring discussion first</strong>
+<span>
+Large platforms, revenue-share arrangements, unfinished third-party code
+and projects with changing or undocumented requirements.
+</span>
+</div>
+
+<div class="fit-option">
+<strong>Employment and contract opportunities</strong>
+<span>
+Software-development, systems-development and technical-delivery roles
+can be discussed through the same contact process.
+</span>
+</div>
+
+<div class="collaboration-actions">
+<a href="contact.html" class="btn primary">Start the Conversation</a>
+<a href="founder.html" class="btn secondary">View the Founder Profile</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Technology and Tools</h2>
+
+<p class="section-intro">
+The technical stack depends on the project and the wider team.
+DL Systems is not limited to one framework or one type of delivery.
+</p>
+
+<div class="stack-grid" aria-label="DL Systems collaboration technologies">
+<div class="stack-item">HTML5</div>
+<div class="stack-item">CSS3</div>
+<div class="stack-item">JavaScript</div>
+<div class="stack-item">Bootstrap</div>
+<div class="stack-item">PHP</div>
+<div class="stack-item">Laravel</div>
+<div class="stack-item">MySQL</div>
+<div class="stack-item">REST APIs</div>
+<div class="stack-item">Responsive Design</div>
+<div class="stack-item">Git & GitHub</div>
+<div class="stack-item">Workflow Automation</div>
+<div class="stack-item">Cloud Deployment</div>
+</div>
+
+<p class="stack-note">
+Where another team or developer is already involved, the existing architecture,
+development standards and responsibilities are reviewed before implementation begins.
+</p>
 
 </section>
 
 <section class="cta-section">
 
-<h2>Interested in Working Together?</h2>
+<h2>Have a Project or Opportunity Worth Discussing?</h2>
 
 <p>
-If you are building a useful website, system, dashboard, automation workflow
-or business platform, DL Systems is open to structured technical collaboration.
+Contact DL Systems about software development, systems development,
+technical delivery, agency support, employment or a product collaboration.
 </p>
 
 <a href="contact.html" class="btn primary">
-Start the Conversation
+Start a Conversation
 </a>
 
 </section>
+
+</main>
 
 <footer class="enterprise-footer">
 
 <div class="footer-inner">
 
 <div class="footer-brand">
-<img src="assets/images/logo.png" alt="DL Systems Logo">
+<img
+src="assets/images/logo.png"
+alt="DL Systems logo"
+width="48"
+height="48"
+>
 <span>DL SYSTEMS</span>
 </div>
 
 <p class="footer-copy">
-© 2026 DL Systems · Business websites, booking systems, dashboards, automation tools and technical collaboration.
+© 2026 DL SYSTEMS · Software Development, Systems Development,
+Technical Collaboration and Digital Product Delivery.
 </p>
 
 </div>
 
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js" defer></script>
 
 </body>
 </html>
